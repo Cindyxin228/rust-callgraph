@@ -1,0 +1,22 @@
+[package]
+name = "callgraph"
+version = "0.1.0"
+authors = ["vikramnitin9 <vikramnitin9@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+cargo_metadata = "0.18.1"
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.122"
+rustc_version = "0.4.0"
+wait-timeout = "0.2.0"
+which = "6.0.2"
+
+[[bin]]
+name = "callgraph"
+
+[[bin]]
+name = "cargo-callgraph"
+
+[package.metadata.rust-analyzer]
+rustc_private = true
