@@ -6,7 +6,21 @@ pub struct S;
 
 impl S {
     pub fn met(&self) {
-        let _k = 44;
+        if self.should_call_bla() {
+            self.bla(); // 调用 bla
+        }
+        println!("met called");
+    }
+
+    pub fn bla(&self) {
+        for _ in 0..1 {
+            println!("bla called");
+        }
+    }
+
+    fn should_call_bla(&self) -> bool {
+        // 这里可以返回 true 或 false
+        true
     }
 }
 

@@ -1,9 +1,11 @@
 mod fun_method;
 
-use fun_method::{S, T};
+use fun_method::S;
 
 fn main() {
     let s = S {};
     s.met();
-    s.bla();
+    if true {
+        s.bla();
+    }
 }

@@ -37,6 +37,7 @@ struct Call {
     // call target
     callee: DefId,
     callee_span: Span,
+    constraint_depth: usize,
 }
 
 pub struct CallgraphVisitor<'tcx> {
@@ -57,6 +58,9 @@ pub struct CallgraphVisitor<'tcx> {
 
     // tracks the current function we're in during AST walk
     cur_fn: Option<DefId>,
+
+    // 新增字段来跟踪约束层数
+    constraint_depth: usize,
 }
 
 impl<'tcx> CallgraphVisitor<'tcx> {
@@ -69,16 +73,52 @@ impl<'tcx> CallgraphVisitor<'tcx> {
             static_calls: HashSet::new(),
             dynamic_calls: HashSet::new(),
             cur_fn: None,
+            constraint_depth: 0,
         }
     }
 
     pub fn dump(&self) {
-        dbg!(&self.functions);
-        dbg!(&self.method_decls);
-        dbg!(&self.method_impls);
-        dbg!(&self.static_calls);
-        dbg!(&self.dynamic_calls);
+        println!("Functions:");
+        for (def_id, span) in &self.functions {
+            let function_name = self.tcx.def_path_str(*def_id);
+            println!("  Function: {}, Span: {:?}", function_name, span);
+        }
+
+        println!("\nMethod Declarations:");
+        for def_id in &self.method_decls {
+            let method_name = self.tcx.def_path_str(*def_id);
+            println!("  Method Declaration: {}", method_name);
+        }
+
+        println!("\nMethod Implementations:");
+        for (decl_id, impl_ids) in &self.method_impls {
+            let decl_name = self.tcx.def_path_str(*decl_id);
+            println!("  Method Implementation for {}: {:?}", decl_name, impl_ids);
+        }
+
+        println!("\nStatic Calls:");
+        for call in &self.static_calls {
+            let caller_str = match call.caller {
+                Some(caller) => self.tcx.def_path_str(caller),
+                None => "Unknown Caller".to_string(),
+            };
+            let callee_str = self.tcx.def_path_str(call.callee);
+
+            println!("{} --- {} (Constraint Depth: {})", caller_str, callee_str, call.constraint_depth);
+        }
+
+        println!("\nDynamic Calls:");
+        for call in &self.dynamic_calls {
+            let caller_str = match call.caller {
+                Some(caller) => self.tcx.def_path_str(caller),
+                None => "Unknown Caller".to_string(),
+            };
+            let callee_str = self.tcx.def_path_str(call.callee);
+
+            println!("{} --- {} (Constraint Depth: {})", caller_str, callee_str, call.constraint_depth);
+        }
     }
+
 }
 
 //解析函数调用，存储静态调用和动态调用
@@ -94,13 +134,30 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
     fn visit_expr(&mut self, expr: &'tcx rustc_hir::Expr) {
         skip_generated_code!(expr.span);
 
+        let old_depth = self.constraint_depth; // 保存当前深度
+
         let hir_id = expr.hir_id;
+
+        // 检查表达式类型并更新约束层数
         match expr.kind {
+            rustc_hir::ExprKind::If(..) => {
+                self.constraint_depth += 1; // 进入 if 语句
+            },
+            rustc_hir::ExprKind::Loop(..) => {
+                if self.constraint_depth == 0 {
+                    self.constraint_depth += 1; // 进入 loop 语句
+                }
+            },
+            rustc_hir::ExprKind::Match(..) => {
+                self.constraint_depth += 1; // 进入 match 语句
+            },
             rustc_hir::ExprKind::Call(
-                    rustc_hir::Expr{
-                        kind: rustc_hir::ExprKind::Path(ref qpath),
-                        ..
-                    }, _) => {
+                rustc_hir::Expr {
+                    kind: rustc_hir::ExprKind::Path(ref qpath),
+                    ..
+                },
+                _,
+            ) => {
                 if let rustc_hir::QPath::Resolved(_, p) = qpath {
                     if let rustc_hir::def::Res::Def(_, def_id) = p.res {
                         self.static_calls.insert(Call {
@@ -110,6 +167,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                             caller_span: None,
                             callee: def_id,
                             callee_span: p.span,
+                            constraint_depth: self.constraint_depth,
                         });
                     }
                 }
@@ -134,6 +192,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                 caller_span: None,
                                 callee: res_def_id,
                                 callee_span: *span,
+                                constraint_depth: self.constraint_depth,
                             });
                         }
                         Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem{span, ..})) |
@@ -147,6 +206,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                 caller_span: None,
                                 callee: res_def_id,
                                 callee_span: *span,
+                                constraint_depth: self.constraint_depth,
                             });
                         },
                         None => (),
@@ -156,8 +216,11 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
             },
             _ => {},
         }
+
         // traverse
         intravisit::walk_expr(self, expr);
+
+        self.constraint_depth = old_depth; // 恢复之前的深度
     }
 
     //解析函数定义，存储函数信息
