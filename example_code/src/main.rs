@@ -4,8 +4,12 @@ use fun_method::S;
 
 fn main() {
     let s = S {};
-    s.met();
-    if true {
-        s.bla();
-    }
+    
+    // if true {
+    //     s.bla();
+    // }
+    
+    s.met(1, 2, 3);
+    
+   
 }
