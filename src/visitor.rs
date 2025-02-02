@@ -8,6 +8,7 @@ use rustc_hir::intravisit;
 use rustc_middle::hir::nested_filter;
 use rustc_span::Span;
 use std::cmp::PartialEq;
+use std::hash::{Hash, Hasher};
 
 macro_rules! skip_generated_code {
     ($span: expr) => {
@@ -28,7 +29,7 @@ macro_rules! push_walk_pop {
     }};
 }
 
-#[derive(Hash, Eq, Debug, Clone)]
+#[derive( Debug, Clone)]
 struct Call {
     // the call expression
     call_expr: HirId,
@@ -40,6 +41,15 @@ struct Call {
     callee: DefId,
     callee_span: Span,
     constraint_depth: usize,
+}
+
+impl Eq for Call {}
+
+impl Hash for Call {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        self.caller.hash(state);
+        self.callee.hash(state);
+    }
 }
 
 // 手动实现 PartialEq 只比较 caller 和 callee
