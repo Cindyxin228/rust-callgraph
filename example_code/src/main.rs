@@ -9,7 +9,7 @@ fn main() {
     //     s.bla();
     // }
     
-    s.met(1, 2, 3);
+    s.met();
     
    
 }

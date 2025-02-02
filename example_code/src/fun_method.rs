@@ -5,19 +5,19 @@ pub trait T {
 pub struct S;
 
 impl S {
-    // pub fn met(&self) {
-    //     if S::should_call_bla(1) && S::should_call_bla1(2) && S::should_call_bla2(3) {
-    //         self.bla(); // 调用 bla
-    //     }
-    //     println!("met called");
-    // }
-
-    pub fn met(&self, a: i32, b: i32, c: i32) {
-        if a == 1 && b == 2 && c == 3 {
+    pub fn met(&self) {
+        if S::should_call_bla(1) && S::should_call_bla1(2) && S::should_call_bla2(3) {
             self.bla(); // 调用 bla
         }
         println!("met called");
     }
+
+    // pub fn met(&self, a: i32, b: i32, c: i32) {
+    //     if a == 1 && b == 2 && c == 3 {
+    //         self.bla(); // 调用 bla
+    //     }
+    //     println!("met called");
+    // }
 
     pub fn bla(&self) {
         for _ in 0..1 {

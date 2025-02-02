@@ -45,7 +45,7 @@ struct Call {
 // 手动实现 PartialEq 只比较 caller 和 callee
 impl PartialEq for Call {
     fn eq(&self, other: &Self) -> bool {
-        self.caller == other.caller && self.callee == other.callee && self.call_expr_span == other.call_expr_span
+        self.caller == other.caller && self.callee == other.callee
     }
 }
 
@@ -151,6 +151,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
 
         let old_depth = self.constraint_depth; // 保存当前深度
         let hir_id = expr.hir_id;
+        let mut flag = true;
         // 检查表达式类型并更新约束层数
         match expr.kind {
             rustc_hir::ExprKind::If(ref cond, _, _) => {
@@ -165,6 +166,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
             },
             rustc_hir::ExprKind::Binary(op, ref lhs, ref rhs) => {
                 // 处理逻辑运算符
+                flag = false;
                 match op.node {
                     rustc_hir::BinOpKind::And => {
                         self.constraint_depth += 1; // 每个 and 增加一个约束深度
@@ -208,22 +210,86 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 },
                 _,
             ) => {
-                println!("Processing call with qpath: {:?}", qpath); // 打印 qpath 信息
+                // println!("Processing call with qpath: {:?}", qpath); // 打印 qpath 信息
 
-                if let rustc_hir::QPath::Resolved(_, p) = qpath {
-                    println!("Resolved path: {:?}", p); // 打印解析后的路径信息
-                    if let rustc_hir::def::Res::Def(_, def_id) = p.res {
+                // if let rustc_hir::QPath::Resolved(_, p) = qpath {
+                //     println!("Resolved path: {:?}", p); // 打印解析后的路径信息
+                //     if let rustc_hir::def::Res::Def(_, def_id) = p.res {
+                //         let new_call = Call {
+                //             call_expr: hir_id,
+                //             call_expr_span: expr.span,
+                //             caller: self.cur_fn,
+                //             caller_span: None,
+                //             callee: def_id,
+                //             callee_span: p.span,
+                //             constraint_depth: self.constraint_depth,
+                //         };
+
+                //         // 检查是否已经存在相同的调用（只比较 caller 和 callee）
+                //         if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
+                //             // 如果存在相同的 caller 和 callee，比较约束深度
+                //             if existing_call.should_insert(self.constraint_depth) {
+                //                 // 移除现有的调用
+                //                 self.static_calls.remove(&existing_call);
+                //                 // 插入新的调用
+                //                 self.static_calls.insert(new_call);
+                //                 println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
+                //             }
+                //         } else {
+                //             self.static_calls.insert(new_call);
+                //             println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                //         }
+                //     }
+                // } else {
+                //     println!("Call expression is not resolved: {:?}", qpath); // 打印未解析的路径信息
+                // }
+                match qpath {
+                    rustc_hir::QPath::Resolved(_, p) => {
+                        // println!("Resolved path: {:?}", p); // 打印解析后的路径信息
+                        if let rustc_hir::def::Res::Def(_, def_id) = p.res {
+                            let new_call = Call {
+                                call_expr: hir_id,
+                                call_expr_span: expr.span,
+                                caller: self.cur_fn,
+                                caller_span: None,
+                                callee: def_id,
+                                callee_span: p.span,
+                                constraint_depth: self.constraint_depth,
+                            };
+                
+                            // 检查是否已经存在相同的调用（只比较 caller 和 callee）
+                            if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
+                                // 如果存在相同的 caller 和 callee，比较约束深度
+                                if existing_call.should_insert(self.constraint_depth) {
+                                    // 移除现有的调用
+                                    self.static_calls.remove(&existing_call);
+                                    // 插入新的调用
+                                    self.static_calls.insert(new_call);
+                                    println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
+                                }
+                            } else {
+                                self.static_calls.insert(new_call);
+                                println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                            }
+                        }
+                    }
+                    rustc_hir::QPath::TypeRelative(ty, path_segment) => {
+                        println!("TypeRelative path: {:?}", path_segment);
+                        let callee_def_id = path_segment.hir_id.owner.to_def_id();
+                        println!("Callee def_id: {:?}", callee_def_id);
                         let new_call = Call {
                             call_expr: hir_id,
                             call_expr_span: expr.span,
                             caller: self.cur_fn,
                             caller_span: None,
-                            callee: def_id,
-                            callee_span: p.span,
+                            callee: callee_def_id,
+                            callee_span: path_segment.ident.span,
                             constraint_depth: self.constraint_depth,
                         };
-
-                        // 检查是否已经存在相同的调用（只比较 caller 和 callee）
+                        let test_call = self.static_calls.get(&new_call).cloned();
+                        println!("test_call: {:?}", test_call);
+                
+                            // 检查是否已经存在相同的调用（只比较 caller 和 callee）
                         if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
                             // 如果存在相同的 caller 和 callee，比较约束深度
                             if existing_call.should_insert(self.constraint_depth) {
@@ -238,8 +304,9 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                             println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
                         }
                     }
-                } else {
-                    println!("Call expression is not resolved: {:?}", qpath); // 打印未解析的路径信息
+                    rustc_hir::QPath::LangItem(_, span) => {
+                        println!("LangItem path: {:?}", span); // 打印语言项路径信息
+                    }
                 }
             },
             rustc_hir::ExprKind::MethodCall(_, _, _, _) => {
@@ -304,7 +371,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                     self.static_calls.remove(&existing_call);
                                     // 插入新的调用
                                     self.static_calls.insert(new_call);
-                                    println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                    println!("replaced new call, constraint_depth: {}", self.constraint_depth);
                                 }
                             } else {
                                 self.static_calls.insert(new_call);
@@ -322,9 +389,10 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
         }
 
         intravisit::walk_expr(self, expr); // 确保遍历所有表达式
-
-        self.constraint_depth = old_depth; // 恢复之前的深度
-        //println!("Exiting expression {:?}, restored constraint_depth to {}", expr, self.constraint_depth);
+        if flag {
+            self.constraint_depth = old_depth; // 恢复之前的深度
+            //println!("Exiting expression {:?}, restored constraint_depth to {}", expr, self.constraint_depth);
+        }
     }
 
     //解析函数定义，存储函数信息
