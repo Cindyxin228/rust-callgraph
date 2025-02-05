@@ -170,22 +170,19 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
         match expr.kind {
             rustc_hir::ExprKind::If(ref cond, _, _) => {
                 self.constraint_depth += 1; // 进入 if 语句
-                //println!("Entering If {:?}, constraint_depth is {}", expr, self.constraint_depth);
+                println!("Entering If {:?}, constraint_depth is {}", expr, self.constraint_depth);
 
                 intravisit::walk_expr(self, cond); // 处理条件表达式
-                // self.visit_expr(cond);
-                // 处理 if 语句体
-                // 在这里可以插入调用的逻辑
-                // 例如，您可以在这里检查并存储调用
             },
             rustc_hir::ExprKind::Binary(op, ref lhs, ref rhs) => {
                 // 处理逻辑运算符
                 flag = false;
                 match op.node {
                     rustc_hir::BinOpKind::And => {
-                        println!("Entering And , constraint_depth is {}", self.constraint_depth);
+                        println!("Entering And lhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(lhs.span));
                         intravisit::walk_expr(self, lhs); // 递归访问左侧表达式
                         self.constraint_depth += 1; // 每个 and 增加一个约束深度
+                        println!("Entering And rhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(rhs.span));
                         intravisit::walk_expr(self, rhs); // 递归访问右侧表达式
                     },
                     rustc_hir::BinOpKind::Or => {
@@ -224,39 +221,6 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 },
                 _,
             ) => {
-                // println!("Processing call with qpath: {:?}", qpath); // 打印 qpath 信息
-
-                // if let rustc_hir::QPath::Resolved(_, p) = qpath {
-                //     println!("Resolved path: {:?}", p); // 打印解析后的路径信息
-                //     if let rustc_hir::def::Res::Def(_, def_id) = p.res {
-                //         let new_call = Call {
-                //             call_expr: hir_id,
-                //             call_expr_span: expr.span,
-                //             caller: self.cur_fn,
-                //             caller_span: None,
-                //             callee: def_id,
-                //             callee_span: p.span,
-                //             constraint_depth: self.constraint_depth,
-                //         };
-
-                //         // 检查是否已经存在相同的调用（只比较 caller 和 callee）
-                //         if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
-                //             // 如果存在相同的 caller 和 callee，比较约束深度
-                //             if existing_call.should_insert(self.constraint_depth) {
-                //                 // 移除现有的调用
-                //                 self.static_calls.remove(&existing_call);
-                //                 // 插入新的调用
-                //                 self.static_calls.insert(new_call);
-                //                 println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
-                //             }
-                //         } else {
-                //             self.static_calls.insert(new_call);
-                //             println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
-                //         }
-                //     }
-                // } else {
-                //     println!("Call expression is not resolved: {:?}", qpath); // 打印未解析的路径信息
-                // }
                 match qpath {
                     rustc_hir::QPath::Resolved(_, p) => {
                         // println!("Resolved path: {:?}", p); // 打印解析后的路径信息
@@ -280,22 +244,23 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                     self.static_calls.remove(&existing_call);
                                     // 插入新的调用
                                     self.static_calls.insert(new_call);
-                                    println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
+                                    //println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
                                 }
                             } else {
                                 self.static_calls.insert(new_call);
-                                println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
                             }
                         }
                     }
                     rustc_hir::QPath::TypeRelative(ty, path_segment) => {   
-                        println!("TypeRelative path: {:?}", ty);
+                        // println!("TypeRelative path: {:?}", ty);
                         if let rustc_hir::TyKind::Path(ref qpath) = ty.kind {
                             if let rustc_hir::QPath::Resolved(_, path) = qpath {
                                 if let rustc_hir::def::Res::Def(_, def_id) = path.res {
                                     // Convert DefId and Ident to strings for printing
                                     let def_id_str = self.tcx.def_path_str(def_id);
                                     let ident_str = path_segment.ident.to_string();
+                                    let callee_path_output = def_id_str + "::" + &ident_str;
                                     let new_call = Call {
                                         call_expr: hir_id,
                                         call_expr_span: expr.span,
@@ -303,7 +268,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                         caller_span: None,
                                         callee: def_id,
                                         callee_span: path_segment.ident.span,   //error span
-                                        callee_path: def_id_str + "::" + &ident_str,
+                                        callee_path: callee_path_output.clone(),
                                         constraint_depth: self.constraint_depth,
                                     };
                             
@@ -317,9 +282,12 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                             self.static_calls.insert(new_call);
                                             println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
                                         }
+                                        else{
+                                            println!("not replaced, caller: {:?}, callee: {}, constraint_depth: {}", self.cur_fn, callee_path_output.clone(), self.constraint_depth);
+                                        }
                                     } else {
                                         self.static_calls.insert(new_call);
-                                        println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                        println!("Inserted new call, caller: {:?}, callee: {}, constraint_depth: {}", self.cur_fn, callee_path_output.clone(), self.constraint_depth);
                                     }
                                 }
                                 }
@@ -365,11 +333,11 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                     self.dynamic_calls.remove(&existing_call);
                                     // 插入新的调用
                                     self.dynamic_calls.insert(new_call);
-                                    println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                    //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
                                 }
                             } else {
                                 self.dynamic_calls.insert(new_call);
-                                println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
                             }
                         }
                         Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem { span, .. })) |
@@ -396,11 +364,11 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                     self.static_calls.remove(&existing_call);
                                     // 插入新的调用
                                     self.static_calls.insert(new_call);
-                                    println!("replaced new call, constraint_depth: {}", self.constraint_depth);
+                                    //println!("replaced new call, constraint_depth: {}", self.constraint_depth);
                                 }
                             } else {
                                 self.static_calls.insert(new_call);
-                                println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
                             }
                         }
                         None => (),
