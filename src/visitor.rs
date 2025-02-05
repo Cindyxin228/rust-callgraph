@@ -170,7 +170,11 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
         match expr.kind {
             rustc_hir::ExprKind::If(ref cond, _, _) => {
                 self.constraint_depth += 1; // 进入 if 语句
-                println!("Entering If {:?}, constraint_depth is {}", expr, self.constraint_depth);
+                // ... existing code ...
+                println!("Entering If: {}, constraint_depth is {}", 
+                self.tcx.sess.source_map().span_to_snippet(expr.span).unwrap_or_else(|_| "unknown".to_string()), 
+                self.constraint_depth
+                );
 
                 intravisit::walk_expr(self, cond); // 处理条件表达式
             },
@@ -180,19 +184,20 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 match op.node {
                     rustc_hir::BinOpKind::And => {
                         println!("Entering And lhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(lhs.span));
-                        intravisit::walk_expr(self, lhs); // 递归访问左侧表达式
+                        self.visit_expr(lhs);
                         self.constraint_depth += 1; // 每个 and 增加一个约束深度
                         println!("Entering And rhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(rhs.span));
-                        intravisit::walk_expr(self, rhs); // 递归访问右侧表达式
+                        self.visit_expr(rhs);
                     },
                     rustc_hir::BinOpKind::Or => {
                         // 对于 or，计算左右子表达式的约束深度
                         let left_depth = self.constraint_depth;
-                        intravisit::walk_expr(self, lhs); // 递归访问左侧表达式
+                        // intravisit::walk_expr(self, lhs); // 递归访问左侧表达式
+                        self.visit_expr(lhs);
                         let left_constraint_depth = self.constraint_depth;
 
                         self.constraint_depth = left_depth; // 恢复之前的深度
-                        intravisit::walk_expr(self, rhs); // 递归访问右侧表达式
+                        self.visit_expr(rhs);
                         let right_constraint_depth = self.constraint_depth;
 
                         // 选择最小的约束深度
@@ -201,8 +206,8 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                     },
                     _ => {
                         // 处理其他二元运算符
-                        intravisit::walk_expr(self, lhs);
-                        intravisit::walk_expr(self, rhs);
+                        self.visit_expr(lhs);
+                        self.visit_expr(rhs);
                     }
                 }
             },
@@ -210,9 +215,11 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 if self.constraint_depth == 0 {
                     self.constraint_depth += 1; // 进入 loop 语句
                 }
+                intravisit::walk_expr(self, expr);
             },
             rustc_hir::ExprKind::Match(..) => {
                 self.constraint_depth += 1; // 进入 match 语句
+                intravisit::walk_expr(self, expr);
             },
             rustc_hir::ExprKind::Call(
                 rustc_hir::Expr {
@@ -381,8 +388,9 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
             }
         }
 
-        intravisit::walk_expr(self, expr); // 确保遍历所有表达式
+        
         if flag {
+            intravisit::walk_expr(self, expr); // 确保遍历所有表达式
             self.constraint_depth = old_depth; // 恢复之前的深度
             //println!("Exiting expression {:?}, restored constraint_depth to {}", expr, self.constraint_depth);
         }
