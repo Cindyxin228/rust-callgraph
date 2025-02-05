@@ -1,6 +1,6 @@
-mod fun_method;
+mod a; 
 
-use fun_method::S;
+use crate::a::fun_method::{S, S1, T}; 
 
 fn main() {
     let s = S {};

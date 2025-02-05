@@ -6,7 +6,7 @@ pub struct S;
 
 impl S {
     pub fn met(&self) {
-        if S::should_call_bla(1) && S::should_call_bla1(2) && S::should_call_bla2(3) {
+        if S1::should_call_bla(1) && S1::should_call_bla1(2) && S1::should_call_bla2(3) {
             self.bla(); // 调用 bla
         }
         println!("met called");
@@ -25,6 +25,11 @@ impl S {
         }
     }
 
+}
+
+pub struct S1;
+
+impl S1 {
     pub fn should_call_bla(a: i32) -> bool {
         a == 1
     }
