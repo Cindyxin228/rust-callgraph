@@ -1,5 +1,5 @@
 pub trait T {
-    fn bla(&self) { let _g = 3; }
+    fn bla(&self) -> bool { let _g = 3; return true ; }
 }
 
 pub struct S;
@@ -19,12 +19,22 @@ impl S {
     //     println!("met called");
     // }
 
-    pub fn bla(&self) {
+    pub fn bla(&self) -> bool {
         for _ in 0..1 {
             println!("bla called");
         }
+        return true;
     }
 
+    pub fn test_while(&self, a: i32) -> i32 {
+        self.bla();
+        return a + 1;
+    }
+
+    pub fn test_while1(&self, a: i32) -> i32 {
+        self.bla();
+        return a + 2;
+    }
 }
 
 pub struct S1;
@@ -44,16 +54,18 @@ impl S1 {
 }
 
 impl T for S {
-    fn bla(&self) {
+    fn bla(&self) -> bool {
         let _i = 6;
+        return true;
     }
 }
 
 pub struct R;
 
 impl T for R {
-    fn bla(&self) {
+    fn bla(&self) -> bool {
         let _x = 4;
+        return true;
     }
 }
 
