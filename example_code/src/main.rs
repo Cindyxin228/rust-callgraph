@@ -1,6 +1,5 @@
 mod a; 
-
-use crate::a::fun_method::{S, S1, R, T}; 
+// use crate::a::fun_method::{S, S1, R, T}; 
 
 fn main() {
     let s = S {};
@@ -44,13 +43,45 @@ fn main() {
     //     a += 1;
     // }
 
-    let t: &dyn T = &s;
-    let r: &dyn T = &r;
+    // let t: &dyn T = &s;
+    // let r: &dyn T = &r;
 
-    //dynamic call
-    if  t.bla() && r.bla() {
-        println!("both true");
-    } else {
-        println!("both false");
-    }
+    // //dynamic call
+    // if  t.bla() && r.bla() {
+    //     println!("both true");
+    // } else {
+    //     println!("both false");
+    // }
 }
+
+
+// struct S;
+
+// impl S {
+//     fn test_a(&self, x: i32) -> bool {
+//         return self.a(x);
+//     }
+
+//     #[inline(always)]
+//     fn a(&self,x: i32) -> bool{
+//         return x == 1;
+//     }
+// }
+
+
+
+// fn main() {
+//     // let ascii = vec!['a', 'b', 'c', 'd', 'e'];
+//     // let deny_list = vec!['a', 'c']; // 假设这是我们的 deny_list
+
+//     // // 使用 map 和闭包，模拟你的例子
+//     // let result: Vec<_> = ascii.iter()
+//     //     .map(|&c| {
+//     //         a::fun_method::apply_ascii_deny_list_to_potentially_upper_case_ascii(c, &deny_list)
+//     //     })
+//     //     .collect();
+//     let s = S {};
+//     let a = s.test_a(1);
+//     // // 输出处理后的结果
+//     // println!("{:?}", result); // 应该打印 ['*', 'b', '*', 'd', 'e']
+// }

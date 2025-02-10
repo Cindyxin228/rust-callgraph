@@ -1,0 +1,655 @@
+Target name: example_code
+Entering expr: Block(
+    Block {
+        stmts: [],
+        expr: Some(
+            Expr {
+                hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).3),
+                kind: Ret(
+                    Some(
+                        Expr {
+                            hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).4),
+                            kind: Call(
+                                Expr {
+                                    hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).5),
+                                    kind: Path(
+                                        Resolved(
+                                            None,
+                                            Path {
+                                                span: src/main.rs:58:12: 58:13 (#0),
+                                                res: Def(
+                                                    Fn,
+                                                    DefId(0:7 ~ example_code[6542]::a),
+                                                ),
+                                                segments: [
+                                                    PathSegment {
+                                                        ident: a#0,
+                                                        hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).6),
+                                                        res: Def(
+                                                            Fn,
+                                                            DefId(0:7 ~ example_code[6542]::a),
+                                                        ),
+                                                        args: None,
+                                                        infer_args: true,
+                                                    },
+                                                ],
+                                            },
+                                        ),
+                                    ),
+                                    span: src/main.rs:58:12: 58:13 (#0),
+                                },
+                                [
+                                    Expr {
+                                        hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).7),
+                                        kind: Path(
+                                            Resolved(
+                                                None,
+                                                Path {
+                                                    span: src/main.rs:58:14: 58:15 (#0),
+                                                    res: Local(
+                                                        HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                                                    ),
+                                                    segments: [
+                                                        PathSegment {
+                                                            ident: x#0,
+                                                            hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).8),
+                                                            res: Local(
+                                                                HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                                                            ),
+                                                            args: None,
+                                                            infer_args: true,
+                                                        },
+                                                    ],
+                                                },
+                                            ),
+                                        ),
+                                        span: src/main.rs:58:14: 58:15 (#0),
+                                    },
+                                ],
+                            ),
+                            span: src/main.rs:58:12: 58:16 (#0),
+                        },
+                    ),
+                ),
+                span: src/main.rs:58:5: 58:16 (#0),
+            },
+        ),
+        hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).9),
+        rules: DefaultBlock,
+        span: src/main.rs:57:26: 59:2 (#0),
+        targeted_by_break: false,
+    },
+    None,
+)
+Entering expr: Ret(
+    Some(
+        Expr {
+            hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).4),
+            kind: Call(
+                Expr {
+                    hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).5),
+                    kind: Path(
+                        Resolved(
+                            None,
+                            Path {
+                                span: src/main.rs:58:12: 58:13 (#0),
+                                res: Def(
+                                    Fn,
+                                    DefId(0:7 ~ example_code[6542]::a),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        ident: a#0,
+                                        hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).6),
+                                        res: Def(
+                                            Fn,
+                                            DefId(0:7 ~ example_code[6542]::a),
+                                        ),
+                                        args: None,
+                                        infer_args: true,
+                                    },
+                                ],
+                            },
+                        ),
+                    ),
+                    span: src/main.rs:58:12: 58:13 (#0),
+                },
+                [
+                    Expr {
+                        hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).7),
+                        kind: Path(
+                            Resolved(
+                                None,
+                                Path {
+                                    span: src/main.rs:58:14: 58:15 (#0),
+                                    res: Local(
+                                        HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                                    ),
+                                    segments: [
+                                        PathSegment {
+                                            ident: x#0,
+                                            hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).8),
+                                            res: Local(
+                                                HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                                            ),
+                                            args: None,
+                                            infer_args: true,
+                                        },
+                                    ],
+                                },
+                            ),
+                        ),
+                        span: src/main.rs:58:14: 58:15 (#0),
+                    },
+                ],
+            ),
+            span: src/main.rs:58:12: 58:16 (#0),
+        },
+    ),
+)
+Entering expr: Call(
+    Expr {
+        hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).5),
+        kind: Path(
+            Resolved(
+                None,
+                Path {
+                    span: src/main.rs:58:12: 58:13 (#0),
+                    res: Def(
+                        Fn,
+                        DefId(0:7 ~ example_code[6542]::a),
+                    ),
+                    segments: [
+                        PathSegment {
+                            ident: a#0,
+                            hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).6),
+                            res: Def(
+                                Fn,
+                                DefId(0:7 ~ example_code[6542]::a),
+                            ),
+                            args: None,
+                            infer_args: true,
+                        },
+                    ],
+                },
+            ),
+        ),
+        span: src/main.rs:58:12: 58:13 (#0),
+    },
+    [
+        Expr {
+            hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).7),
+            kind: Path(
+                Resolved(
+                    None,
+                    Path {
+                        span: src/main.rs:58:14: 58:15 (#0),
+                        res: Local(
+                            HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                        ),
+                        segments: [
+                            PathSegment {
+                                ident: x#0,
+                                hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).8),
+                                res: Local(
+                                    HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                                ),
+                                args: None,
+                                infer_args: true,
+                            },
+                        ],
+                    },
+                ),
+            ),
+            span: src/main.rs:58:14: 58:15 (#0),
+        },
+    ],
+)
+call path Resolved(None, Path { span: src/main.rs:58:12: 58:13 (#0), res: Def(Fn, DefId(0:7 ~ example_code[6542]::a)), segments: [PathSegment { ident: a#0, hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).6), res: Def(Fn, DefId(0:7 ~ example_code[6542]::a)), args: None, infer_args: true }] })
+Entering expr: Path(
+    Resolved(
+        None,
+        Path {
+            span: src/main.rs:58:12: 58:13 (#0),
+            res: Def(
+                Fn,
+                DefId(0:7 ~ example_code[6542]::a),
+            ),
+            segments: [
+                PathSegment {
+                    ident: a#0,
+                    hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).6),
+                    res: Def(
+                        Fn,
+                        DefId(0:7 ~ example_code[6542]::a),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+            ],
+        },
+    ),
+)
+Entering expr: Path(
+    Resolved(
+        None,
+        Path {
+            span: src/main.rs:58:14: 58:15 (#0),
+            res: Local(
+                HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+            ),
+            segments: [
+                PathSegment {
+                    ident: x#0,
+                    hir_id: HirId(DefId(0:6 ~ example_code[6542]::test_a).8),
+                    res: Local(
+                        HirId(DefId(0:6 ~ example_code[6542]::test_a).2),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+            ],
+        },
+    ),
+)
+Entering expr: Block(
+    Block {
+        stmts: [
+            Stmt {
+                hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).8),
+                kind: Semi(
+                    Expr {
+                        hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).3),
+                        kind: Ret(
+                            Some(
+                                Expr {
+                                    hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).4),
+                                    kind: Binary(
+                                        Spanned {
+                                            node: Eq,
+                                            span: src/main.rs:62:14: 62:16 (#0),
+                                        },
+                                        Expr {
+                                            hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).5),
+                                            kind: Path(
+                                                Resolved(
+                                                    None,
+                                                    Path {
+                                                        span: src/main.rs:62:12: 62:13 (#0),
+                                                        res: Local(
+                                                            HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                                                        ),
+                                                        segments: [
+                                                            PathSegment {
+                                                                ident: x#0,
+                                                                hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).6),
+                                                                res: Local(
+                                                                    HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                                                                ),
+                                                                args: None,
+                                                                infer_args: true,
+                                                            },
+                                                        ],
+                                                    },
+                                                ),
+                                            ),
+                                            span: src/main.rs:62:12: 62:13 (#0),
+                                        },
+                                        Expr {
+                                            hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).7),
+                                            kind: Lit(
+                                                Spanned {
+                                                    node: Int(
+                                                        Pu128(
+                                                            1,
+                                                        ),
+                                                        Unsuffixed,
+                                                    ),
+                                                    span: src/main.rs:62:17: 62:18 (#0),
+                                                },
+                                            ),
+                                            span: src/main.rs:62:17: 62:18 (#0),
+                                        },
+                                    ),
+                                    span: src/main.rs:62:12: 62:18 (#0),
+                                },
+                            ),
+                        ),
+                        span: src/main.rs:62:5: 62:18 (#0),
+                    },
+                ),
+                span: src/main.rs:62:5: 62:19 (#0),
+            },
+        ],
+        expr: None,
+        hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).9),
+        rules: DefaultBlock,
+        span: src/main.rs:61:21: 63:2 (#0),
+        targeted_by_break: false,
+    },
+    None,
+)
+Entering expr: Ret(
+    Some(
+        Expr {
+            hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).4),
+            kind: Binary(
+                Spanned {
+                    node: Eq,
+                    span: src/main.rs:62:14: 62:16 (#0),
+                },
+                Expr {
+                    hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).5),
+                    kind: Path(
+                        Resolved(
+                            None,
+                            Path {
+                                span: src/main.rs:62:12: 62:13 (#0),
+                                res: Local(
+                                    HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                                ),
+                                segments: [
+                                    PathSegment {
+                                        ident: x#0,
+                                        hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).6),
+                                        res: Local(
+                                            HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                                        ),
+                                        args: None,
+                                        infer_args: true,
+                                    },
+                                ],
+                            },
+                        ),
+                    ),
+                    span: src/main.rs:62:12: 62:13 (#0),
+                },
+                Expr {
+                    hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).7),
+                    kind: Lit(
+                        Spanned {
+                            node: Int(
+                                Pu128(
+                                    1,
+                                ),
+                                Unsuffixed,
+                            ),
+                            span: src/main.rs:62:17: 62:18 (#0),
+                        },
+                    ),
+                    span: src/main.rs:62:17: 62:18 (#0),
+                },
+            ),
+            span: src/main.rs:62:12: 62:18 (#0),
+        },
+    ),
+)
+Entering expr: Binary(
+    Spanned {
+        node: Eq,
+        span: src/main.rs:62:14: 62:16 (#0),
+    },
+    Expr {
+        hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).5),
+        kind: Path(
+            Resolved(
+                None,
+                Path {
+                    span: src/main.rs:62:12: 62:13 (#0),
+                    res: Local(
+                        HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                    ),
+                    segments: [
+                        PathSegment {
+                            ident: x#0,
+                            hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).6),
+                            res: Local(
+                                HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                            ),
+                            args: None,
+                            infer_args: true,
+                        },
+                    ],
+                },
+            ),
+        ),
+        span: src/main.rs:62:12: 62:13 (#0),
+    },
+    Expr {
+        hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).7),
+        kind: Lit(
+            Spanned {
+                node: Int(
+                    Pu128(
+                        1,
+                    ),
+                    Unsuffixed,
+                ),
+                span: src/main.rs:62:17: 62:18 (#0),
+            },
+        ),
+        span: src/main.rs:62:17: 62:18 (#0),
+    },
+)
+Entering expr: Path(
+    Resolved(
+        None,
+        Path {
+            span: src/main.rs:62:12: 62:13 (#0),
+            res: Local(
+                HirId(DefId(0:7 ~ example_code[6542]::a).2),
+            ),
+            segments: [
+                PathSegment {
+                    ident: x#0,
+                    hir_id: HirId(DefId(0:7 ~ example_code[6542]::a).6),
+                    res: Local(
+                        HirId(DefId(0:7 ~ example_code[6542]::a).2),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+            ],
+        },
+    ),
+)
+Entering expr: Lit(
+    Spanned {
+        node: Int(
+            Pu128(
+                1,
+            ),
+            Unsuffixed,
+        ),
+        span: src/main.rs:62:17: 62:18 (#0),
+    },
+)
+Entering expr: Block(
+    Block {
+        stmts: [
+            Stmt {
+                hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).1),
+                kind: Let(
+                    LetStmt {
+                        pat: Pat {
+                            hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).7),
+                            kind: Binding(
+                                BindingMode(
+                                    No,
+                                    Not,
+                                ),
+                                HirId(DefId(0:8 ~ example_code[6542]::main).7),
+                                a#0,
+                                None,
+                            ),
+                            span: src/main.rs:75:9: 75:10 (#0),
+                            default_binding_modes: true,
+                        },
+                        ty: None,
+                        init: Some(
+                            Expr {
+                                hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).2),
+                                kind: Call(
+                                    Expr {
+                                        hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).3),
+                                        kind: Path(
+                                            Resolved(
+                                                None,
+                                                Path {
+                                                    span: src/main.rs:75:13: 75:19 (#0),
+                                                    res: Def(
+                                                        Fn,
+                                                        DefId(0:6 ~ example_code[6542]::test_a),
+                                                    ),
+                                                    segments: [
+                                                        PathSegment {
+                                                            ident: test_a#0,
+                                                            hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).4),
+                                                            res: Def(
+                                                                Fn,
+                                                                DefId(0:6 ~ example_code[6542]::test_a),
+                                                            ),
+                                                            args: None,
+                                                            infer_args: true,
+                                                        },
+                                                    ],
+                                                },
+                                            ),
+                                        ),
+                                        span: src/main.rs:75:13: 75:19 (#0),
+                                    },
+                                    [
+                                        Expr {
+                                            hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).5),
+                                            kind: Lit(
+                                                Spanned {
+                                                    node: Int(
+                                                        Pu128(
+                                                            1,
+                                                        ),
+                                                        Unsuffixed,
+                                                    ),
+                                                    span: src/main.rs:75:20: 75:21 (#0),
+                                                },
+                                            ),
+                                            span: src/main.rs:75:20: 75:21 (#0),
+                                        },
+                                    ],
+                                ),
+                                span: src/main.rs:75:13: 75:22 (#0),
+                            },
+                        ),
+                        els: None,
+                        hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).6),
+                        span: src/main.rs:75:5: 75:23 (#0),
+                        source: Normal,
+                    },
+                ),
+                span: src/main.rs:75:5: 75:23 (#0),
+            },
+        ],
+        expr: None,
+        hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).8),
+        rules: DefaultBlock,
+        span: src/main.rs:65:11: 78:2 (#0),
+        targeted_by_break: false,
+    },
+    None,
+)
+Entering expr: Call(
+    Expr {
+        hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).3),
+        kind: Path(
+            Resolved(
+                None,
+                Path {
+                    span: src/main.rs:75:13: 75:19 (#0),
+                    res: Def(
+                        Fn,
+                        DefId(0:6 ~ example_code[6542]::test_a),
+                    ),
+                    segments: [
+                        PathSegment {
+                            ident: test_a#0,
+                            hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).4),
+                            res: Def(
+                                Fn,
+                                DefId(0:6 ~ example_code[6542]::test_a),
+                            ),
+                            args: None,
+                            infer_args: true,
+                        },
+                    ],
+                },
+            ),
+        ),
+        span: src/main.rs:75:13: 75:19 (#0),
+    },
+    [
+        Expr {
+            hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).5),
+            kind: Lit(
+                Spanned {
+                    node: Int(
+                        Pu128(
+                            1,
+                        ),
+                        Unsuffixed,
+                    ),
+                    span: src/main.rs:75:20: 75:21 (#0),
+                },
+            ),
+            span: src/main.rs:75:20: 75:21 (#0),
+        },
+    ],
+)
+call path Resolved(None, Path { span: src/main.rs:75:13: 75:19 (#0), res: Def(Fn, DefId(0:6 ~ example_code[6542]::test_a)), segments: [PathSegment { ident: test_a#0, hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).4), res: Def(Fn, DefId(0:6 ~ example_code[6542]::test_a)), args: None, infer_args: true }] })
+Entering expr: Path(
+    Resolved(
+        None,
+        Path {
+            span: src/main.rs:75:13: 75:19 (#0),
+            res: Def(
+                Fn,
+                DefId(0:6 ~ example_code[6542]::test_a),
+            ),
+            segments: [
+                PathSegment {
+                    ident: test_a#0,
+                    hir_id: HirId(DefId(0:8 ~ example_code[6542]::main).4),
+                    res: Def(
+                        Fn,
+                        DefId(0:6 ~ example_code[6542]::test_a),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+            ],
+        },
+    ),
+)
+Entering expr: Lit(
+    Spanned {
+        node: Int(
+            Pu128(
+                1,
+            ),
+            Unsuffixed,
+        ),
+        span: src/main.rs:75:20: 75:21 (#0),
+    },
+)
+Functions:
+  Function: main, Span: src/main.rs:65:1: 78:2 (#0)
+  Function: a, Span: src/main.rs:61:1: 63:2 (#0)
+  Function: test_a, Span: src/main.rs:57:2: 59:2 (#0)
+
+Method Declarations:
+
+Method Implementations:
+
+Static Calls:
+test_a --- a (Constraint Depth: 0)
+main --- test_a (Constraint Depth: 0)
+
+Dynamic Calls:

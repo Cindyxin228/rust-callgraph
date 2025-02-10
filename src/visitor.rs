@@ -166,6 +166,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
         let old_depth = self.constraint_depth; // 保存当前深度
         let hir_id = expr.hir_id;
         let mut flag = true;
+        println!("Entering expr: {:#?}", expr.kind);
         // 检查表达式类型并更新约束层数
         match expr.kind {
             rustc_hir::ExprKind::If(ref cond, _, _) => {
@@ -261,6 +262,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 },
                 _,
             ) => {
+                println!("call path {:?}", qpath);
                 match qpath {
                     rustc_hir::QPath::Resolved(_, p) => {
                         // println!("Resolved path: {:?}", p); // 打印解析后的路径信息
@@ -336,13 +338,12 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                         
                         
                     rustc_hir::QPath::LangItem(_, span) => {
-                        //println!("LangItem path: {:?}", span); // 打印语言项路径信息
+                        println!("LangItem path: {:?}", span); // 打印语言项路径信息
                     }
                 }
                 intravisit::walk_expr(self, expr); // 确保遍历所有表达式
             },
-            rustc_hir::ExprKind::MethodCall(_, _, _, _) => {
-                //println!("into method call, constraint_depth: {}", self.constraint_depth);
+            rustc_hir::ExprKind::MethodCall(ref segment, ref receiver, ref args, span) => {
                 let o_def_id = hir_id.owner;
                 let typeck_tables = self.tcx.typeck(o_def_id);
                 let substs = typeck_tables.node_args(hir_id);
@@ -351,7 +352,10 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 if let Ok(Some(inst)) =
                     self.tcx.resolve_instance_raw(ParamEnvAnd { param_env, value: (method_id, substs) })
                 {
+                    println!("into method call: {:#?}", expr);
                     let res_def_id = inst.def_id();
+                    println!("caller: {:?}", self.cur_fn);
+                    println!("def_id: {:?}, get_if_local res_def_id: {:#?}", res_def_id, self.tcx.hir().get_if_local(res_def_id));
                     match self.tcx.hir().get_if_local(res_def_id) {
                         Some(rustc_hir::Node::TraitItem(rustc_hir::TraitItem { span, .. })) => {
                             // dynamic calls resolve only to the trait method decl
@@ -365,6 +369,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                 callee_path: self.tcx.def_path_str(res_def_id),
                                 constraint_depth: self.constraint_depth,
                             };
+                            println!("new call: {:#?}", new_call);
 
                             // 检查是否已经存在相同的动态调用
                             if let Some(existing_call) = self.dynamic_calls.get(&new_call).cloned() {
@@ -396,7 +401,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                 constraint_depth: self.constraint_depth,
                             };
 
-                            
+                            println!("new static call: {:#?}", new_call);
                             // 检查是否已经存在相同的静态调用
                             if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
                                 // 如果存在相同的 caller 和 callee，比较约束深度
