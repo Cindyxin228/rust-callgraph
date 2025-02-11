@@ -8,13 +8,13 @@ fn main() {
     // // 测试 if 表达式
     // s.met();
 
-    // // for loop
-    // for i in 0..3 {
-    //     println!("Loop iteration: {}", i);
-    //     if S1::should_call_bla(i) {
-    //         s.bla();
-    //     }
-    // }
+    // for loop
+    for i in 0..3 {
+        println!("Loop iteration: {}", i);
+        if S1::should_call_bla(i) {
+            s.bla();
+        }
+    }
 
     // 测试嵌套 if 和函数调用
     // if S1::should_call_bla(1) && S1::should_call_bla1(2) {

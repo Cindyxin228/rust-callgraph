@@ -200,15 +200,6 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 // else_ex.as_ref().map(|expr| intravisit::walk_expr(self, expr));
 
             },
-            rustc_hir::ExprKind::DropTemps(ref inner )=>{
-                // let mut current_expr = inner;
-                // // 循环解包 DropTemps 和 Binary
-                // while let rustc_hir::ExprKind::DropTemps(inner) = &current_expr.kind {
-                //     current_expr = inner; // 更新为内层的表达式
-                //     self.visit_expr(current_expr);
-                // }
-                // println!("DropTemps: {:#?}", expr);
-            },
             rustc_hir::ExprKind::Binary(op, ref lhs, ref rhs) => {
                 // 处理逻辑运算符
                 flag = false;
@@ -242,9 +233,6 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                     }
                 }
             },
-            rustc_hir::ExprKind::Block(ref block, ref label)=>{
-                
-            }
             rustc_hir::ExprKind::Loop(block, _, lp, _) => {
                 match lp {
                     // rustc_hir::LoopSource::While => {
