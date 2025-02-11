@@ -9,12 +9,13 @@ fn main() {
     // s.met();
 
     // for loop
-    for i in 0..3 {
-        println!("Loop iteration: {}", i);
-        if S1::should_call_bla(i) {
-            s.bla();
-        }
-    }
+    // for i in 0..3 {
+    //     println!("Loop iteration: {}", i);
+    //     if S1::should_call_bla(i) {
+    //         s.bla();
+    //     }
+    // }
+    s.met();
 
     // 测试嵌套 if 和函数调用
     // if S1::should_call_bla(1) && S1::should_call_bla1(2) {
@@ -30,7 +31,7 @@ fn main() {
     //     }
     //     count += 1;
     // }
-    let mut a = 0;
+    // let mut a = 0;
     //just loop
     // loop {
     //     a += 1;
@@ -40,9 +41,9 @@ fn main() {
     // }
 
     //while loop
-    while (s.test_while(a) < 10 || s.test_while1(a) < 10) {
-        a += 1;
-    }
+    // while (s.test_while(a) < 10 || s.test_while1(a) < 10) {
+    //     a += 1;
+    // }
 }
 
     // let t: &dyn T = &s;

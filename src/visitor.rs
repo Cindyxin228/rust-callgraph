@@ -178,27 +178,20 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
    
 
     fn visit_expr(&mut self, expr: &'tcx rustc_hir::Expr) {
-        skip_generated_code!(expr.span);
+        // skip_generated_code!(expr.span);
 
         let old_depth = self.constraint_depth; // 保存当前深度
         let hir_id = expr.hir_id;
         let mut flag = true;
-        println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
-        println!("Entering expr: {:#?}", expr.kind);
+        // println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
+        // println!("Entering expr: {:#?}", expr.kind);
         // 检查表达式类型并更新约束层数
         match expr.kind {
             rustc_hir::ExprKind::If(ref cond, ref then , ref else_ex) => {
+                intravisit::walk_expr(self, cond); // 处理条件表达式
                 self.constraint_depth += 1; // 进入 if 语句
-                // ... existing code ...
-                // println!("Entering If: {:#?}, constraint_depth is {}", expr, self.constraint_depth);
-                // self.tcx.sess.source_map().span_to_snippet(expr.span).unwrap_or_else(|_| "unknown".to_string()), 
-                // self.constraint_depth
-                // );
-                intravisit::walk_expr(self, expr); // 处理条件表达式
-                // intravisit::walk_expr(self, then); // 处理条件表达式
-                // // 使用 Option::map 直接传递引用
-                // else_ex.as_ref().map(|expr| intravisit::walk_expr(self, expr));
-
+                intravisit::walk_expr(self, then); // 处理条件表达式
+                else_ex.as_ref().map(|expr| intravisit::walk_expr(self, expr));
             },
             rustc_hir::ExprKind::Binary(op, ref lhs, ref rhs) => {
                 // 处理逻辑运算符
@@ -235,26 +228,8 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
             },
             rustc_hir::ExprKind::Loop(block, _, lp, _) => {
                 match lp {
-                    // rustc_hir::LoopSource::While => {
-                    //     // if self.constraint_depth == 0 {
-                    //     //     self.constraint_depth += 1; // 进入 loop 语句
-                    //     // }
-                    //     if let Some(expr) = block.expr{
-                    //         match expr.kind {
-                    //             rustc_hir::ExprKind::If(cond, _, _) => {
-                    //                 self.visit_expr(expr);
-                    //             },
-                    //             _ => {
-                    //                 // 如果不是 if 表达式，依然遍历
-                    //                 intravisit::walk_expr(self, expr);
-                    //             }
-                    //         }
-                    //     }
-                    // },
                     rustc_hir::LoopSource::ForLoop => {
-                        if self.constraint_depth == 0 {
-                            self.constraint_depth += 1; // 进入 loop 语句
-                        }
+                        self.constraint_depth += 1; // 进入 loop 语句
                         intravisit::walk_expr(self, expr); // 确保遍历所有表达式
                     },
                     _ => {
