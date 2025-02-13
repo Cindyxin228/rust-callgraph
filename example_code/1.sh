@@ -3,4 +3,4 @@ cd ../
 cargo clean
 cargo install --debug --locked --path . --force
 cd example_code
-cargo callgraph >debug.txt
+cargo callgraph >output.txt

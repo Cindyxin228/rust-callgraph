@@ -11,7 +11,7 @@ use rustc_middle::hir::nested_filter;
 use rustc_span::Span;
 use std::cmp::PartialEq;
 use std::hash::{Hash, Hasher};
-use rustc_middle::ty;
+use rustc_hir::LangItem;
 
 macro_rules! skip_generated_code {
     ($span: expr) => {
@@ -92,6 +92,9 @@ pub struct CallgraphVisitor<'tcx> {
 
     // 新增字段来跟踪约束层数
     constraint_depth: usize,
+
+    enter_if: bool,
+
 }
 
 impl<'tcx> CallgraphVisitor<'tcx> {
@@ -106,6 +109,7 @@ impl<'tcx> CallgraphVisitor<'tcx> {
             non_local_calls: HashSet::new(),
             cur_fn: None,
             constraint_depth: 0,
+            enter_if: false,
         }
     }
 
@@ -170,6 +174,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
 
     //only see the body, ignore other information
     type NestedFilter = nested_filter::OnlyBodies;
+    
 
     fn nested_visit_map(&mut self) -> Self::Map {
         self.tcx.hir()
@@ -184,62 +189,126 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
         let hir_id = expr.hir_id;
         let mut flag = true;
         // println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
-        // println!("Entering expr: {:#?}", expr.kind);
+        // println!("Entering expr: {:#?}, constraint_depth{}", expr.kind, self.constraint_depth);
         // 检查表达式类型并更新约束层数
         match expr.kind {
             rustc_hir::ExprKind::If(ref cond, ref then , ref else_ex) => {
+                self.enter_if = true;
                 intravisit::walk_expr(self, cond); // 处理条件表达式
-                self.constraint_depth += 1; // 进入 if 语句
+                self.enter_if = false;
+                match self.tcx.sess.source_map().span_to_snippet(expr.span) {
+                    Ok(snippet) => {
+                        if snippet.contains("debug") {  //应对debug_assert
+                        }
+                        else{
+                            self.constraint_depth += 1;
+                        }
+                    }
+                    _=>{
+                        self.constraint_depth += 1;
+                    }
+                }
                 intravisit::walk_expr(self, then); // 处理条件表达式
+                // println!("into if expr:{:#?}, constraint:{}", expr, self.constraint_depth);
                 else_ex.as_ref().map(|expr| intravisit::walk_expr(self, expr));
+                
             },
             rustc_hir::ExprKind::Binary(op, ref lhs, ref rhs) => {
                 // 处理逻辑运算符
+                // println!("into binary, depth {:?}", self.constraint_depth);
                 flag = false;
-                match op.node {
-                    rustc_hir::BinOpKind::And => {
-                        //println!("Entering And lhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(lhs.span));
-                        self.visit_expr(lhs);
-                        self.constraint_depth += 1; // 每个 and 增加一个约束深度
-                        //println!("Entering And rhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(rhs.span));
-                        self.visit_expr(rhs);
-                    },
-                    rustc_hir::BinOpKind::Or => {
-                        // 对于 or，计算左右子表达式的约束深度
-                        let left_depth = self.constraint_depth;
-                        // intravisit::walk_expr(self, lhs); // 递归访问左侧表达式
-                        self.visit_expr(lhs);
-                        let left_constraint_depth = self.constraint_depth;
+                if self.enter_if{ 
+                    match op.node {
+                        rustc_hir::BinOpKind::And => {
+                            //println!("Entering And lhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(lhs.span));
+                            self.visit_expr(lhs);
+                            self.constraint_depth += 1; // 每个 and 增加一个约束深度
+                            //println!("Entering And rhs, constraint_depth is {}, code: {:?}", self.constraint_depth, self.tcx.sess.source_map().span_to_snippet(rhs.span));
+                            self.visit_expr(rhs);
+                            // println!("And expr:{:#?}, constraint:{}", expr, self.constraint_depth);
+                        },
+                        rustc_hir::BinOpKind::Or => {
+                            // 对于 or，计算左右子表达式的约束深度
+                            let left_depth = self.constraint_depth;
+                            // intravisit::walk_expr(self, lhs); // 递归访问左侧表达式
+                            self.visit_expr(lhs);
+                            let left_constraint_depth = self.constraint_depth;
 
-                        self.constraint_depth = left_depth; // 恢复之前的深度
-                        self.visit_expr(rhs);
-                        let right_constraint_depth = self.constraint_depth;
-
-                        // 选择最小的约束深度
-                        self.constraint_depth = left_constraint_depth.min(right_constraint_depth);
-                        //println!("After Or {:?}, constraint_depth is {}", expr, self.constraint_depth);
-                    },
-                    _ => {
-                        // 处理其他二元运算符
-                        self.visit_expr(lhs);
-                        self.visit_expr(rhs);
+                            self.constraint_depth = left_depth; // 恢复之前的深度
+                            self.visit_expr(rhs);
+                            let right_constraint_depth = self.constraint_depth;
+                            
+                            // 选择最小的约束深度
+                            self.constraint_depth = left_constraint_depth.min(right_constraint_depth);
+                            // println!("Or expr:{:#?}, constraint:{}", expr, self.constraint_depth);
+                        },
+                        _ => {
+                            // 处理其他二元运算符
+                            self.visit_expr(lhs);
+                            self.visit_expr(rhs);
+                        }
                     }
                 }
-            },
-            rustc_hir::ExprKind::Loop(block, _, lp, _) => {
-                match lp {
-                    rustc_hir::LoopSource::ForLoop => {
-                        self.constraint_depth += 1; // 进入 loop 语句
-                        intravisit::walk_expr(self, expr); // 确保遍历所有表达式
-                    },
-                    _ => {
-                        intravisit::walk_expr(self, expr); // 确保遍历所有表达式
-                    }
+                else{
+                    self.visit_expr(lhs);
+                    self.visit_expr(rhs);
                 }
             },
-            rustc_hir::ExprKind::Match(..) => {
-                self.constraint_depth += 1; // 进入 match 语句
+            // rustc_hir::ExprKind::Loop(block, _, lp, _) => {
+            //     // match lp {
+            //     //     rustc_hir::LoopSource::ForLoop => {
+            //     //         if self.constraint_depth == 0 {
+            //     //             self.constraint_depth += 1; // 进入 loop 语句
+            //     //             println!("enter for");
+            //     //         }
+            //     //         intravisit::walk_expr(self, expr); // 确保遍历所有表达式
+            //     //     },
+            //     //     _ => {
+            //     //         intravisit::walk_expr(self, expr); // 确保遍历所有表达式
+            //     //     }
+            //     // }
+            //     println!("loop{:#?}", expr);
+            //     intravisit::walk_expr(self, expr); // 确保遍历所有表达式
+            // },
+            rustc_hir::ExprKind::Match(ref match_expr, _, match_source) => {
+                let not_for_loop_match = match match_expr.kind {
+                    rustc_hir::ExprKind::Call(ref callee, _) => {
+                        println!("into Match call");
+                        // 检查 callee 是否是 `next()` 方法，这通常是 `for` 循环的一部分
+                        if let rustc_hir::ExprKind::Path(rustc_hir::QPath::LangItem(
+                            LangItem::IteratorNext,
+                            _,
+                        )) = callee.kind
+                        {
+                            // 如果是 `next()` 方法调用，则它可能是 `for` 循环的一部分
+                            println!("is inner Match");
+                            false
+                        } else {
+                            true
+                        }
+                    }
+                    _ => true,
+                };
+
+                let is_real_match = match match_source {
+                    | rustc_hir::MatchSource::TryDesugar(_) // 注意 TryDesugar 包含一个 HirId
+                    | rustc_hir::MatchSource::AwaitDesugar
+                    | rustc_hir::MatchSource::FormatArgs => false,
+                    _ => true,
+                };
+
+                let is_real_match = is_real_match & not_for_loop_match;
+                
+                
+            
+                if is_real_match {
+                    // 如果不是 `for` 循环的内层 match或desugar的match，则增加深度
+                    self.constraint_depth += 1; // 进入 match 语句
+                }
+                
+                // println!("Match expr:{:#?}, constraint:{}", expr, self.constraint_depth);
                 intravisit::walk_expr(self, expr); // 确保遍历所有表达式
+                // println!("Match expr:{:#?}, constraint:{}", expr, self.constraint_depth);
             },
             rustc_hir::ExprKind::Call(
                 rustc_hir::Expr {
@@ -302,7 +371,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                         constraint_depth: self.constraint_depth,
                                     };
 
-                                    println!("Typeratived new call {:?}", new_call);
+                                    // println!("Typeratived new call {:?}", new_call);
                             
                                         // 检查是否已经存在相同的调用（只比较 caller 和 callee）
                                     if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
@@ -447,6 +516,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
             }
             
         }
+
         
         if flag {
             self.constraint_depth = old_depth; // 恢复之前的深度

@@ -1,11 +1,14 @@
 Target name: idna
 resolved new call Call { call_expr: HirId(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional).11), call_expr_span: idna/src/deprecated.rs:27:16: 27:37 (#0), caller: Some(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional)), caller_span: None, callee: DefId(5:791 ~ alloc[186e]::borrow::Cow::Borrowed::{constructor#0}), callee_span: idna/src/deprecated.rs:27:16: 27:29 (#0), callee_path: "std::borrow::Cow::Borrowed", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional).62), call_expr_span: idna/src/deprecated.rs:35:33: 35:68 (#0), caller: Some(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/deprecated.rs:35:41: 35:54 (#0), callee_path: "std::string::String::with_capacity", constraint_depth: 2 }
+into Match call
 LangItem path: idna/src/deprecated.rs:39:30: 39:42 (#177)
+into Match call
+is inner Match
 LangItem path: idna/src/deprecated.rs:39:30: 39:42 (#177)
 resolved new call Call { call_expr: HirId(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional).182), call_expr_span: idna/src/deprecated.rs:53:28: 53:41 (#0), caller: Some(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional)), caller_span: None, callee: DefId(5:794 ~ alloc[186e]::borrow::Cow::Owned::{constructor#0}), callee_span: idna/src/deprecated.rs:53:28: 53:38 (#0), callee_path: "std::borrow::Cow::Owned", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional).202), call_expr_span: idna/src/deprecated.rs:61:5: 61:26 (#0), caller: Some(DefId(0:15 ~ idna[92a0]::deprecated::map_transitional)), caller_span: None, callee: DefId(5:791 ~ alloc[186e]::borrow::Cow::Borrowed::{constructor#0}), callee_span: idna/src/deprecated.rs:61:5: 61:18 (#0), callee_path: "std::borrow::Cow::Borrowed", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:50 ~ idna[92a0]::punycode::decode_to_string).3), call_expr_span: idna/src/punycode.rs:49:5: 54:6 (#0), caller: Some(DefId(0:50 ~ idna[92a0]::punycode::decode_to_string)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/punycode.rs:49:5: 49:9 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/punycode.rs:50:9: 52:19 (#187)
 new static call: Call {
     call_expr: HirId(DefId(0:50 ~ idna[92a0]::punycode::decode_to_string).11),
@@ -17,11 +20,11 @@ new static call: Call {
     callee: DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode),
     callee_span: idna/src/punycode.rs:166:5: 264:6 (#0),
     callee_path: "punycode::Decoder::decode",
-    constraint_depth: 1,
+    constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:50 ~ idna[92a0]::punycode::decode_to_string).17), call_expr_span: idna/src/punycode.rs:50:9: 50:27 (#0), caller: Some(DefId(0:50 ~ idna[92a0]::punycode::decode_to_string)), caller_span: None, callee: DefId(0:245 ~ idna[92a0]::punycode::Decoder), callee_span: idna/src/punycode.rs:50:18: 50:25 (#0), callee_path: "punycode::Decoder::default", constraint_depth: 1 }
 LangItem path: idna/src/punycode.rs:52:18: 52:19 (#188)
 resolved new call Call { call_expr: HirId(DefId(0:51 ~ idna[92a0]::punycode::decode).3), call_expr_span: idna/src/punycode.rs:63:5: 68:6 (#0), caller: Some(DefId(0:51 ~ idna[92a0]::punycode::decode)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/punycode.rs:63:5: 63:9 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/punycode.rs:64:9: 66:19 (#189)
 new static call: Call {
     call_expr: HirId(DefId(0:51 ~ idna[92a0]::punycode::decode).11),
@@ -33,64 +36,91 @@ new static call: Call {
     callee: DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode),
     callee_span: idna/src/punycode.rs:166:5: 264:6 (#0),
     callee_path: "punycode::Decoder::decode",
-    constraint_depth: 1,
+    constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:51 ~ idna[92a0]::punycode::decode).17), call_expr_span: idna/src/punycode.rs:64:9: 64:27 (#0), caller: Some(DefId(0:51 ~ idna[92a0]::punycode::decode)), caller_span: None, callee: DefId(0:245 ~ idna[92a0]::punycode::Decoder), callee_span: idna/src/punycode.rs:64:18: 64:25 (#0), callee_path: "punycode::Decoder::default", constraint_depth: 1 }
 LangItem path: idna/src/punycode.rs:66:18: 66:19 (#190)
-Typeratived new call Call { call_expr: HirId(DefId(0:108 ~ idna[92a0]::punycode::encode_str).25), call_expr_span: idna/src/punycode.rs:326:19: 326:53 (#0), caller: Some(DefId(0:108 ~ idna[92a0]::punycode::encode_str)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/punycode.rs:326:27: 326:40 (#0), callee_path: "std::string::String::with_capacity", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:108 ~ idna[92a0]::punycode::encode_str).40), call_expr_span: idna/src/punycode.rs:327:5: 327:65 (#0), caller: Some(DefId(0:108 ~ idna[92a0]::punycode::encode_str)), caller_span: None, callee: DefId(0:119 ~ idna[92a0]::punycode::encode_into), callee_span: idna/src/punycode.rs:327:5: 327:40 (#0), callee_path: "punycode::encode_into", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:110 ~ idna[92a0]::punycode::encode).25), call_expr_span: idna/src/punycode.rs:340:19: 340:53 (#0), caller: Some(DefId(0:110 ~ idna[92a0]::punycode::encode)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/punycode.rs:340:27: 340:40 (#0), callee_path: "std::string::String::with_capacity", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:110 ~ idna[92a0]::punycode::encode).40), call_expr_span: idna/src/punycode.rs:341:5: 341:73 (#0), caller: Some(DefId(0:110 ~ idna[92a0]::punycode::encode)), caller_span: None, callee: DefId(0:119 ~ idna[92a0]::punycode::encode_into), callee_span: idna/src/punycode.rs:341:5: 341:40 (#0), callee_path: "punycode::encode_into", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/punycode.rs:365:14: 365:27 (#223)
+into Match call
+is inner Match
 LangItem path: idna/src/punycode.rs:365:14: 365:27 (#223)
+into Match call
 LangItem path: idna/src/punycode.rs:366:24: 368:51 (#225)
 LangItem path: idna/src/punycode.rs:368:50: 368:51 (#226)
+into Match call
 LangItem path: idna/src/punycode.rs:370:13: 370:34 (#228)
 LangItem path: idna/src/punycode.rs:370:33: 370:34 (#229)
+into Match call
 LangItem path: idna/src/punycode.rs:380:28: 382:51 (#231)
 LangItem path: idna/src/punycode.rs:382:50: 382:51 (#232)
+into Match call
 LangItem path: idna/src/punycode.rs:383:9: 385:51 (#233)
 LangItem path: idna/src/punycode.rs:385:50: 385:51 (#234)
+into Match call
 LangItem path: idna/src/punycode.rs:389:9: 389:32 (#236)
 LangItem path: idna/src/punycode.rs:389:31: 389:32 (#237)
+into Match call
 LangItem path: idna/src/punycode.rs:406:27: 408:55 (#241)
 LangItem path: idna/src/punycode.rs:408:54: 408:55 (#242)
+into Match call
 LangItem path: idna/src/punycode.rs:409:21: 411:55 (#243)
 LangItem path: idna/src/punycode.rs:411:54: 411:55 (#244)
+into Match call
 LangItem path: idna/src/punycode.rs:416:18: 416:31 (#246)
+into Match call
+is inner Match
 LangItem path: idna/src/punycode.rs:416:18: 416:31 (#246)
+into Match call
 LangItem path: idna/src/punycode.rs:420:29: 420:87 (#250)
 LangItem path: idna/src/punycode.rs:420:86: 420:87 (#251)
+into Match call
 LangItem path: idna/src/punycode.rs:441:21: 441:62 (#256)
-resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).549), call_expr_span: idna/src/punycode.rs:441:39: 441:60 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(0:125 ~ idna[92a0]::punycode::value_to_digit), callee_span: idna/src/punycode.rs:441:39: 441:53 (#0), callee_path: "punycode::value_to_digit", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).549), call_expr_span: idna/src/punycode.rs:441:39: 441:60 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(0:125 ~ idna[92a0]::punycode::value_to_digit), callee_span: idna/src/punycode.rs:441:39: 441:53 (#0), callee_path: "punycode::value_to_digit", constraint_depth: 3 }
 LangItem path: idna/src/punycode.rs:441:61: 441:62 (#257)
+into Match call
 LangItem path: idna/src/punycode.rs:445:17: 445:54 (#258)
-resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).600), call_expr_span: idna/src/punycode.rs:445:35: 445:52 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(0:125 ~ idna[92a0]::punycode::value_to_digit), callee_span: idna/src/punycode.rs:445:35: 445:49 (#0), callee_path: "punycode::value_to_digit", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).600), call_expr_span: idna/src/punycode.rs:445:35: 445:52 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(0:125 ~ idna[92a0]::punycode::value_to_digit), callee_span: idna/src/punycode.rs:445:35: 445:49 (#0), callee_path: "punycode::value_to_digit", constraint_depth: 3 }
 LangItem path: idna/src/punycode.rs:445:53: 445:54 (#259)
-resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).626), call_expr_span: idna/src/punycode.rs:446:24: 446:78 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(0:49 ~ idna[92a0]::punycode::adapt), callee_span: idna/src/punycode.rs:446:24: 446:29 (#0), callee_path: "punycode::adapt", constraint_depth: 5 }
+resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).626), call_expr_span: idna/src/punycode.rs:446:24: 446:78 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(0:49 ~ idna[92a0]::punycode::adapt), callee_span: idna/src/punycode.rs:446:24: 446:29 (#0), callee_path: "punycode::adapt", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:119 ~ idna[92a0]::punycode::encode_into).690), call_expr_span: idna/src/punycode.rs:454:5: 454:11 (#0), caller: Some(DefId(0:119 ~ idna[92a0]::punycode::encode_into)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/punycode.rs:454:5: 454:7 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:125 ~ idna[92a0]::punycode::value_to_digit).38), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:26:9: 26:51 (#32), caller: Some(DefId(0:125 ~ idna[92a0]::punycode::value_to_digit)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:26:9: 26:33 (#32), callee_path: "core::panicking::panic", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:138 ~ idna[92a0]::uts46::UPPER_CASE_MASK).3), call_expr_span: idna/src/uts46.rs:69:31: 69:48 (#0), caller: None, caller_span: None, callee: DefId(0:137 ~ idna[92a0]::uts46::upper_case_mask), callee_span: idna/src/uts46.rs:69:31: 69:46 (#0), callee_path: "uts46::upper_case_mask", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:140 ~ idna[92a0]::uts46::GLYPHLESS_MASK).3), call_expr_span: idna/src/uts46.rs:85:30: 85:46 (#0), caller: None, caller_span: None, callee: DefId(0:139 ~ idna[92a0]::uts46::glyphless_mask), callee_span: idna/src/uts46.rs:85:30: 85:44 (#0), callee_path: "uts46::glyphless_mask", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/uts46.rs:112:5: 112:28 (#269)
 LangItem path: idna/src/uts46.rs:112:27: 112:28 (#270)
+into Match call
 LangItem path: idna/src/uts46.rs:113:5: 113:87 (#271)
-resolved new call Call { call_expr: HirId(DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label).30), call_expr_span: idna/src/uts46.rs:113:5: 113:86 (#0), caller: Some(DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label)), caller_span: None, callee: DefId(0:119 ~ idna[92a0]::punycode::encode_into), callee_span: idna/src/uts46.rs:113:5: 113:57 (#0), callee_path: "punycode::encode_into", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label).30), call_expr_span: idna/src/uts46.rs:113:5: 113:86 (#0), caller: Some(DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label)), caller_span: None, callee: DefId(0:119 ~ idna[92a0]::punycode::encode_into), callee_span: idna/src/uts46.rs:113:5: 113:57 (#0), callee_path: "punycode::encode_into", constraint_depth: 0 }
 LangItem path: idna/src/uts46.rs:113:86: 113:87 (#272)
 resolved new call Call { call_expr: HirId(DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label).65), call_expr_span: idna/src/uts46.rs:114:5: 114:11 (#0), caller: Some(DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:114:5: 114:7 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label).45), call_expr_span: idna/src/uts46.rs:161:13: 161:51 (#0), caller: Some(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:161:13: 161:32 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:164:19: 164:23 (#277)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:164:19: 164:23 (#277)
-resolved new call Call { call_expr: HirId(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label).70), call_expr_span: idna/src/uts46.rs:167:16: 167:50 (#0), caller: Some(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:167:16: 167:35 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 4 }
-resolved new call Call { call_expr: HirId(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label).84), call_expr_span: idna/src/uts46.rs:170:16: 170:50 (#0), caller: Some(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:170:16: 170:35 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label).70), call_expr_span: idna/src/uts46.rs:167:16: 167:50 (#0), caller: Some(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:167:16: 167:35 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label).84), call_expr_span: idna/src/uts46.rs:170:16: 170:50 (#0), caller: Some(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:170:16: 170:35 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label).134), call_expr_span: idna/src/uts46.rs:178:25: 178:36 (#0), caller: Some(DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/uts46.rs:178:25: 178:29 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:154 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii).29), call_expr_span: idna/src/uts46.rs:224:8: 224:42 (#0), caller: Some(DefId(0:154 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:224:8: 224:27 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/uts46.rs:232:14: 232:26 (#287)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:232:14: 232:26 (#287)
+into Match call
 LangItem path: idna/src/uts46.rs:258:22: 258:26 (#293)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:258:22: 258:26 (#293)
-resolved new call Call { call_expr: HirId(DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length).22), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#98), caller: Some(DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#98), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length).22), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#98), caller: Some(DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#98), callee_path: "core::panicking::panic", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:477:18: 477:72 (#313)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:477:18: 477:72 (#313)
 new static call: Call {
     call_expr: HirId(DefId(0:227 ~ idna[92a0]::domain_to_ascii_cow).5),
@@ -104,7 +134,6 @@ new static call: Call {
     callee_path: "uts46::Uts46::to_ascii",
     constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:227 ~ idna[92a0]::domain_to_ascii_cow).7), call_expr_span: idna/src/lib.rs:109:5: 109:17 (#0), caller: Some(DefId(0:227 ~ idna[92a0]::domain_to_ascii_cow)), caller_span: None, callee: DefId(0:168 ~ idna[92a0]::uts46::Uts46), callee_span: idna/src/lib.rs:109:12: 109:15 (#0), callee_path: "uts46::Uts46::new", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:228 ~ idna[92a0]::domain_to_ascii).5), call_expr_span: idna/src/lib.rs:129:5: 129:65 (#0), caller: Some(DefId(0:228 ~ idna[92a0]::domain_to_ascii)), caller_span: None, callee: DefId(0:227 ~ idna[92a0]::domain_to_ascii_cow), callee_span: idna/src/lib.rs:129:5: 129:24 (#0), callee_path: "domain_to_ascii_cow", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:230 ~ idna[92a0]::domain_to_ascii_strict).5),
@@ -118,7 +147,6 @@ new static call: Call {
     callee_path: "uts46::Uts46::to_ascii",
     constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:230 ~ idna[92a0]::domain_to_ascii_strict).7), call_expr_span: idna/src/lib.rs:140:5: 140:17 (#0), caller: Some(DefId(0:230 ~ idna[92a0]::domain_to_ascii_strict)), caller_span: None, callee: DefId(0:168 ~ idna[92a0]::uts46::Uts46), callee_span: idna/src/lib.rs:140:12: 140:15 (#0), callee_path: "uts46::Uts46::new", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:232 ~ idna[92a0]::domain_to_unicode).4),
     call_expr_span: idna/src/lib.rs:165:25: 169:6 (#0),
@@ -131,7 +159,6 @@ new static call: Call {
     callee_path: "uts46::Uts46::to_unicode",
     constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:232 ~ idna[92a0]::domain_to_unicode).6), call_expr_span: idna/src/lib.rs:165:25: 165:37 (#0), caller: Some(DefId(0:232 ~ idna[92a0]::domain_to_unicode)), caller_span: None, callee: DefId(0:168 ~ idna[92a0]::uts46::Uts46), callee_span: idna/src/lib.rs:165:32: 165:35 (#0), callee_path: "uts46::Uts46::new", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).8), call_expr_span: idna/src/deprecated.rs:79:22: 79:83 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:15 ~ idna[92a0]::deprecated::map_transitional), callee_span: idna/src/deprecated.rs:79:22: 79:38 (#0), callee_path: "deprecated::map_transitional", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).20),
@@ -145,7 +172,6 @@ new static call: Call {
     callee_path: "uts46::Uts46::process",
     constraint_depth: 1,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).22), call_expr_span: idna/src/deprecated.rs:80:15: 80:27 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:168 ~ idna[92a0]::uts46::Uts46), callee_span: idna/src/deprecated.rs:80:22: 80:25 (#0), callee_path: "uts46::Uts46::new", constraint_depth: 1 }
 new static call: Call {
     call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).31),
     call_expr_span: idna/src/deprecated.rs:82:13: 82:36 (#0),
@@ -172,14 +198,11 @@ new static call: Call {
 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).73), call_expr_span: idna/src/deprecated.rs:90:54: 90:86 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length), callee_span: idna/src/deprecated.rs:90:54: 90:71 (#0), callee_path: "uts46::verify_dns_length", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).82), call_expr_span: idna/src/deprecated.rs:91:28: 91:57 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/deprecated.rs:91:28: 91:31 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 3 }
-Typeratived new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).85), call_expr_span: idna/src/deprecated.rs:91:32: 91:56 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/deprecated.rs:91:47: 91:54 (#0), callee_path: "Errors::default", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).103), call_expr_span: idna/src/deprecated.rs:94:17: 94:23 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/deprecated.rs:94:17: 94:19 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).122), call_expr_span: idna/src/deprecated.rs:97:54: 97:82 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length), callee_span: idna/src/deprecated.rs:97:54: 97:71 (#0), callee_path: "uts46::verify_dns_length", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).130), call_expr_span: idna/src/deprecated.rs:98:28: 98:57 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/deprecated.rs:98:28: 98:31 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 3 }
-Typeratived new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).133), call_expr_span: idna/src/deprecated.rs:98:32: 98:56 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/deprecated.rs:98:47: 98:54 (#0), callee_path: "Errors::default", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).143), call_expr_span: idna/src/deprecated.rs:100:17: 100:23 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/deprecated.rs:100:17: 100:19 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).154), call_expr_span: idna/src/deprecated.rs:102:52: 102:81 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/deprecated.rs:102:52: 102:55 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).157), call_expr_span: idna/src/deprecated.rs:102:56: 102:80 (#0), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/deprecated.rs:102:71: 102:78 (#0), callee_path: "Errors::default", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii).169), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:77 (#10), caller: Some(DefId(0:18 ~ idna[92a0]::deprecated::{impl#0}::to_ascii)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:33 (#10), callee_path: "core::panicking::panic", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).8), call_expr_span: idna/src/deprecated.rs:110:22: 110:83 (#0), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(0:15 ~ idna[92a0]::deprecated::map_transitional), callee_span: idna/src/deprecated.rs:110:22: 110:38 (#0), callee_path: "deprecated::map_transitional", constraint_depth: 0 }
 new static call: Call {
@@ -194,7 +217,6 @@ new static call: Call {
     callee_path: "uts46::Uts46::process",
     constraint_depth: 1,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).22), call_expr_span: idna/src/deprecated.rs:111:15: 111:27 (#0), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(0:168 ~ idna[92a0]::uts46::Uts46), callee_span: idna/src/deprecated.rs:111:22: 111:25 (#0), callee_path: "uts46::Uts46::new", constraint_depth: 1 }
 new static call: Call {
     call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).31),
     call_expr_span: idna/src/deprecated.rs:113:13: 113:36 (#0),
@@ -222,11 +244,8 @@ new static call: Call {
 resolved new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).74), call_expr_span: idna/src/deprecated.rs:122:17: 122:23 (#0), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/deprecated.rs:122:17: 122:19 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).85), call_expr_span: idna/src/deprecated.rs:124:51: 124:57 (#0), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/deprecated.rs:124:51: 124:53 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).95), call_expr_span: idna/src/deprecated.rs:125:52: 125:81 (#0), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/deprecated.rs:125:52: 125:55 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).98), call_expr_span: idna/src/deprecated.rs:125:56: 125:80 (#0), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/deprecated.rs:125:71: 125:78 (#0), callee_path: "Errors::default", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode).110), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:77 (#13), caller: Some(DefId(0:20 ~ idna[92a0]::deprecated::{impl#0}::to_unicode)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:33 (#13), callee_path: "core::panicking::panic", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:29 ~ idna[92a0]::deprecated::{impl#2}::use_idna_2008_rules).11), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:39 (#20), caller: Some(DefId(0:29 ~ idna[92a0]::deprecated::{impl#2}::use_idna_2008_rules)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:33 (#20), callee_path: "core::panicking::panic", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:32 ~ idna[92a0]::deprecated::{impl#2}::to_ascii).6), call_expr_span: idna/src/deprecated.rs:236:26: 236:61 (#0), caller: Some(DefId(0:32 ~ idna[92a0]::deprecated::{impl#2}::to_ascii)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/deprecated.rs:236:34: 236:47 (#0), callee_path: "std::string::String::with_capacity", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:32 ~ idna[92a0]::deprecated::{impl#2}::to_ascii).18), call_expr_span: idna/src/deprecated.rs:237:25: 237:40 (#0), caller: Some(DefId(0:32 ~ idna[92a0]::deprecated::{impl#2}::to_ascii)), caller_span: None, callee: DefId(0:233 ~ idna[92a0]::deprecated::Idna), callee_span: idna/src/deprecated.rs:237:31: 237:34 (#0), callee_path: "deprecated::Idna::new", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:32 ~ idna[92a0]::deprecated::{impl#2}::to_ascii).29),
     call_expr_span: idna/src/deprecated.rs:238:9: 238:44 (#0),
@@ -239,8 +258,6 @@ new static call: Call {
     callee_path: "deprecated::Idna::to_ascii",
     constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:34 ~ idna[92a0]::deprecated::{impl#2}::to_unicode).6), call_expr_span: idna/src/deprecated.rs:243:25: 243:40 (#0), caller: Some(DefId(0:34 ~ idna[92a0]::deprecated::{impl#2}::to_unicode)), caller_span: None, callee: DefId(0:233 ~ idna[92a0]::deprecated::Idna), callee_span: idna/src/deprecated.rs:243:31: 243:34 (#0), callee_path: "deprecated::Idna::new", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:34 ~ idna[92a0]::deprecated::{impl#2}::to_unicode).16), call_expr_span: idna/src/deprecated.rs:244:23: 244:58 (#0), caller: Some(DefId(0:34 ~ idna[92a0]::deprecated::{impl#2}::to_unicode)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/deprecated.rs:244:31: 244:44 (#0), callee_path: "std::string::String::with_capacity", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:34 ~ idna[92a0]::deprecated::{impl#2}::to_unicode).28),
     call_expr_span: idna/src/deprecated.rs:245:22: 245:56 (#0),
@@ -254,24 +271,32 @@ new static call: Call {
     constraint_depth: 0,
 }
 resolved new call Call { call_expr: HirId(DefId(0:71 ~ idna[92a0]::punycode::{impl#2}::digit).9), call_expr_span: idna/src/punycode.rs:117:9: 122:18 (#0), caller: Some(DefId(0:71 ~ idna[92a0]::punycode::{impl#2}::digit)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/punycode.rs:117:9: 117:13 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 0 }
-resolved new call Call { call_expr: HirId(DefId(0:76 ~ idna[92a0]::punycode::{impl#3}::is_ascii).10), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#23), caller: Some(DefId(0:76 ~ idna[92a0]::punycode::{impl#3}::is_ascii)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#23), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:76 ~ idna[92a0]::punycode::{impl#3}::is_ascii).10), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#23), caller: Some(DefId(0:76 ~ idna[92a0]::punycode::{impl#3}::is_ascii)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#23), callee_path: "core::panicking::panic", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:77 ~ idna[92a0]::punycode::{impl#3}::digit).9), call_expr_span: idna/src/punycode.rs:142:9: 147:11 (#0), caller: Some(DefId(0:77 ~ idna[92a0]::punycode::{impl#3}::digit)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/punycode.rs:142:9: 142:13 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 0 }
-resolved new call Call { call_expr: HirId(DefId(0:78 ~ idna[92a0]::punycode::{impl#3}::char).10), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#27), caller: Some(DefId(0:78 ~ idna[92a0]::punycode::{impl#3}::char)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#27), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:78 ~ idna[92a0]::punycode::{impl#3}::char).10), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#27), caller: Some(DefId(0:78 ~ idna[92a0]::punycode::{impl#3}::char)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#27), callee_path: "core::panicking::panic", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).103), call_expr_span: idna/src/punycode.rs:187:20: 187:27 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/punycode.rs:187:20: 187:23 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).197), call_expr_span: idna/src/punycode.rs:211:28: 211:35 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/punycode.rs:211:28: 211:31 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/punycode.rs:213:31: 213:67 (#203)
 LangItem path: idna/src/punycode.rs:213:66: 213:67 (#204)
+into Match call
 LangItem path: idna/src/punycode.rs:214:21: 214:54 (#205)
 LangItem path: idna/src/punycode.rs:214:53: 214:54 (#206)
+into Match call
 LangItem path: idna/src/punycode.rs:225:26: 225:65 (#210)
 LangItem path: idna/src/punycode.rs:225:64: 225:65 (#211)
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).365), call_expr_span: idna/src/punycode.rs:228:36: 228:43 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/punycode.rs:228:36: 228:39 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).381), call_expr_span: idna/src/punycode.rs:233:20: 233:70 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(0:49 ~ idna[92a0]::punycode::adapt), callee_span: idna/src/punycode.rs:233:20: 233:25 (#0), callee_path: "punycode::adapt", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/punycode.rs:237:26: 237:77 (#212)
 LangItem path: idna/src/punycode.rs:237:76: 237:77 (#213)
+into Match call
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).444), call_expr_span: idna/src/punycode.rs:239:27: 239:53 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(1:5138 ~ core[f118]::char::from_u32), callee_span: idna/src/punycode.rs:239:27: 239:41 (#0), callee_path: "core::char::from_u32", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).460), call_expr_span: idna/src/punycode.rs:241:32: 241:39 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/punycode.rs:241:32: 241:35 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/punycode.rs:245:29: 245:49 (#215)
+into Match call
+is inner Match
 LangItem path: idna/src/punycode.rs:245:29: 245:49 (#215)
 resolved new call Call { call_expr: HirId(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode).557), call_expr_span: idna/src/punycode.rs:256:9: 263:11 (#0), caller: Some(DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/punycode.rs:256:9: 256:11 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:102 ~ idna[92a0]::punycode::{impl#5}::next).40), call_expr_span: idna/src/punycode.rs:289:28: 289:36 (#0), caller: Some(DefId(0:102 ~ idna[92a0]::punycode::{impl#5}::next)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/punycode.rs:289:28: 289:32 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 1 }
@@ -283,12 +308,8 @@ resolved new call Call { call_expr: HirId(DefId(0:158 ~ idna[92a0]::uts46::{impl
 resolved new call Call { call_expr: HirId(DefId(0:158 ~ idna[92a0]::uts46::{impl#0}::new).112), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:39 (#59), caller: Some(DefId(0:158 ~ idna[92a0]::uts46::{impl#0}::new)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:33 (#59), callee_path: "core::panicking::panic", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:158 ~ idna[92a0]::uts46::{impl#0}::new).134), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:39 (#63), caller: Some(DefId(0:158 ~ idna[92a0]::uts46::{impl#0}::new)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:33 (#63), callee_path: "core::panicking::panic", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:158 ~ idna[92a0]::uts46::{impl#0}::new).156), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:39 (#67), caller: Some(DefId(0:158 ~ idna[92a0]::uts46::{impl#0}::new)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:29:9: 29:33 (#67), callee_path: "core::panicking::panic", constraint_depth: 2 }
-Typeratived new call Call { call_expr: HirId(DefId(0:159 ~ idna[92a0]::uts46::{impl#0}::EMPTY).3), call_expr_span: idna/src/uts46.rs:335:38: 335:67 (#0), caller: None, caller_span: None, callee: DefId(0:279 ~ idna[92a0]::uts46::AsciiDenyList), callee_span: idna/src/uts46.rs:335:53: 335:56 (#0), callee_path: "uts46::AsciiDenyList::new", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:160 ~ idna[92a0]::uts46::{impl#0}::STD3).6), call_expr_span: idna/src/uts46.rs:342:59: 342:69 (#0), caller: None, caller_span: None, callee: DefId(0:142 ~ idna[92a0]::uts46::ldh_mask), callee_span: idna/src/uts46.rs:342:59: 342:67 (#0), callee_path: "uts46::ldh_mask", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:161 ~ idna[92a0]::uts46::{impl#0}::URL).3), call_expr_span: idna/src/uts46.rs:351:36: 351:78 (#0), caller: None, caller_span: None, callee: DefId(0:279 ~ idna[92a0]::uts46::AsciiDenyList), callee_span: idna/src/uts46.rs:351:51: 351:54 (#0), callee_path: "uts46::AsciiDenyList::new", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:165 ~ idna[92a0]::uts46::{impl#2}::from).4), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:123:9: 123:54 (#92), caller: Some(DefId(0:165 ~ idna[92a0]::uts46::{impl#2}::from)), caller_span: None, callee: DefId(1:9580 ~ core[f118]::panicking::unreachable_display), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:123:9: 123:47 (#92), callee_path: "core::panicking::unreachable_display", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:173 ~ idna[92a0]::uts46::{impl#4}::new).4), call_expr_span: idna/src/uts46.rs:505:19: 505:47 (#0), caller: Some(DefId(0:173 ~ idna[92a0]::uts46::{impl#4}::new)), caller_span: None, callee: DefId(20:34 ~ idna_adapter[4672]::Adapter), callee_span: idna/src/uts46.rs:505:42: 505:45 (#0), callee_path: "idna_adapter::Adapter::new", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).12), call_expr_span: idna/src/uts46.rs:534:21: 534:34 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/uts46.rs:534:29: 534:32 (#0), callee_path: "std::string::String::new", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).20),
     call_expr_span: idna/src/uts46.rs:535:15: 543:10 (#0),
@@ -305,15 +326,12 @@ resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).62), call_expr_span: idna/src/uts46.rs:546:50: 546:93 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:546:50: 546:80 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).81), call_expr_span: idna/src/uts46.rs:548:25: 548:93 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length), callee_span: idna/src/uts46.rs:548:25: 548:42 (#0), callee_path: "uts46::verify_dns_length", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).94), call_expr_span: idna/src/uts46.rs:550:21: 550:50 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:550:21: 550:24 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 3 }
-Typeratived new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).97), call_expr_span: idna/src/uts46.rs:550:25: 550:49 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/uts46.rs:550:40: 550:47 (#0), callee_path: "Errors::default", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).106), call_expr_span: idna/src/uts46.rs:552:21: 552:28 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:552:21: 552:23 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).126), call_expr_span: idna/src/uts46.rs:556:41: 556:54 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(5:794 ~ alloc[186e]::borrow::Cow::Owned::{constructor#0}), callee_span: idna/src/uts46.rs:556:41: 556:51 (#0), callee_path: "std::borrow::Cow::Owned", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).143), call_expr_span: idna/src/uts46.rs:558:25: 558:93 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(0:166 ~ idna[92a0]::uts46::verify_dns_length), callee_span: idna/src/uts46.rs:558:25: 558:42 (#0), callee_path: "uts46::verify_dns_length", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).156), call_expr_span: idna/src/uts46.rs:560:21: 560:50 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:560:21: 560:24 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 3 }
-Typeratived new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).159), call_expr_span: idna/src/uts46.rs:560:25: 560:49 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/uts46.rs:560:40: 560:47 (#0), callee_path: "Errors::default", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).168), call_expr_span: idna/src/uts46.rs:562:21: 562:28 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:562:21: 562:23 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 3 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).181), call_expr_span: idna/src/uts46.rs:565:52: 565:81 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:565:52: 565:55 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).184), call_expr_span: idna/src/uts46.rs:565:56: 565:80 (#0), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/uts46.rs:565:71: 565:78 (#0), callee_path: "Errors::default", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii).196), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:77 (#102), caller: Some(DefId(0:174 ~ idna[92a0]::uts46::{impl#4}::to_ascii)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:33 (#102), callee_path: "core::panicking::panic", constraint_depth: 1 }
 new static call: Call {
     call_expr: HirId(DefId(0:177 ~ idna[92a0]::uts46::{impl#4}::to_unicode).9),
@@ -327,7 +345,6 @@ new static call: Call {
     callee_path: "uts46::Uts46::to_user_interface",
     constraint_depth: 0,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).12), call_expr_span: idna/src/uts46.rs:654:21: 654:34 (#0), caller: Some(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface)), caller_span: None, callee: DefId(5:7875 ~ alloc[186e]::string::String), callee_span: idna/src/uts46.rs:654:29: 654:32 (#0), callee_path: "std::string::String::new", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).20),
     call_expr_span: idna/src/uts46.rs:655:15: 663:10 (#0),
@@ -347,10 +364,7 @@ resolved new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl
 resolved new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).77), call_expr_span: idna/src/uts46.rs:669:67: 669:73 (#0), caller: Some(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:669:67: 669:69 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).88), call_expr_span: idna/src/uts46.rs:670:53: 670:66 (#0), caller: Some(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface)), caller_span: None, callee: DefId(5:794 ~ alloc[186e]::borrow::Cow::Owned::{constructor#0}), callee_span: idna/src/uts46.rs:670:53: 670:63 (#0), callee_path: "std::borrow::Cow::Owned", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).94), call_expr_span: idna/src/uts46.rs:670:68: 670:97 (#0), caller: Some(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:670:68: 670:71 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).97), call_expr_span: idna/src/uts46.rs:670:72: 670:96 (#0), caller: Some(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface)), caller_span: None, callee: DefId(0:380 ~ idna[92a0]::Errors), callee_span: idna/src/uts46.rs:670:87: 670:94 (#0), callee_path: "Errors::default", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface).109), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:77 (#105), caller: Some(DefId(0:180 ~ idna[92a0]::uts46::{impl#4}::to_user_interface)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:33 (#105), callee_path: "core::panicking::panic", constraint_depth: 1 }
-Typeratived new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).27), call_expr_span: idna/src/uts46.rs:766:33: 766:63 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(41:118 ~ smallvec[5a3f]::SmallVec), callee_span: idna/src/uts46.rs:766:58: 766:61 (#0), callee_path: "smallvec::SmallVec::new", constraint_depth: 0 }
-Typeratived new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).41), call_expr_span: idna/src/uts46.rs:767:36: 767:77 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(41:118 ~ smallvec[5a3f]::SmallVec), callee_span: idna/src/uts46.rs:767:72: 767:75 (#0), callee_path: "smallvec::SmallVec::new", constraint_depth: 0 }
 new static call: Call {
     call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).56),
     call_expr_span: idna/src/uts46.rs:770:56: 777:10 (#0),
@@ -363,104 +377,151 @@ new static call: Call {
     callee_path: "uts46::Uts46::process_inner",
     constraint_depth: 0,
 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).97), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#108), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#108), callee_path: "core::panicking::panic", constraint_depth: 3 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).110), call_expr_span: idna/src/uts46.rs:780:20: 780:54 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:780:20: 780:22 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).97), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#108), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#108), callee_path: "core::panicking::panic", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).110), call_expr_span: idna/src/uts46.rs:780:20: 780:54 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:780:20: 780:22 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).128), call_expr_span: idna/src/uts46.rs:784:20: 784:55 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:784:20: 784:23 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 2 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).176), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#112), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#112), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).176), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#112), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#112), callee_path: "core::panicking::assert_failed", constraint_depth: 2 }
+into Match call
 LangItem path: idna/src/uts46.rs:799:22: 799:56 (#331)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:799:22: 799:56 (#331)
+into Match call
 LangItem path: idna/src/uts46.rs:805:21: 805:42 (#335)
 LangItem path: idna/src/uts46.rs:805:41: 805:42 (#336)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).375), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#115), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#115), callee_path: "core::panicking::assert_failed", constraint_depth: 8 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).426), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#118), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#118), callee_path: "core::panicking::panic", constraint_depth: 8 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).439), call_expr_span: idna/src/uts46.rs:811:32: 811:66 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:811:32: 811:34 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 6 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).553), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#122), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#122), callee_path: "core::panicking::assert_failed", constraint_depth: 9 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).375), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#115), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#115), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).426), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#118), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#118), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).439), call_expr_span: idna/src/uts46.rs:811:32: 811:66 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:811:32: 811:34 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).553), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#122), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#122), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+into Match call
 LangItem path: idna/src/uts46.rs:831:21: 831:95 (#352)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).598), call_expr_span: idna/src/uts46.rs:831:45: 831:91 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:831:45: 831:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).598), call_expr_span: idna/src/uts46.rs:831:45: 831:91 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:831:45: 831:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:831:94: 831:95 (#353)
+into Match call
 LangItem path: idna/src/uts46.rs:832:30: 832:41 (#355)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:832:30: 832:41 (#355)
+into Match call
 LangItem path: idna/src/uts46.rs:833:25: 833:77 (#357)
 LangItem path: idna/src/uts46.rs:833:76: 833:77 (#358)
+into Match call
 LangItem path: idna/src/uts46.rs:837:21: 837:91 (#360)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).696), call_expr_span: idna/src/uts46.rs:837:45: 837:87 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:837:45: 837:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).696), call_expr_span: idna/src/uts46.rs:837:45: 837:87 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:837:45: 837:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:837:90: 837:91 (#361)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).751), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#125), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#125), callee_path: "core::panicking::panic", constraint_depth: 8 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).764), call_expr_span: idna/src/uts46.rs:842:32: 842:66 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:842:32: 842:34 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 6 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).791), call_expr_span: idna/src/uts46.rs:849:31: 849:59 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:156 ~ idna[92a0]::uts46::classify_for_punycode), callee_span: idna/src/uts46.rs:849:31: 849:52 (#0), callee_path: "uts46::classify_for_punycode", constraint_depth: 5 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).800), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#129), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#129), callee_path: "core::panicking::panic", constraint_depth: 6 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).813), call_expr_span: idna/src/uts46.rs:850:18: 850:33 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:155 ~ idna[92a0]::uts46::is_ascii), callee_span: idna/src/uts46.rs:850:18: 850:26 (#0), callee_path: "uts46::is_ascii", constraint_depth: 4 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).822), call_expr_span: idna/src/uts46.rs:852:17: 852:45 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:156 ~ idna[92a0]::uts46::classify_for_punycode), callee_span: idna/src/uts46.rs:852:17: 852:38 (#0), callee_path: "uts46::classify_for_punycode", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).751), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#125), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#125), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).764), call_expr_span: idna/src/uts46.rs:842:32: 842:66 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:842:32: 842:34 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).791), call_expr_span: idna/src/uts46.rs:849:31: 849:59 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:156 ~ idna[92a0]::uts46::classify_for_punycode), callee_span: idna/src/uts46.rs:849:31: 849:52 (#0), callee_path: "uts46::classify_for_punycode", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).800), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#129), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#129), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).813), call_expr_span: idna/src/uts46.rs:850:18: 850:33 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:155 ~ idna[92a0]::uts46::is_ascii), callee_span: idna/src/uts46.rs:850:18: 850:26 (#0), callee_path: "uts46::is_ascii", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).822), call_expr_span: idna/src/uts46.rs:852:17: 852:45 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:156 ~ idna[92a0]::uts46::classify_for_punycode), callee_span: idna/src/uts46.rs:852:17: 852:38 (#0), callee_path: "uts46::classify_for_punycode", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:865:21: 867:24 (#377)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).885), call_expr_span: idna/src/uts46.rs:866:25: 866:99 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:866:25: 866:55 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).885), call_expr_span: idna/src/uts46.rs:866:25: 866:99 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:866:25: 866:55 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 2 }
 LangItem path: idna/src/uts46.rs:867:23: 867:24 (#378)
+into Match call
 LangItem path: idna/src/uts46.rs:869:26: 869:47 (#380)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:869:26: 869:47 (#380)
+into Match call
 LangItem path: idna/src/uts46.rs:870:21: 870:40 (#382)
 LangItem path: idna/src/uts46.rs:870:39: 870:40 (#383)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1073), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#133), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#133), callee_path: "core::panicking::assert_failed", constraint_depth: 9 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1073), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#133), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#133), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+into Match call
 LangItem path: idna/src/uts46.rs:886:21: 886:95 (#389)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1118), call_expr_span: idna/src/uts46.rs:886:45: 886:91 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:886:45: 886:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1118), call_expr_span: idna/src/uts46.rs:886:45: 886:91 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:886:45: 886:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:886:94: 886:95 (#390)
+into Match call
 LangItem path: idna/src/uts46.rs:887:30: 887:41 (#392)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:887:30: 887:41 (#392)
+into Match call
 LangItem path: idna/src/uts46.rs:888:25: 888:77 (#394)
 LangItem path: idna/src/uts46.rs:888:76: 888:77 (#395)
+into Match call
 LangItem path: idna/src/uts46.rs:892:21: 892:91 (#397)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1216), call_expr_span: idna/src/uts46.rs:892:45: 892:87 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:892:45: 892:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1216), call_expr_span: idna/src/uts46.rs:892:45: 892:87 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:892:45: 892:75 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:892:90: 892:91 (#398)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1271), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#136), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#136), callee_path: "core::panicking::panic", constraint_depth: 8 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1284), call_expr_span: idna/src/uts46.rs:897:32: 897:66 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:897:32: 897:34 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1271), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#136), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#136), callee_path: "core::panicking::panic", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1284), call_expr_span: idna/src/uts46.rs:897:32: 897:66 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:897:32: 897:34 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:904:21: 906:24 (#406)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1313), call_expr_span: idna/src/uts46.rs:905:25: 905:99 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:905:25: 905:55 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1313), call_expr_span: idna/src/uts46.rs:905:25: 905:99 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:905:25: 905:55 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 2 }
 LangItem path: idna/src/uts46.rs:906:23: 906:24 (#407)
+into Match call
 LangItem path: idna/src/uts46.rs:908:17: 908:51 (#408)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1349), call_expr_span: idna/src/uts46.rs:908:17: 908:50 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label), callee_span: idna/src/uts46.rs:908:17: 908:37 (#0), callee_path: "uts46::write_punycode_label", constraint_depth: 5 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1349), call_expr_span: idna/src/uts46.rs:908:17: 908:50 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label), callee_span: idna/src/uts46.rs:908:17: 908:37 (#0), callee_path: "uts46::write_punycode_label", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:908:50: 908:51 (#409)
 resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1398), call_expr_span: idna/src/uts46.rs:913:20: 913:55 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:913:20: 913:23 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:922:30: 922:64 (#413)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:922:30: 922:64 (#413)
+into Match call
 LangItem path: idna/src/uts46.rs:928:29: 928:50 (#417)
 LangItem path: idna/src/uts46.rs:928:49: 928:50 (#418)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1540), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#140), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#140), callee_path: "core::panicking::assert_failed", constraint_depth: 10 }
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1678), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#143), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#143), callee_path: "core::panicking::assert_failed", constraint_depth: 11 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1540), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#140), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#140), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1678), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#143), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#143), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+into Match call
 LangItem path: idna/src/uts46.rs:950:29: 952:32 (#428)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1723), call_expr_span: idna/src/uts46.rs:951:33: 951:79 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:951:33: 951:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1723), call_expr_span: idna/src/uts46.rs:951:33: 951:79 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:951:33: 951:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:952:31: 952:32 (#429)
+into Match call
 LangItem path: idna/src/uts46.rs:953:38: 953:49 (#431)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:953:38: 953:49 (#431)
+into Match call
 LangItem path: idna/src/uts46.rs:954:33: 954:85 (#433)
 LangItem path: idna/src/uts46.rs:954:84: 954:85 (#434)
+into Match call
 LangItem path: idna/src/uts46.rs:958:29: 958:99 (#436)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1821), call_expr_span: idna/src/uts46.rs:958:53: 958:95 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:958:53: 958:83 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1821), call_expr_span: idna/src/uts46.rs:958:53: 958:95 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:958:53: 958:83 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:958:98: 958:99 (#437)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1866), call_expr_span: idna/src/uts46.rs:965:24: 965:39 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:155 ~ idna[92a0]::uts46::is_ascii), callee_span: idna/src/uts46.rs:965:24: 965:32 (#0), callee_path: "uts46::is_ascii", constraint_depth: 5 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1866), call_expr_span: idna/src/uts46.rs:965:24: 965:39 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:155 ~ idna[92a0]::uts46::is_ascii), callee_span: idna/src/uts46.rs:965:24: 965:32 (#0), callee_path: "uts46::is_ascii", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:969:29: 973:32 (#440)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1888), call_expr_span: idna/src/uts46.rs:970:33: 972:34 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:970:33: 970:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).1888), call_expr_span: idna/src/uts46.rs:970:33: 972:34 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:970:33: 970:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 2 }
 LangItem path: idna/src/uts46.rs:973:31: 973:32 (#441)
+into Match call
 LangItem path: idna/src/uts46.rs:975:34: 975:55 (#443)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:975:34: 975:55 (#443)
+into Match call
 LangItem path: idna/src/uts46.rs:976:29: 976:48 (#445)
 LangItem path: idna/src/uts46.rs:976:47: 976:48 (#446)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2076), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#146), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#146), callee_path: "core::panicking::assert_failed", constraint_depth: 11 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2076), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#146), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#146), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+into Match call
 LangItem path: idna/src/uts46.rs:993:29: 995:32 (#452)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2121), call_expr_span: idna/src/uts46.rs:994:33: 994:79 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:994:33: 994:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2121), call_expr_span: idna/src/uts46.rs:994:33: 994:79 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:994:33: 994:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:995:31: 995:32 (#453)
+into Match call
 LangItem path: idna/src/uts46.rs:996:38: 996:49 (#455)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:996:38: 996:49 (#455)
+into Match call
 LangItem path: idna/src/uts46.rs:997:33: 997:85 (#457)
 LangItem path: idna/src/uts46.rs:997:84: 997:85 (#458)
+into Match call
 LangItem path: idna/src/uts46.rs:1001:29: 1001:99 (#460)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2219), call_expr_span: idna/src/uts46.rs:1001:53: 1001:95 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:1001:53: 1001:83 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2219), call_expr_span: idna/src/uts46.rs:1001:53: 1001:95 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:1001:53: 1001:83 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:1001:98: 1001:99 (#461)
+into Match call
 LangItem path: idna/src/uts46.rs:1009:29: 1013:32 (#463)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2276), call_expr_span: idna/src/uts46.rs:1010:33: 1012:34 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:1010:33: 1010:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2276), call_expr_span: idna/src/uts46.rs:1010:33: 1012:34 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:1010:33: 1010:63 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 2 }
 LangItem path: idna/src/uts46.rs:1013:31: 1013:32 (#464)
+into Match call
 LangItem path: idna/src/uts46.rs:1015:25: 1015:59 (#465)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2312), call_expr_span: idna/src/uts46.rs:1015:25: 1015:58 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label), callee_span: idna/src/uts46.rs:1015:25: 1015:45 (#0), callee_path: "uts46::write_punycode_label", constraint_depth: 7 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2312), call_expr_span: idna/src/uts46.rs:1015:25: 1015:58 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(0:145 ~ idna[92a0]::uts46::write_punycode_label), callee_span: idna/src/uts46.rs:1015:25: 1015:45 (#0), callee_path: "uts46::write_punycode_label", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:1015:58: 1015:59 (#466)
+into Match call
 LangItem path: idna/src/uts46.rs:1020:21: 1022:24 (#468)
-resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2367), call_expr_span: idna/src/uts46.rs:1021:25: 1021:99 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:1021:25: 1021:55 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2367), call_expr_span: idna/src/uts46.rs:1021:25: 1021:99 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:12976 ~ core[f118]::str::converts::from_utf8_unchecked), callee_span: idna/src/uts46.rs:1021:25: 1021:55 (#0), callee_path: "core::str::from_utf8_unchecked", constraint_depth: 1 }
 LangItem path: idna/src/uts46.rs:1022:23: 1022:24 (#469)
 resolved new call Call { call_expr: HirId(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process).2406), call_expr_span: idna/src/uts46.rs:1026:9: 1026:43 (#0), caller: Some(DefId(0:183 ~ idna[92a0]::uts46::{impl#4}::process)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:1026:9: 1026:11 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:195 ~ idna[92a0]::uts46::{impl#4}::process_inner).41), call_expr_span: idna/src/uts46.rs:1046:20: 1046:54 (#0), caller: Some(DefId(0:195 ~ idna[92a0]::uts46::{impl#4}::process_inner)), caller_span: None, callee: DefId(0:148 ~ idna[92a0]::uts46::in_inclusive_range8), callee_span: idna/src/uts46.rs:1046:20: 1046:39 (#0), callee_path: "uts46::in_inclusive_range8", constraint_depth: 1 }
@@ -476,14 +537,17 @@ new static call: Call {
     callee_path: "uts46::Uts46::process_innermost",
     constraint_depth: 1,
 }
+into Match call
 LangItem path: idna/src/uts46.rs:1096:22: 1096:48 (#473)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1096:22: 1096:48 (#473)
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).82), call_expr_span: idna/src/uts46.rs:1109:29: 1109:62 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label), callee_span: idna/src/uts46.rs:1109:29: 1109:55 (#0), callee_path: "uts46::is_passthrough_ascii_label", constraint_depth: 4 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).128), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#149), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#149), callee_path: "core::panicking::assert_failed", constraint_depth: 9 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).226), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#152), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#152), callee_path: "core::panicking::assert_failed", constraint_depth: 8 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).298), call_expr_span: idna/src/uts46.rs:1131:42: 1131:77 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:151 ~ idna[92a0]::uts46::split_ascii_fast_path_prefix), callee_span: idna/src/uts46.rs:1131:42: 1131:70 (#0), callee_path: "uts46::split_ascii_fast_path_prefix", constraint_depth: 4 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).315), call_expr_span: idna/src/uts46.rs:1133:24: 1133:50 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:147 ~ idna[92a0]::uts46::has_punycode_prefix), callee_span: idna/src/uts46.rs:1133:24: 1133:43 (#0), callee_path: "uts46::has_punycode_prefix", constraint_depth: 5 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).328), call_expr_span: idna/src/uts46.rs:1134:45: 1134:56 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/uts46.rs:1134:45: 1134:49 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 6 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).82), call_expr_span: idna/src/uts46.rs:1109:29: 1109:62 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:150 ~ idna[92a0]::uts46::is_passthrough_ascii_label), callee_span: idna/src/uts46.rs:1109:29: 1109:55 (#0), callee_path: "uts46::is_passthrough_ascii_label", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).128), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#149), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#149), callee_path: "core::panicking::assert_failed", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).226), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#152), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#152), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).298), call_expr_span: idna/src/uts46.rs:1131:42: 1131:77 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:151 ~ idna[92a0]::uts46::split_ascii_fast_path_prefix), callee_span: idna/src/uts46.rs:1131:42: 1131:70 (#0), callee_path: "uts46::split_ascii_fast_path_prefix", constraint_depth: 2 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).315), call_expr_span: idna/src/uts46.rs:1133:24: 1133:50 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:147 ~ idna[92a0]::uts46::has_punycode_prefix), callee_span: idna/src/uts46.rs:1133:24: 1133:43 (#0), callee_path: "uts46::has_punycode_prefix", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).328), call_expr_span: idna/src/uts46.rs:1134:45: 1134:56 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:45302 ~ core[f118]::option::Option::Some::{constructor#0}), callee_span: idna/src/uts46.rs:1134:45: 1134:49 (#0), callee_path: "core::prelude::v1::Some", constraint_depth: 4 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).348),
     call_expr_span: idna/src/uts46.rs:1138:33: 1138:93 (#0),
@@ -494,10 +558,8 @@ new static call: Call {
     callee: DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode),
     callee_span: idna/src/punycode.rs:166:5: 264:6 (#0),
     callee_path: "punycode::Decoder::decode",
-    constraint_depth: 8,
+    constraint_depth: 6,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).354), call_expr_span: idna/src/uts46.rs:1138:33: 1138:51 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:245 ~ idna[92a0]::punycode::Decoder), callee_span: idna/src/uts46.rs:1138:42: 1138:49 (#0), callee_path: "punycode::Decoder::default", constraint_depth: 8 }
-Typeratived new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).367), call_expr_span: idna/src/uts46.rs:1142:56: 1142:85 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(41:118 ~ smallvec[5a3f]::SmallVec), callee_span: idna/src/uts46.rs:1142:80: 1142:83 (#0), callee_path: "smallvec::SmallVec::new", constraint_depth: 9 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).388),
     call_expr_span: idna/src/uts46.rs:1145:36: 1152:34 (#0),
@@ -508,7 +570,7 @@ new static call: Call {
     callee: DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode),
     callee_span: idna/src/uts46.rs:1479:5: 1522:6 (#0),
     callee_path: "uts46::Uts46::after_punycode_decode",
-    constraint_depth: 9,
+    constraint_depth: 7,
 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).417),
@@ -520,19 +582,25 @@ new static call: Call {
     callee: DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label),
     callee_span: idna/src/uts46.rs:1525:5: 1618:6 (#0),
     callee_path: "uts46::Uts46::check_label",
-    constraint_depth: 9,
+    constraint_depth: 7,
 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).500), call_expr_span: idna/src/uts46.rs:1179:37: 1181:38 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:154 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii), callee_span: idna/src/uts46.rs:1179:37: 1179:90 (#0), callee_path: "uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii", constraint_depth: 9 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).517), call_expr_span: idna/src/uts46.rs:1186:51: 1186:94 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:368 ~ idna[92a0]::uts46::AlreadyAsciiLabel::MixedCasePunycode::{constructor#0}), callee_span: idna/src/uts46.rs:1186:51: 1186:87 (#0), callee_path: "uts46::AlreadyAsciiLabel::MixedCasePunycode", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).500), call_expr_span: idna/src/uts46.rs:1179:37: 1181:38 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:154 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii), callee_span: idna/src/uts46.rs:1179:37: 1179:90 (#0), callee_path: "uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii", constraint_depth: 7 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).517), call_expr_span: idna/src/uts46.rs:1186:51: 1186:94 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:368 ~ idna[92a0]::uts46::AlreadyAsciiLabel::MixedCasePunycode::{constructor#0}), callee_span: idna/src/uts46.rs:1186:51: 1186:87 (#0), callee_path: "uts46::AlreadyAsciiLabel::MixedCasePunycode", constraint_depth: 6 }
+into Match call
 LangItem path: idna/src/uts46.rs:1200:26: 1204:19 (#496)
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).564), call_expr_span: idna/src/uts46.rs:1203:21: 1203:89 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:154 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii), callee_span: idna/src/uts46.rs:1203:21: 1203:74 (#0), callee_path: "uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii", constraint_depth: 5 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).564), call_expr_span: idna/src/uts46.rs:1203:21: 1203:89 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:154 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii), callee_span: idna/src/uts46.rs:1203:21: 1203:74 (#0), callee_path: "uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii", constraint_depth: 3 }
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1200:26: 1204:19 (#496)
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).645), call_expr_span: idna/src/uts46.rs:1215:28: 1220:26 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:218 ~ idna[92a0]::uts46::check_hyphens), callee_span: idna/src/uts46.rs:1215:28: 1215:41 (#0), callee_path: "uts46::check_hyphens", constraint_depth: 6 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).691), call_expr_span: idna/src/uts46.rs:1227:25: 1227:65 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:365 ~ idna[92a0]::uts46::AlreadyAsciiLabel::MixedCaseAscii::{constructor#0}), callee_span: idna/src/uts46.rs:1227:25: 1227:58 (#0), callee_path: "uts46::AlreadyAsciiLabel::MixedCaseAscii", constraint_depth: 6 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).742), call_expr_span: idna/src/uts46.rs:1237:30: 1237:88 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:153 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_lower_cased_unicode), callee_span: idna/src/uts46.rs:1237:30: 1237:74 (#0), callee_path: "uts46::apply_ascii_deny_list_to_lower_cased_unicode", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).645), call_expr_span: idna/src/uts46.rs:1215:28: 1220:26 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:218 ~ idna[92a0]::uts46::check_hyphens), callee_span: idna/src/uts46.rs:1215:28: 1215:41 (#0), callee_path: "uts46::check_hyphens", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).691), call_expr_span: idna/src/uts46.rs:1227:25: 1227:65 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:365 ~ idna[92a0]::uts46::AlreadyAsciiLabel::MixedCaseAscii::{constructor#0}), callee_span: idna/src/uts46.rs:1227:25: 1227:58 (#0), callee_path: "uts46::AlreadyAsciiLabel::MixedCaseAscii", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).742), call_expr_span: idna/src/uts46.rs:1237:30: 1237:88 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:153 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_lower_cased_unicode), callee_span: idna/src/uts46.rs:1237:30: 1237:74 (#0), callee_path: "uts46::apply_ascii_deny_list_to_lower_cased_unicode", constraint_depth: 2 }
+into Match call
 LangItem path: idna/src/uts46.rs:1246:42: 1246:93 (#505)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1246:42: 1246:93 (#505)
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).917), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:77 (#155), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:33 (#155), callee_path: "core::panicking::panic", constraint_depth: 7 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).917), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:77 (#155), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs:118:9: 118:33 (#155), callee_path: "core::panicking::panic", constraint_depth: 5 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).989),
     call_expr_span: idna/src/uts46.rs:1292:57: 1295:42 (#0),
@@ -543,10 +611,8 @@ new static call: Call {
     callee: DefId(0:81 ~ idna[92a0]::punycode::{impl#4}::decode),
     callee_span: idna/src/punycode.rs:166:5: 264:6 (#0),
     callee_path: "punycode::Decoder::decode",
-    constraint_depth: 7,
+    constraint_depth: 5,
 }
-Typeratived new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).995), call_expr_span: idna/src/uts46.rs:1292:57: 1292:75 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:245 ~ idna[92a0]::punycode::Decoder), callee_span: idna/src/uts46.rs:1292:66: 1292:73 (#0), callee_path: "punycode::Decoder::default", constraint_depth: 7 }
-Typeratived new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).1021), call_expr_span: idna/src/uts46.rs:1301:64: 1301:93 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(41:118 ~ smallvec[5a3f]::SmallVec), callee_span: idna/src/uts46.rs:1301:88: 1301:91 (#0), callee_path: "smallvec::SmallVec::new", constraint_depth: 8 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).1049),
     call_expr_span: idna/src/uts46.rs:1305:44: 1312:42 (#0),
@@ -557,7 +623,7 @@ new static call: Call {
     callee: DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode),
     callee_span: idna/src/uts46.rs:1479:5: 1522:6 (#0),
     callee_path: "uts46::Uts46::after_punycode_decode",
-    constraint_depth: 8,
+    constraint_depth: 6,
 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).1135),
@@ -569,9 +635,9 @@ new static call: Call {
     callee: DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label),
     callee_span: idna/src/uts46.rs:1525:5: 1618:6 (#0),
     callee_path: "uts46::Uts46::check_label",
-    constraint_depth: 5,
+    constraint_depth: 3,
 }
-resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).1260), call_expr_span: idna/src/uts46.rs:1363:39: 1363:79 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:365 ~ idna[92a0]::uts46::AlreadyAsciiLabel::MixedCaseAscii::{constructor#0}), callee_span: idna/src/uts46.rs:1363:39: 1363:72 (#0), callee_path: "uts46::AlreadyAsciiLabel::MixedCaseAscii", constraint_depth: 4 }
+resolved new call Call { call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).1260), call_expr_span: idna/src/uts46.rs:1363:39: 1363:79 (#0), caller: Some(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost)), caller_span: None, callee: DefId(0:365 ~ idna[92a0]::uts46::AlreadyAsciiLabel::MixedCaseAscii::{constructor#0}), callee_span: idna/src/uts46.rs:1363:39: 1363:72 (#0), callee_path: "uts46::AlreadyAsciiLabel::MixedCaseAscii", constraint_depth: 2 }
 new static call: Call {
     call_expr: HirId(DefId(0:199 ~ idna[92a0]::uts46::{impl#4}::process_innermost).1287),
     call_expr_span: idna/src/uts46.rs:1367:23: 1367:50 (#0),
@@ -584,22 +650,37 @@ new static call: Call {
     callee_path: "uts46::Uts46::is_bidi",
     constraint_depth: 0,
 }
+into Match call
 LangItem path: idna/src/uts46.rs:1369:26: 1369:64 (#522)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1369:26: 1369:64 (#522)
+into Match call
 LangItem path: idna/src/uts46.rs:1401:42: 1401:58 (#532)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1401:42: 1401:58 (#532)
+into Match call
 LangItem path: idna/src/uts46.rs:1413:42: 1413:58 (#537)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1413:42: 1413:58 (#537)
+into Match call
 LangItem path: idna/src/uts46.rs:1488:18: 1491:90 (#550)
 resolved new call Call { call_expr: HirId(DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode).31), call_expr_span: idna/src/uts46.rs:1491:22: 1491:89 (#0), caller: Some(DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode)), caller_span: None, callee: DefId(0:153 ~ idna[92a0]::uts46::apply_ascii_deny_list_to_lower_cased_unicode), callee_span: idna/src/uts46.rs:1491:22: 1491:66 (#0), callee_path: "uts46::apply_ascii_deny_list_to_lower_cased_unicode", constraint_depth: 1 }
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1488:18: 1491:90 (#550)
 resolved new call Call { call_expr: HirId(DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode).139), call_expr_span: idna/src/uts46.rs:1508:25: 1508:31 (#0), caller: Some(DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode)), caller_span: None, callee: DefId(1:45569 ~ core[f118]::result::Result::Ok::{constructor#0}), callee_span: idna/src/uts46.rs:1508:25: 1508:27 (#0), callee_path: "core::prelude::v1::Ok", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode).152), call_expr_span: idna/src/uts46.rs:1512:25: 1512:32 (#0), caller: Some(DefId(0:210 ~ idna[92a0]::uts46::{impl#4}::after_punycode_decode)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/uts46.rs:1512:25: 1512:28 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).23), call_expr_span: idna/src/uts46.rs:1535:16: 1540:14 (#0), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(0:218 ~ idna[92a0]::uts46::check_hyphens), callee_span: idna/src/uts46.rs:1535:16: 1535:29 (#0), callee_path: "uts46::check_hyphens", constraint_depth: 1 }
+into Match call
 LangItem path: idna/src/uts46.rs:1557:22: 1557:40 (#562)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1557:22: 1557:40 (#562)
-resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).126), call_expr_span: idna/src/uts46.rs:1559:21: 1559:71 (#0), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1559:21: 1559:44 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 4 }
-resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).279), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#158), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#158), callee_path: "core::panicking::assert_failed", constraint_depth: 8 }
+resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).126), call_expr_span: idna/src/uts46.rs:1559:21: 1559:71 (#0), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1559:21: 1559:44 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).279), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:114 (#158), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:51:21: 51:53 (#158), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
 new static call: Call {
     call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).310),
     call_expr_span: idna/src/uts46.rs:1588:25: 1591:22 (#0),
@@ -610,7 +691,7 @@ new static call: Call {
     callee: DefId(0:215 ~ idna[92a0]::uts46::{impl#4}::has_appropriately_joining_char),
     callee_span: idna/src/uts46.rs:1621:5: 1637:6 (#0),
     callee_path: "uts46::Uts46::has_appropriately_joining_char",
-    constraint_depth: 5,
+    constraint_depth: 1,
 }
 new static call: Call {
     call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).325),
@@ -622,413 +703,419 @@ new static call: Call {
     callee: DefId(0:215 ~ idna[92a0]::uts46::{impl#4}::has_appropriately_joining_char),
     callee_span: idna/src/uts46.rs:1621:5: 1637:6 (#0),
     callee_path: "uts46::Uts46::has_appropriately_joining_char",
-    constraint_depth: 5,
+    constraint_depth: 1,
 }
-resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).372), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#161), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#161), callee_path: "core::panicking::panic", constraint_depth: 7 }
+resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).372), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:38 (#161), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(1:9575 ~ core[f118]::panicking::panic), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:335:13: 335:13 (#161), callee_path: "core::panicking::panic", constraint_depth: 2 }
 resolved new call Call { call_expr: HirId(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label).408), call_expr_span: idna/src/uts46.rs:1607:13: 1607:32 (#0), caller: Some(DefId(0:214 ~ idna[92a0]::uts46::{impl#4}::check_label)), caller_span: None, callee: DefId(0:155 ~ idna[92a0]::uts46::is_ascii), callee_span: idna/src/uts46.rs:1607:13: 1607:21 (#0), callee_path: "uts46::is_ascii", constraint_depth: 0 }
+into Match call
 LangItem path: idna/src/uts46.rs:1626:18: 1626:22 (#583)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1626:18: 1626:22 (#583)
+into Match call
 LangItem path: idna/src/uts46.rs:1641:19: 1641:25 (#588)
+into Match call
+is inner Match
 LangItem path: idna/src/uts46.rs:1641:19: 1641:25 (#588)
-resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).27), call_expr_span: idna/src/uts46.rs:1646:16: 1646:66 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1646:16: 1646:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 3 }
-resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).67), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#165), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#165), callee_path: "core::panicking::assert_failed", constraint_depth: 7 }
-resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).101), call_expr_span: idna/src/uts46.rs:1650:16: 1650:68 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1650:16: 1650:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 3 }
-resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).115), call_expr_span: idna/src/uts46.rs:1653:16: 1653:67 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1653:16: 1653:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 3 }
-resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).129), call_expr_span: idna/src/uts46.rs:1656:16: 1656:68 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1656:16: 1656:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).27), call_expr_span: idna/src/uts46.rs:1646:16: 1646:66 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1646:16: 1646:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).67), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:114 (#165), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(1:9590 ~ core[f118]::panicking::assert_failed), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/macros/mod.rs:107:21: 107:53 (#165), callee_path: "core::panicking::assert_failed", constraint_depth: 3 }
+resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).101), call_expr_span: idna/src/uts46.rs:1650:16: 1650:68 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1650:16: 1650:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).115), call_expr_span: idna/src/uts46.rs:1653:16: 1653:67 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1653:16: 1653:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 1 }
+resolved new call Call { call_expr: HirId(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi).129), call_expr_span: idna/src/uts46.rs:1656:16: 1656:68 (#0), caller: Some(DefId(0:217 ~ idna[92a0]::uts46::{impl#4}::is_bidi)), caller_span: None, callee: DefId(0:149 ~ idna[92a0]::uts46::in_inclusive_range_char), callee_span: idna/src/uts46.rs:1656:16: 1656:39 (#0), callee_path: "uts46::in_inclusive_range_char", constraint_depth: 1 }
 resolved new call Call { call_expr: HirId(DefId(0:223 ~ idna[92a0]::{impl#0}::from).3), call_expr_span: idna/src/lib.rs:70:9: 70:15 (#0), caller: Some(DefId(0:223 ~ idna[92a0]::{impl#0}::from)), caller_span: None, callee: DefId(1:45572 ~ core[f118]::result::Result::Err::{constructor#0}), callee_span: idna/src/lib.rs:70:9: 70:12 (#0), callee_path: "core::prelude::v1::Err", constraint_depth: 0 }
 resolved new call Call { call_expr: HirId(DefId(0:226 ~ idna[92a0]::{impl#2}::fmt).5), call_expr_span: idna/src/lib.rs:82:9: 82:39 (#0), caller: Some(DefId(0:226 ~ idna[92a0]::{impl#2}::fmt)), caller_span: None, callee: DefId(1:10655 ~ core[f118]::fmt::Debug::fmt), callee_span: idna/src/lib.rs:82:9: 82:30 (#0), callee_path: "core::fmt::Debug::fmt", constraint_depth: 0 }
 Functions:
+  Function: <punycode::Decode<'_, T, C> as core::iter::ExactSizeIterator>::len, Span: idna/src/punycode.rs:313:5: 315:6 (#0)
+  Function: uts46::Uts46::has_appropriately_joining_char, Span: idna/src/uts46.rs:1621:5: 1637:6 (#0)
+  Function: uts46::Uts46::check_label, Span: idna/src/uts46.rs:1525:5: 1618:6 (#0)
+  Function: <u8 as punycode::PunycodeCodeUnit>::is_delimiter, Span: idna/src/punycode.rs:109:5: 111:6 (#0)
+  Function: <u8 as punycode::PunycodeCodeUnit>::char, Span: idna/src/punycode.rs:124:5: 126:6 (#0)
+  Function: <char as punycode::PunycodeCodeUnit>::is_delimiter, Span: idna/src/punycode.rs:133:5: 135:6 (#0)
+  Function: deprecated::Idna::to_ascii, Span: idna/src/deprecated.rs:78:5: 105:6 (#0)
+  Function: uts46::Uts46::to_ascii, Span: idna/src/uts46.rs:527:5: 568:6 (#0)
+  Function: uts46::verify_dns_length, Span: idna/src/uts46.rs:463:1: 486:2 (#0)
+  Function: punycode::encode, Span: idna/src/punycode.rs:336:1: 344:2 (#0)
   Function: punycode::adapt, Span: idna/src/punycode.rs:31:1: 40:2 (#0)
   Function: uts46::split_ascii_fast_path_prefix, Span: idna/src/uts46.rs:186:1: 202:2 (#0)
-  Function: uts46::Uts46::process_inner, Span: idna/src/uts46.rs:1031:5: 1067:6 (#0)
-  Function: deprecated::Config::transitional_processing, Span: idna/src/deprecated.rs:172:5: 175:6 (#0)
-  Function: <char as punycode::PunycodeCodeUnit>::is_ascii, Span: idna/src/punycode.rs:136:5: 139:6 (#0)
-  Function: <impl core::convert::From<Errors> for core::result::Result<(), Errors>>::from, Span: idna/src/lib.rs:69:5: 71:6 (#0)
+  Function: <char as punycode::PunycodeCodeUnit>::digit, Span: idna/src/punycode.rs:140:5: 148:6 (#0)
+  Function: deprecated::Config::use_std3_ascii_rules, Span: idna/src/deprecated.rs:162:5: 165:6 (#0)
+  Function: <char as punycode::PunycodeCodeUnit>::char, Span: idna/src/punycode.rs:149:5: 152:6 (#0)
+  Function: uts46::Uts46::new, Span: idna/src/uts46.rs:503:5: 507:6 (#0)
+  Function: punycode::decode_to_string, Span: idna/src/punycode.rs:48:1: 55:2 (#0)
+  Function: domain_to_ascii_cow, Span: idna/src/lib.rs:105:1: 115:2 (#0)
+  Function: uts46::upper_case_mask, Span: idna/src/uts46.rs:56:1: 66:2 (#0)
+  Function: uts46::in_inclusive_range_char, Span: idna/src/uts46.rs:138:1: 140:2 (#0)
   Function: uts46::Uts46::to_unicode, Span: idna/src/uts46.rs:592:5: 599:6 (#0)
-  Function: <char as punycode::PunycodeCodeUnit>::is_delimiter, Span: idna/src/punycode.rs:133:5: 135:6 (#0)
-  Function: uts46::Uts46::to_ascii, Span: idna/src/uts46.rs:527:5: 568:6 (#0)
-  Function: uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii, Span: idna/src/uts46.rs:220:1: 228:2 (#0)
-  Function: deprecated::map_transitional, Span: idna/src/deprecated.rs:25:1: 62:2 (#0)
-  Function: <u8 as punycode::PunycodeCodeUnit>::char_ascii_lower_case, Span: idna/src/punycode.rs:127:5: 129:6 (#0)
-  Function: punycode::encode, Span: idna/src/punycode.rs:336:1: 344:2 (#0)
-  Function: <u8 as punycode::PunycodeCodeUnit>::is_ascii, Span: idna/src/punycode.rs:112:5: 114:6 (#0)
-  Function: <punycode::PunycodeEncodeError as core::convert::From<core::fmt::Error>>::from, Span: idna/src/punycode.rs:352:5: 354:6 (#0)
-  Function: punycode::encode_str, Span: idna/src/punycode.rs:322:1: 330:2 (#0)
-  Function: <punycode::Decode<'_, T, C> as core::iter::ExactSizeIterator>::len, Span: idna/src/punycode.rs:313:5: 315:6 (#0)
-  Function: domain_to_ascii, Span: idna/src/lib.rs:128:1: 130:2 (#0)
-  Function: uts46::classify_for_punycode, Span: idna/src/uts46.rs:248:1: 267:2 (#0)
-  Function: uts46::Uts46::to_user_interface, Span: idna/src/uts46.rs:647:5: 673:6 (#0)
-  Function: punycode::encode_into, Span: idna/src/punycode.rs:357:1: 455:2 (#0)
-  Function: uts46::has_punycode_prefix, Span: idna/src/uts46.rs:118:1: 130:2 (#0)
-  Function: uts46::Uts46::after_punycode_decode, Span: idna/src/uts46.rs:1479:5: 1522:6 (#0)
+  Function: uts46::write_punycode_label, Span: idna/src/uts46.rs:108:1: 115:2 (#0)
+  Function: uts46::is_passthrough_ascii_label, Span: idna/src/uts46.rs:143:1: 183:2 (#0)
   Function: deprecated::Config::to_ascii, Span: idna/src/deprecated.rs:235:5: 239:6 (#0)
+  Function: uts46::glyphless_mask, Span: idna/src/uts46.rs:72:1: 82:2 (#0)
+  Function: deprecated::Config::use_idna_2008_rules, Span: idna/src/deprecated.rs:211:5: 214:6 (#0)
+  Function: <char as punycode::PunycodeCodeUnit>::char_ascii_lower_case, Span: idna/src/punycode.rs:153:5: 156:6 (#0)
+  Function: uts46::Uts46::process, Span: idna/src/uts46.rs:755:5: 1027:6 (#0)
+  Function: uts46::Uts46::process_inner, Span: idna/src/uts46.rs:1031:5: 1067:6 (#0)
+  Function: uts46::apply_ascii_deny_list_to_lower_cased_unicode, Span: idna/src/uts46.rs:206:1: 216:2 (#0)
+  Function: domain_to_unicode, Span: idna/src/lib.rs:164:1: 171:2 (#0)
+  Function: uts46::Uts46::is_bidi, Span: idna/src/uts46.rs:1640:5: 1664:6 (#0)
+  Function: uts46::has_punycode_prefix, Span: idna/src/uts46.rs:118:1: 130:2 (#0)
+  Function: domain_to_ascii, Span: idna/src/lib.rs:128:1: 130:2 (#0)
+  Function: <punycode::PunycodeEncodeError as core::convert::From<core::fmt::Error>>::from, Span: idna/src/punycode.rs:352:5: 354:6 (#0)
+  Function: <uts46::ProcessingError as core::convert::From<punycode::PunycodeEncodeError>>::from, Span: idna/src/uts46.rs:442:5: 446:6 (#0)
+  Function: <u8 as punycode::PunycodeCodeUnit>::digit, Span: idna/src/punycode.rs:115:5: 123:6 (#0)
+  Function: <uts46::ProcessingError as core::convert::From<core::fmt::Error>>::from, Span: idna/src/uts46.rs:436:5: 438:6 (#0)
+  Function: uts46::Uts46::process_innermost, Span: idna/src/uts46.rs:1075:5: 1476:6 (#0)
+  Function: deprecated::Idna::new, Span: idna/src/deprecated.rs:72:5: 74:6 (#0)
   Function: uts46::ldh_mask, Span: idna/src/uts46.rs:91:1: 101:2 (#0)
+  Function: uts46::AsciiDenyList::new, Span: idna/src/uts46.rs:294:5: 323:6 (#0)
+  Function: punycode::encode_into, Span: idna/src/punycode.rs:357:1: 455:2 (#0)
+  Function: <punycode::Decode<'_, T, C> as core::iter::Iterator>::size_hint, Span: idna/src/punycode.rs:306:5: 309:6 (#0)
+  Function: <u8 as punycode::PunycodeCodeUnit>::char_ascii_lower_case, Span: idna/src/punycode.rs:127:5: 129:6 (#0)
+  Function: <impl core::convert::From<Errors> for core::result::Result<(), Errors>>::from, Span: idna/src/lib.rs:69:5: 71:6 (#0)
+  Function: <u8 as punycode::PunycodeCodeUnit>::is_ascii, Span: idna/src/punycode.rs:112:5: 114:6 (#0)
+  Function: <punycode::Decode<'_, T, C> as core::iter::Iterator>::next, Span: idna/src/punycode.rs:283:5: 304:6 (#0)
+  Function: deprecated::Config::to_unicode, Span: idna/src/deprecated.rs:242:5: 247:6 (#0)
+  Function: punycode::value_to_digit, Span: idna/src/punycode.rs:458:1: 464:2 (#0)
+  Function: punycode::decode, Span: idna/src/punycode.rs:62:1: 69:2 (#0)
   Function: uts46::check_hyphens, Span: idna/src/uts46.rs:1667:1: 1703:2 (#0)
   Function: <deprecated::Config as core::default::Default>::default, Span: idna/src/deprecated.rs:144:5: 152:6 (#0)
-  Function: <punycode::Decode<'_, T, C> as core::iter::Iterator>::next, Span: idna/src/punycode.rs:283:5: 304:6 (#0)
-  Function: uts46::verify_dns_length, Span: idna/src/uts46.rs:463:1: 486:2 (#0)
-  Function: deprecated::Config::verify_dns_length, Span: idna/src/deprecated.rs:183:5: 186:6 (#0)
-  Function: uts46::Uts46::process, Span: idna/src/uts46.rs:755:5: 1027:6 (#0)
-  Function: punycode::decode, Span: idna/src/punycode.rs:62:1: 69:2 (#0)
-  Function: deprecated::Config::use_idna_2008_rules, Span: idna/src/deprecated.rs:211:5: 214:6 (#0)
-  Function: <uts46::ProcessingError as core::convert::From<core::fmt::Error>>::from, Span: idna/src/uts46.rs:436:5: 438:6 (#0)
-  Function: uts46::apply_ascii_deny_list_to_lower_cased_unicode, Span: idna/src/uts46.rs:206:1: 216:2 (#0)
-  Function: uts46::is_ascii, Span: idna/src/uts46.rs:231:1: 238:2 (#0)
-  Function: deprecated::Config::use_std3_ascii_rules, Span: idna/src/deprecated.rs:162:5: 165:6 (#0)
-  Function: punycode::value_to_digit, Span: idna/src/punycode.rs:458:1: 464:2 (#0)
-  Function: deprecated::Config::to_unicode, Span: idna/src/deprecated.rs:242:5: 247:6 (#0)
-  Function: uts46::glyphless_mask, Span: idna/src/uts46.rs:72:1: 82:2 (#0)
-  Function: <char as punycode::PunycodeCodeUnit>::char_ascii_lower_case, Span: idna/src/punycode.rs:153:5: 156:6 (#0)
-  Function: uts46::upper_case_mask, Span: idna/src/uts46.rs:56:1: 66:2 (#0)
-  Function: deprecated::Idna::new, Span: idna/src/deprecated.rs:72:5: 74:6 (#0)
-  Function: deprecated::Idna::to_unicode, Span: idna/src/deprecated.rs:109:5: 128:6 (#0)
-  Function: punycode::Decoder::decode, Span: idna/src/punycode.rs:166:5: 264:6 (#0)
-  Function: domain_to_ascii_cow, Span: idna/src/lib.rs:105:1: 115:2 (#0)
-  Function: <u8 as punycode::PunycodeCodeUnit>::digit, Span: idna/src/punycode.rs:115:5: 123:6 (#0)
-  Function: domain_to_ascii_strict, Span: idna/src/lib.rs:139:1: 148:2 (#0)
-  Function: uts46::in_inclusive_range_char, Span: idna/src/uts46.rs:138:1: 140:2 (#0)
-  Function: deprecated::Config::check_hyphens, Span: idna/src/deprecated.rs:199:5: 202:6 (#0)
-  Function: deprecated::Config::hyphens, Span: idna/src/deprecated.rs:226:5: 232:6 (#0)
-  Function: uts46::Uts46::is_bidi, Span: idna/src/uts46.rs:1640:5: 1664:6 (#0)
-  Function: <uts46::Uts46 as core::default::Default>::default, Span: idna/src/uts46.rs:495:5: 497:6 (#0)
-  Function: deprecated::Idna::to_ascii, Span: idna/src/deprecated.rs:78:5: 105:6 (#0)
-  Function: <u8 as punycode::PunycodeCodeUnit>::char, Span: idna/src/punycode.rs:124:5: 126:6 (#0)
-  Function: <punycode::Decode<'_, T, C> as core::iter::Iterator>::size_hint, Span: idna/src/punycode.rs:306:5: 309:6 (#0)
-  Function: uts46::Uts46::process_innermost, Span: idna/src/uts46.rs:1075:5: 1476:6 (#0)
-  Function: domain_to_unicode, Span: idna/src/lib.rs:164:1: 171:2 (#0)
-  Function: <char as punycode::PunycodeCodeUnit>::digit, Span: idna/src/punycode.rs:140:5: 148:6 (#0)
-  Function: punycode::decode_to_string, Span: idna/src/punycode.rs:48:1: 55:2 (#0)
-  Function: <u8 as punycode::PunycodeCodeUnit>::is_delimiter, Span: idna/src/punycode.rs:109:5: 111:6 (#0)
-  Function: uts46::is_passthrough_ascii_label, Span: idna/src/uts46.rs:143:1: 183:2 (#0)
   Function: deprecated::Config::deny_list, Span: idna/src/deprecated.rs:217:5: 223:6 (#0)
-  Function: <char as punycode::PunycodeCodeUnit>::char, Span: idna/src/punycode.rs:149:5: 152:6 (#0)
-  Function: uts46::AsciiDenyList::new, Span: idna/src/uts46.rs:294:5: 323:6 (#0)
-  Function: uts46::write_punycode_label, Span: idna/src/uts46.rs:108:1: 115:2 (#0)
-  Function: <uts46::ProcessingError as core::convert::From<punycode::PunycodeEncodeError>>::from, Span: idna/src/uts46.rs:442:5: 446:6 (#0)
-  Function: uts46::in_inclusive_range8, Span: idna/src/uts46.rs:133:1: 135:2 (#0)
-  Function: uts46::Uts46::new, Span: idna/src/uts46.rs:503:5: 507:6 (#0)
-  Function: uts46::Uts46::check_label, Span: idna/src/uts46.rs:1525:5: 1618:6 (#0)
-  Function: uts46::Uts46::has_appropriately_joining_char, Span: idna/src/uts46.rs:1621:5: 1637:6 (#0)
+  Function: uts46::Uts46::after_punycode_decode, Span: idna/src/uts46.rs:1479:5: 1522:6 (#0)
+  Function: punycode::encode_str, Span: idna/src/punycode.rs:322:1: 330:2 (#0)
   Function: <Errors as core::fmt::Display>::fmt, Span: idna/src/lib.rs:81:5: 83:6 (#0)
+  Function: domain_to_ascii_strict, Span: idna/src/lib.rs:139:1: 148:2 (#0)
+  Function: deprecated::Config::hyphens, Span: idna/src/deprecated.rs:226:5: 232:6 (#0)
+  Function: deprecated::map_transitional, Span: idna/src/deprecated.rs:25:1: 62:2 (#0)
+  Function: uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii, Span: idna/src/uts46.rs:220:1: 228:2 (#0)
+  Function: uts46::Uts46::to_user_interface, Span: idna/src/uts46.rs:647:5: 673:6 (#0)
+  Function: uts46::classify_for_punycode, Span: idna/src/uts46.rs:248:1: 267:2 (#0)
+  Function: deprecated::Idna::to_unicode, Span: idna/src/deprecated.rs:109:5: 128:6 (#0)
+  Function: <uts46::Uts46 as core::default::Default>::default, Span: idna/src/uts46.rs:495:5: 497:6 (#0)
+  Function: deprecated::Config::verify_dns_length, Span: idna/src/deprecated.rs:183:5: 186:6 (#0)
+  Function: deprecated::Config::transitional_processing, Span: idna/src/deprecated.rs:172:5: 175:6 (#0)
+  Function: deprecated::Config::check_hyphens, Span: idna/src/deprecated.rs:199:5: 202:6 (#0)
+  Function: punycode::Decoder::decode, Span: idna/src/punycode.rs:166:5: 264:6 (#0)
+  Function: <char as punycode::PunycodeCodeUnit>::is_ascii, Span: idna/src/punycode.rs:136:5: 139:6 (#0)
+  Function: uts46::is_ascii, Span: idna/src/uts46.rs:231:1: 238:2 (#0)
+  Function: uts46::in_inclusive_range8, Span: idna/src/uts46.rs:133:1: 135:2 (#0)
 
 Method Declarations:
-  Method Declaration: punycode::PunycodeCodeUnit::is_ascii
-  Method Declaration: punycode::PunycodeCodeUnit::digit
   Method Declaration: punycode::PunycodeCodeUnit::char_ascii_lower_case
+  Method Declaration: punycode::PunycodeCodeUnit::digit
   Method Declaration: punycode::PunycodeCodeUnit::is_delimiter
+  Method Declaration: punycode::PunycodeCodeUnit::is_ascii
   Method Declaration: punycode::PunycodeCodeUnit::char
 
 Method Implementations:
-  Method Implementation for core::default::Default::default: [DefId(0:23 ~ idna[92a0]::deprecated::{impl#1}::default), DefId(0:171 ~ idna[92a0]::uts46::{impl#3}::default)]
-  Method Implementation for core::convert::From::from: [DefId(0:118 ~ idna[92a0]::punycode::{impl#7}::from), DefId(0:163 ~ idna[92a0]::uts46::{impl#1}::from), DefId(0:165 ~ idna[92a0]::uts46::{impl#2}::from), DefId(0:223 ~ idna[92a0]::{impl#0}::from)]
-  Method Implementation for core::fmt::Display::fmt: [DefId(0:226 ~ idna[92a0]::{impl#2}::fmt)]
+  Method Implementation for punycode::PunycodeCodeUnit::digit: [DefId(0:71 ~ idna[92a0]::punycode::{impl#2}::digit), DefId(0:77 ~ idna[92a0]::punycode::{impl#3}::digit)]
   Method Implementation for punycode::PunycodeCodeUnit::is_ascii: [DefId(0:70 ~ idna[92a0]::punycode::{impl#2}::is_ascii), DefId(0:76 ~ idna[92a0]::punycode::{impl#3}::is_ascii)]
   Method Implementation for punycode::PunycodeCodeUnit::is_delimiter: [DefId(0:69 ~ idna[92a0]::punycode::{impl#2}::is_delimiter), DefId(0:75 ~ idna[92a0]::punycode::{impl#3}::is_delimiter)]
-  Method Implementation for punycode::PunycodeCodeUnit::digit: [DefId(0:71 ~ idna[92a0]::punycode::{impl#2}::digit), DefId(0:77 ~ idna[92a0]::punycode::{impl#3}::digit)]
-  Method Implementation for core::iter::Iterator::next: [DefId(0:102 ~ idna[92a0]::punycode::{impl#5}::next)]
+  Method Implementation for core::convert::From::from: [DefId(0:118 ~ idna[92a0]::punycode::{impl#7}::from), DefId(0:163 ~ idna[92a0]::uts46::{impl#1}::from), DefId(0:165 ~ idna[92a0]::uts46::{impl#2}::from), DefId(0:223 ~ idna[92a0]::{impl#0}::from)]
+  Method Implementation for core::fmt::Display::fmt: [DefId(0:226 ~ idna[92a0]::{impl#2}::fmt)]
   Method Implementation for core::iter::Iterator::size_hint: [DefId(0:103 ~ idna[92a0]::punycode::{impl#5}::size_hint)]
   Method Implementation for punycode::PunycodeCodeUnit::char: [DefId(0:72 ~ idna[92a0]::punycode::{impl#2}::char), DefId(0:78 ~ idna[92a0]::punycode::{impl#3}::char)]
-  Method Implementation for punycode::PunycodeCodeUnit::char_ascii_lower_case: [DefId(0:73 ~ idna[92a0]::punycode::{impl#2}::char_ascii_lower_case), DefId(0:79 ~ idna[92a0]::punycode::{impl#3}::char_ascii_lower_case)]
   Method Implementation for core::iter::ExactSizeIterator::len: [DefId(0:107 ~ idna[92a0]::punycode::{impl#6}::len)]
+  Method Implementation for core::iter::Iterator::next: [DefId(0:102 ~ idna[92a0]::punycode::{impl#5}::next)]
+  Method Implementation for core::default::Default::default: [DefId(0:23 ~ idna[92a0]::deprecated::{impl#1}::default), DefId(0:171 ~ idna[92a0]::uts46::{impl#3}::default)]
+  Method Implementation for punycode::PunycodeCodeUnit::char_ascii_lower_case: [DefId(0:73 ~ idna[92a0]::punycode::{impl#2}::char_ascii_lower_case), DefId(0:79 ~ idna[92a0]::punycode::{impl#3}::char_ascii_lower_case)]
 
 Static Calls:
-deprecated::Config::to_ascii --- deprecated::Idna::to_ascii (Constraint Depth: 0)
-punycode::encode_into --- punycode::value_to_digit (Constraint Depth: 6)
-deprecated::Idna::to_unicode --- Errors::default (Constraint Depth: 1)
-Unknown Caller --- uts46::glyphless_mask (Constraint Depth: 0)
-uts46::Uts46::process --- core::panicking::assert_failed (Constraint Depth: 3)
-<uts46::ProcessingError as core::convert::From<punycode::PunycodeEncodeError>>::from --- core::panicking::unreachable_display (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- uts46::split_ascii_fast_path_prefix (Constraint Depth: 4)
-deprecated::map_transitional --- std::borrow::Cow::Owned (Constraint Depth: 2)
-<impl core::convert::From<Errors> for core::result::Result<(), Errors>>::from --- core::prelude::v1::Err (Constraint Depth: 0)
-punycode::encode_into --- punycode::adapt (Constraint Depth: 5)
-punycode::encode_into --- core::prelude::v1::Ok (Constraint Depth: 0)
-deprecated::Config::to_unicode --- deprecated::Idna::new (Constraint Depth: 0)
-deprecated::Idna::to_unicode --- core::prelude::v1::Ok (Constraint Depth: 1)
-deprecated::Idna::to_unicode --- deprecated::map_transitional (Constraint Depth: 0)
-deprecated::Idna::to_unicode --- uts46::Uts46::process (Constraint Depth: 1)
-<punycode::Decode<'_, T, C> as core::iter::Iterator>::next --- core::prelude::v1::Some (Constraint Depth: 1)
-uts46::Uts46::to_user_interface --- std::borrow::Cow::Borrowed (Constraint Depth: 1)
-uts46::Uts46::process_inner --- uts46::in_inclusive_range8 (Constraint Depth: 1)
-domain_to_ascii_cow --- uts46::Uts46::new (Constraint Depth: 0)
-deprecated::Idna::to_unicode --- core::prelude::v1::Err (Constraint Depth: 1)
-domain_to_unicode --- uts46::Uts46::new (Constraint Depth: 0)
-uts46::Uts46::process_inner --- uts46::Uts46::process_innermost (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- uts46::Uts46::is_bidi (Constraint Depth: 0)
-uts46::Uts46::is_bidi --- core::panicking::assert_failed (Constraint Depth: 7)
-uts46::write_punycode_label --- core::prelude::v1::Ok (Constraint Depth: 0)
-punycode::Decoder::decode --- core::prelude::v1::Ok (Constraint Depth: 0)
 uts46::Uts46::to_unicode --- uts46::Uts46::to_user_interface (Constraint Depth: 0)
-punycode::decode --- core::prelude::v1::Some (Constraint Depth: 0)
-uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii --- uts46::in_inclusive_range8 (Constraint Depth: 0)
-deprecated::Idna::to_ascii --- core::prelude::v1::Err (Constraint Depth: 1)
-uts46::Uts46::to_user_interface --- core::panicking::panic (Constraint Depth: 1)
-uts46::Uts46::to_ascii --- core::str::from_utf8_unchecked (Constraint Depth: 1)
-uts46::Uts46::to_ascii --- core::panicking::panic (Constraint Depth: 1)
-uts46::Uts46::to_user_interface --- Errors::default (Constraint Depth: 1)
-uts46::Uts46::process --- core::panicking::panic (Constraint Depth: 3)
-uts46::Uts46::check_label --- core::panicking::assert_failed (Constraint Depth: 8)
-uts46::Uts46::to_ascii --- core::prelude::v1::Ok (Constraint Depth: 3)
-<char as punycode::PunycodeCodeUnit>::char --- core::panicking::panic (Constraint Depth: 2)
-Unknown Caller --- uts46::AsciiDenyList::new (Constraint Depth: 0)
-uts46::is_passthrough_ascii_label --- core::prelude::v1::Some (Constraint Depth: 1)
-uts46::verify_dns_length --- core::panicking::panic (Constraint Depth: 2)
-deprecated::Idna::to_unicode --- core::panicking::panic (Constraint Depth: 1)
 punycode::encode --- std::string::String::with_capacity (Constraint Depth: 0)
-uts46::Uts46::after_punycode_decode --- uts46::apply_ascii_deny_list_to_lower_cased_unicode (Constraint Depth: 1)
-uts46::Uts46::check_label --- uts46::in_inclusive_range_char (Constraint Depth: 4)
-uts46::Uts46::process_innermost --- uts46::check_hyphens (Constraint Depth: 6)
-uts46::Uts46::process_innermost --- uts46::AlreadyAsciiLabel::MixedCaseAscii (Constraint Depth: 4)
-deprecated::Idna::to_unicode --- deprecated::Config::deny_list (Constraint Depth: 1)
-punycode::value_to_digit --- core::panicking::panic (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- uts46::Uts46::after_punycode_decode (Constraint Depth: 8)
-punycode::decode_to_string --- core::prelude::v1::Some (Constraint Depth: 0)
-<char as punycode::PunycodeCodeUnit>::digit --- core::prelude::v1::Some (Constraint Depth: 0)
-uts46::Uts46::process --- uts46::write_punycode_label (Constraint Depth: 5)
-deprecated::Idna::to_ascii --- core::panicking::panic (Constraint Depth: 1)
-uts46::Uts46::to_ascii --- std::borrow::Cow::Borrowed (Constraint Depth: 1)
-deprecated::map_transitional --- std::string::String::with_capacity (Constraint Depth: 2)
-deprecated::Config::to_ascii --- std::string::String::with_capacity (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::prelude::v1::Some (Constraint Depth: 6)
-uts46::Uts46::process_innermost --- uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii (Constraint Depth: 5)
-uts46::Uts46::to_ascii --- std::borrow::Cow::Owned (Constraint Depth: 1)
-uts46::write_punycode_label --- punycode::encode_into (Constraint Depth: 1)
-deprecated::Idna::to_ascii --- deprecated::map_transitional (Constraint Depth: 0)
-uts46::Uts46::to_user_interface --- core::str::from_utf8_unchecked (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- uts46::is_passthrough_ascii_label (Constraint Depth: 4)
-uts46::Uts46::check_label --- core::panicking::panic (Constraint Depth: 7)
-deprecated::Idna::to_unicode --- uts46::Uts46::new (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- uts46::Uts46::check_label (Constraint Depth: 5)
-uts46::Uts46::new --- idna_adapter::Adapter::new (Constraint Depth: 0)
-punycode::encode_str --- punycode::encode_into (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- uts46::apply_ascii_deny_list_to_lower_cased_unicode (Constraint Depth: 4)
-uts46::Uts46::process --- uts46::is_ascii (Constraint Depth: 4)
-uts46::Uts46::process_innermost --- punycode::Decoder::default (Constraint Depth: 7)
-uts46::Uts46::is_bidi --- uts46::in_inclusive_range_char (Constraint Depth: 3)
-deprecated::Config::to_unicode --- deprecated::Idna::to_unicode (Constraint Depth: 0)
-uts46::Uts46::to_user_interface --- std::borrow::Cow::Owned (Constraint Depth: 1)
-uts46::Uts46::process --- core::prelude::v1::Ok (Constraint Depth: 0)
-uts46::Uts46::to_ascii --- core::prelude::v1::Err (Constraint Depth: 1)
-uts46::Uts46::process --- core::prelude::v1::Err (Constraint Depth: 1)
-uts46::is_passthrough_ascii_label --- uts46::in_inclusive_range8 (Constraint Depth: 1)
-uts46::Uts46::process --- uts46::Uts46::process_inner (Constraint Depth: 0)
-domain_to_ascii --- domain_to_ascii_cow (Constraint Depth: 0)
-punycode::Decoder::decode --- core::prelude::v1::Err (Constraint Depth: 1)
-uts46::Uts46::after_punycode_decode --- core::prelude::v1::Err (Constraint Depth: 1)
-<Errors as core::fmt::Display>::fmt --- core::fmt::Debug::fmt (Constraint Depth: 0)
-uts46::Uts46::check_label --- uts46::check_hyphens (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- smallvec::SmallVec::new (Constraint Depth: 8)
-deprecated::Idna::to_ascii --- deprecated::Config::deny_list (Constraint Depth: 1)
-<punycode::Decode<'_, T, C> as core::iter::Iterator>::size_hint --- core::prelude::v1::Some (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- uts46::AlreadyAsciiLabel::MixedCasePunycode (Constraint Depth: 8)
-uts46::Uts46::process_innermost --- core::panicking::panic (Constraint Depth: 7)
-deprecated::Idna::to_ascii --- deprecated::Config::hyphens (Constraint Depth: 1)
-deprecated::map_transitional --- std::borrow::Cow::Borrowed (Constraint Depth: 0)
-domain_to_unicode --- uts46::Uts46::to_unicode (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::panicking::assert_failed (Constraint Depth: 8)
-punycode::encode_str --- std::string::String::with_capacity (Constraint Depth: 0)
-<u8 as punycode::PunycodeCodeUnit>::digit --- core::prelude::v1::Some (Constraint Depth: 0)
-uts46::Uts46::process --- uts46::classify_for_punycode (Constraint Depth: 4)
-uts46::Uts46::process_innermost --- punycode::Decoder::decode (Constraint Depth: 7)
-domain_to_ascii_cow --- uts46::Uts46::to_ascii (Constraint Depth: 0)
-deprecated::Idna::to_unicode --- deprecated::Config::hyphens (Constraint Depth: 1)
-uts46::Uts46::to_user_interface --- core::prelude::v1::Ok (Constraint Depth: 1)
-uts46::Uts46::process --- smallvec::SmallVec::new (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- uts46::has_punycode_prefix (Constraint Depth: 5)
-deprecated::Idna::to_ascii --- core::prelude::v1::Ok (Constraint Depth: 1)
-<char as punycode::PunycodeCodeUnit>::is_ascii --- core::panicking::panic (Constraint Depth: 2)
-deprecated::Idna::to_ascii --- uts46::Uts46::new (Constraint Depth: 1)
-uts46::Uts46::to_ascii --- std::string::String::new (Constraint Depth: 0)
-punycode::Decoder::decode --- core::char::from_u32 (Constraint Depth: 1)
-uts46::Uts46::after_punycode_decode --- core::prelude::v1::Ok (Constraint Depth: 1)
-uts46::Uts46::to_ascii --- Errors::default (Constraint Depth: 1)
-deprecated::Idna::to_ascii --- uts46::Uts46::process (Constraint Depth: 1)
-punycode::decode_to_string --- punycode::Decoder::default (Constraint Depth: 1)
-deprecated::Idna::to_ascii --- Errors::default (Constraint Depth: 1)
-uts46::Uts46::to_user_interface --- std::string::String::new (Constraint Depth: 0)
-uts46::Uts46::process --- core::str::from_utf8_unchecked (Constraint Depth: 4)
-deprecated::Config::to_unicode --- std::string::String::with_capacity (Constraint Depth: 0)
-deprecated::Config::to_ascii --- deprecated::Idna::new (Constraint Depth: 0)
-punycode::Decoder::decode --- punycode::adapt (Constraint Depth: 0)
-punycode::decode --- punycode::Decoder::decode (Constraint Depth: 1)
-domain_to_ascii_strict --- uts46::Uts46::to_ascii (Constraint Depth: 0)
-uts46::Uts46::to_ascii --- uts46::verify_dns_length (Constraint Depth: 2)
-domain_to_ascii_strict --- uts46::Uts46::new (Constraint Depth: 0)
-Unknown Caller --- uts46::ldh_mask (Constraint Depth: 0)
 deprecated::Idna::to_ascii --- uts46::verify_dns_length (Constraint Depth: 2)
-uts46::Uts46::check_label --- uts46::Uts46::has_appropriately_joining_char (Constraint Depth: 5)
-Unknown Caller --- uts46::upper_case_mask (Constraint Depth: 0)
-uts46::AsciiDenyList::new --- core::panicking::panic (Constraint Depth: 2)
-uts46::Uts46::to_user_interface --- core::prelude::v1::Err (Constraint Depth: 1)
+deprecated::Idna::to_unicode --- deprecated::Config::hyphens (Constraint Depth: 1)
+Unknown Caller --- uts46::ldh_mask (Constraint Depth: 0)
+punycode::encode_into --- punycode::adapt (Constraint Depth: 3)
+uts46::Uts46::process --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::to_ascii --- core::str::from_utf8_unchecked (Constraint Depth: 1)
+deprecated::map_transitional --- std::borrow::Cow::Borrowed (Constraint Depth: 0)
+uts46::Uts46::after_punycode_decode --- uts46::apply_ascii_deny_list_to_lower_cased_unicode (Constraint Depth: 1)
+deprecated::Config::to_ascii --- deprecated::Idna::to_ascii (Constraint Depth: 0)
+uts46::Uts46::to_ascii --- std::borrow::Cow::Owned (Constraint Depth: 1)
+<Errors as core::fmt::Display>::fmt --- core::fmt::Debug::fmt (Constraint Depth: 0)
+punycode::encode_into --- core::prelude::v1::Ok (Constraint Depth: 0)
+deprecated::Config::to_ascii --- deprecated::Idna::new (Constraint Depth: 0)
+uts46::Uts46::process --- uts46::is_ascii (Constraint Depth: 1)
 uts46::Uts46::check_label --- uts46::is_ascii (Constraint Depth: 0)
-punycode::decode --- punycode::Decoder::default (Constraint Depth: 1)
-deprecated::Config::use_idna_2008_rules --- core::panicking::panic (Constraint Depth: 1)
-uts46::Uts46::to_user_interface --- uts46::Uts46::process (Constraint Depth: 1)
+uts46::Uts46::to_user_interface --- core::prelude::v1::Ok (Constraint Depth: 1)
+punycode::decode_to_string --- core::prelude::v1::Some (Constraint Depth: 0)
+<impl core::convert::From<Errors> for core::result::Result<(), Errors>>::from --- core::prelude::v1::Err (Constraint Depth: 0)
+uts46::Uts46::process --- uts46::Uts46::process_inner (Constraint Depth: 0)
+punycode::decode --- punycode::Decoder::default (Constraint Depth: 0)
+uts46::Uts46::process --- core::prelude::v1::Err (Constraint Depth: 1)
 uts46::Uts46::to_ascii --- uts46::Uts46::process (Constraint Depth: 1)
+deprecated::Config::to_unicode --- deprecated::Idna::to_unicode (Constraint Depth: 0)
+punycode::decode_to_string --- punycode::Decoder::decode (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::after_punycode_decode --- core::prelude::v1::Err (Constraint Depth: 1)
+<char as punycode::PunycodeCodeUnit>::char --- core::panicking::panic (Constraint Depth: 1)
+deprecated::Config::to_unicode --- deprecated::Idna::new (Constraint Depth: 0)
+uts46::Uts46::is_bidi --- uts46::in_inclusive_range_char (Constraint Depth: 1)
+deprecated::map_transitional --- std::borrow::Cow::Owned (Constraint Depth: 2)
+uts46::Uts46::is_bidi --- core::panicking::assert_failed (Constraint Depth: 3)
+Unknown Caller --- uts46::AsciiDenyList::new (Constraint Depth: 0)
+domain_to_ascii_strict --- uts46::Uts46::to_ascii (Constraint Depth: 0)
+punycode::decode --- punycode::Decoder::decode (Constraint Depth: 0)
+deprecated::Idna::to_unicode --- deprecated::map_transitional (Constraint Depth: 0)
+Unknown Caller --- uts46::upper_case_mask (Constraint Depth: 0)
+deprecated::Config::to_unicode --- std::string::String::with_capacity (Constraint Depth: 0)
+uts46::Uts46::to_user_interface --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::AlreadyAsciiLabel::MixedCasePunycode (Constraint Depth: 6)
+domain_to_ascii --- domain_to_ascii_cow (Constraint Depth: 0)
+deprecated::Idna::to_unicode --- uts46::Uts46::process (Constraint Depth: 1)
+deprecated::Idna::to_ascii --- deprecated::map_transitional (Constraint Depth: 0)
+uts46::write_punycode_label --- punycode::encode_into (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- uts46::Uts46::check_label (Constraint Depth: 3)
+punycode::value_to_digit --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::AlreadyAsciiLabel::MixedCaseAscii (Constraint Depth: 2)
+uts46::Uts46::check_label --- core::panicking::assert_failed (Constraint Depth: 3)
+punycode::decode --- core::prelude::v1::Some (Constraint Depth: 0)
+deprecated::Idna::to_unicode --- Errors::default (Constraint Depth: 1)
+domain_to_ascii_cow --- uts46::Uts46::to_ascii (Constraint Depth: 0)
+uts46::Uts46::to_user_interface --- std::borrow::Cow::Owned (Constraint Depth: 1)
+deprecated::Config::use_idna_2008_rules --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::to_ascii --- std::borrow::Cow::Borrowed (Constraint Depth: 1)
+uts46::Uts46::to_user_interface --- Errors::default (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::Uts46::is_bidi (Constraint Depth: 0)
+uts46::Uts46::process --- core::prelude::v1::Ok (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- uts46::Uts46::new (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::Uts46::after_punycode_decode (Constraint Depth: 6)
+uts46::Uts46::to_ascii --- uts46::verify_dns_length (Constraint Depth: 2)
+punycode::Decoder::decode --- punycode::adapt (Constraint Depth: 0)
+domain_to_ascii_cow --- uts46::Uts46::new (Constraint Depth: 0)
+uts46::is_passthrough_ascii_label --- uts46::in_inclusive_range8 (Constraint Depth: 1)
+<char as punycode::PunycodeCodeUnit>::is_ascii --- core::panicking::panic (Constraint Depth: 1)
+deprecated::Idna::to_unicode --- core::prelude::v1::Err (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- core::panicking::panic (Constraint Depth: 5)
+uts46::Uts46::to_ascii --- std::string::String::new (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- Errors::default (Constraint Depth: 1)
+punycode::Decoder::decode --- core::prelude::v1::Err (Constraint Depth: 1)
+uts46::Uts46::check_label --- uts46::check_hyphens (Constraint Depth: 1)
+deprecated::Idna::to_unicode --- deprecated::Config::deny_list (Constraint Depth: 1)
+uts46::write_punycode_label --- core::prelude::v1::Ok (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- deprecated::Config::deny_list (Constraint Depth: 1)
+uts46::Uts46::to_ascii --- Errors::default (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- punycode::Decoder::decode (Constraint Depth: 5)
+uts46::Uts46::to_user_interface --- std::string::String::new (Constraint Depth: 0)
+uts46::Uts46::process --- core::panicking::assert_failed (Constraint Depth: 2)
+punycode::Decoder::decode --- core::prelude::v1::Ok (Constraint Depth: 0)
+Unknown Caller --- uts46::glyphless_mask (Constraint Depth: 0)
+deprecated::Config::to_ascii --- std::string::String::with_capacity (Constraint Depth: 0)
+punycode::encode_str --- punycode::encode_into (Constraint Depth: 0)
+uts46::Uts46::process --- uts46::write_punycode_label (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- punycode::Decoder::default (Constraint Depth: 5)
+uts46::Uts46::process --- core::str::from_utf8_unchecked (Constraint Depth: 1)
+deprecated::map_transitional --- std::string::String::with_capacity (Constraint Depth: 2)
+uts46::Uts46::to_ascii --- core::prelude::v1::Ok (Constraint Depth: 3)
+uts46::Uts46::to_user_interface --- uts46::Uts46::process (Constraint Depth: 1)
+deprecated::Idna::to_unicode --- core::prelude::v1::Ok (Constraint Depth: 1)
+punycode::decode_to_string --- punycode::Decoder::default (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::panicking::assert_failed (Constraint Depth: 3)
+uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii --- uts46::in_inclusive_range8 (Constraint Depth: 0)
+uts46::Uts46::to_user_interface --- std::borrow::Cow::Borrowed (Constraint Depth: 1)
+uts46::Uts46::check_label --- core::panicking::panic (Constraint Depth: 2)
+uts46::Uts46::process_innermost --- uts46::is_passthrough_ascii_label (Constraint Depth: 2)
+domain_to_unicode --- uts46::Uts46::new (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- uts46::Uts46::process (Constraint Depth: 1)
+uts46::Uts46::to_user_interface --- core::str::from_utf8_unchecked (Constraint Depth: 1)
+<u8 as punycode::PunycodeCodeUnit>::digit --- core::prelude::v1::Some (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- core::prelude::v1::Ok (Constraint Depth: 1)
+uts46::Uts46::process --- uts46::classify_for_punycode (Constraint Depth: 1)
+uts46::Uts46::process --- smallvec::SmallVec::new (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::prelude::v1::Some (Constraint Depth: 4)
+uts46::Uts46::process_innermost --- smallvec::SmallVec::new (Constraint Depth: 6)
+uts46::Uts46::process_inner --- uts46::in_inclusive_range8 (Constraint Depth: 1)
+uts46::Uts46::to_user_interface --- core::prelude::v1::Err (Constraint Depth: 1)
+punycode::encode_into --- punycode::value_to_digit (Constraint Depth: 3)
+deprecated::Idna::to_ascii --- core::prelude::v1::Err (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::has_punycode_prefix (Constraint Depth: 3)
+<punycode::Decode<'_, T, C> as core::iter::Iterator>::size_hint --- core::prelude::v1::Some (Constraint Depth: 0)
+uts46::Uts46::new --- idna_adapter::Adapter::new (Constraint Depth: 0)
+punycode::Decoder::decode --- core::char::from_u32 (Constraint Depth: 1)
+punycode::encode_str --- std::string::String::with_capacity (Constraint Depth: 0)
+<char as punycode::PunycodeCodeUnit>::digit --- core::prelude::v1::Some (Constraint Depth: 0)
+<uts46::ProcessingError as core::convert::From<punycode::PunycodeEncodeError>>::from --- core::panicking::unreachable_display (Constraint Depth: 0)
+uts46::is_passthrough_ascii_label --- core::prelude::v1::Some (Constraint Depth: 1)
+uts46::Uts46::to_ascii --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::process_inner --- uts46::Uts46::process_innermost (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::apply_ascii_deny_list_to_lower_cased_unicode (Constraint Depth: 2)
+<punycode::Decode<'_, T, C> as core::iter::Iterator>::next --- core::prelude::v1::Some (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::apply_ascii_deny_list_to_potentially_upper_case_ascii (Constraint Depth: 3)
+uts46::Uts46::check_label --- uts46::Uts46::has_appropriately_joining_char (Constraint Depth: 1)
+deprecated::Idna::to_ascii --- deprecated::Config::hyphens (Constraint Depth: 1)
 punycode::encode --- punycode::encode_into (Constraint Depth: 0)
-punycode::decode_to_string --- punycode::Decoder::decode (Constraint Depth: 1)
+domain_to_unicode --- uts46::Uts46::to_unicode (Constraint Depth: 0)
+uts46::Uts46::check_label --- uts46::in_inclusive_range_char (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- uts46::check_hyphens (Constraint Depth: 4)
+uts46::verify_dns_length --- core::panicking::panic (Constraint Depth: 1)
+domain_to_ascii_strict --- uts46::Uts46::new (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- uts46::split_ascii_fast_path_prefix (Constraint Depth: 2)
+deprecated::Idna::to_unicode --- core::panicking::panic (Constraint Depth: 1)
+uts46::Uts46::to_ascii --- core::prelude::v1::Err (Constraint Depth: 1)
+uts46::Uts46::after_punycode_decode --- core::prelude::v1::Ok (Constraint Depth: 1)
+deprecated::Idna::to_unicode --- uts46::Uts46::new (Constraint Depth: 1)
+uts46::AsciiDenyList::new --- core::panicking::panic (Constraint Depth: 2)
 
 Dynamic Calls:
 
 Non Local Calls:
-domain_to_unicode --- std::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
-punycode::encode --- core::iter::Iterator::copied (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split_first_mut (Constraint Depth: 4)
-punycode::encode_into --- core::num::<impl u32>::checked_add (Constraint Depth: 4)
-uts46::write_punycode_label --- core::iter::Iterator::copied (Constraint Depth: 1)
-uts46::verify_dns_length --- core::slice::<impl [T]>::split (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- idna_adapter::Adapter::bidi_class (Constraint Depth: 5)
-punycode::encode_str --- core::str::<impl str>::len (Constraint Depth: 0)
-uts46::classify_for_punycode --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
-punycode::encode_str --- core::option::Option::<T>::map (Constraint Depth: 0)
-uts46::classify_for_punycode --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::iter_mut (Constraint Depth: 7)
-domain_to_ascii_strict --- core::result::Result::<T, E>::map (Constraint Depth: 0)
-deprecated::map_transitional --- core::str::<impl str>::chars (Constraint Depth: 0)
-deprecated::Config::to_unicode --- core::str::<impl str>::len (Constraint Depth: 0)
-uts46::split_ascii_fast_path_prefix --- core::slice::<impl [T]>::split_at (Constraint Depth: 2)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split_mut (Constraint Depth: 2)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-punycode::encode_into --- core::option::Option::<T>::unwrap (Constraint Depth: 1)
-uts46::AsciiDenyList::new --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
-deprecated::map_transitional --- std::string::String::push (Constraint Depth: 6)
-uts46::Uts46::process --- core::slice::<impl [T]>::strip_suffix (Constraint Depth: 0)
-uts46::Uts46::is_bidi --- idna_adapter::BidiClass::to_mask (Constraint Depth: 3)
-uts46::Uts46::has_appropriately_joining_char --- idna_adapter::Adapter::joining_type (Constraint Depth: 3)
-deprecated::map_transitional --- core::str::Chars::<'a>::as_str (Constraint Depth: 2)
-deprecated::Idna::to_unicode --- std::string::String::push_str (Constraint Depth: 1)
-punycode::Decoder::decode --- core::option::Option::<T>::ok_or (Constraint Depth: 1)
-deprecated::Idna::to_unicode --- core::str::<impl str>::as_bytes (Constraint Depth: 1)
-uts46::verify_dns_length --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-domain_to_ascii --- std::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
-punycode::Decoder::decode --- core::num::<impl u32>::checked_mul (Constraint Depth: 1)
-punycode::encode --- core::option::Option::<T>::map (Constraint Depth: 0)
-uts46::check_hyphens --- core::slice::<impl [T]>::first_mut (Constraint Depth: 0)
-uts46::in_inclusive_range_char --- core::num::<impl u32>::wrapping_sub (Constraint Depth: 0)
-uts46::Uts46::process --- core::slice::<impl [T]>::rsplit (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::iter (Constraint Depth: 9)
-deprecated::map_transitional --- core::str::<impl str>::len (Constraint Depth: 2)
-uts46::Uts46::process_innermost --- idna_adapter::BidiClass::to_mask (Constraint Depth: 5)
-uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_nonspacing_mark (Constraint Depth: 6)
-uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_european_number (Constraint Depth: 12)
-uts46::Uts46::check_label --- core::slice::<impl [T]>::iter (Constraint Depth: 5)
-punycode::decode --- core::iter::Iterator::collect (Constraint Depth: 0)
-punycode::decode --- core::result::Result::<T, E>::ok (Constraint Depth: 1)
-punycode::Decoder::decode --- core::num::<impl u32>::checked_add (Constraint Depth: 1)
-deprecated::Idna::to_ascii --- core::str::<impl str>::as_bytes (Constraint Depth: 1)
-uts46::is_passthrough_ascii_label --- core::slice::<impl [T]>::last (Constraint Depth: 1)
-uts46::has_punycode_prefix --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-uts46::Uts46::process --- core::num::<impl u8>::to_ascii_lowercase (Constraint Depth: 9)
-uts46::Uts46::process_innermost --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 9)
-uts46::Uts46::check_label --- idna_adapter::Adapter::is_mark (Constraint Depth: 2)
-domain_to_ascii_strict --- std::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
-uts46::Uts46::process --- <core::slice::Iter<'a, T> as core::iter::Iterator>::next (Constraint Depth: 3)
-punycode::encode_str --- core::str::<impl str>::chars (Constraint Depth: 0)
-uts46::verify_dns_length --- core::slice::<impl [T]>::strip_suffix (Constraint Depth: 0)
-deprecated::Idna::to_ascii --- std::string::String::push_str (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split (Constraint Depth: 1)
-uts46::Uts46::process --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-uts46::verify_dns_length --- core::slice::ascii::<impl [u8]>::is_ascii (Constraint Depth: 1)
-<u8 as punycode::PunycodeCodeUnit>::char_ascii_lower_case --- core::num::<impl u8>::to_ascii_lowercase (Constraint Depth: 0)
-punycode::Decoder::decode --- smallvec::SmallVec::<A>::clear (Constraint Depth: 0)
-uts46::Uts46::after_punycode_decode --- core::iter::Iterator::copied (Constraint Depth: 1)
-punycode::encode --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
-uts46::Uts46::process_inner --- <core::slice::Iter<'_, T> as core::clone::Clone>::clone (Constraint Depth: 0)
-uts46::Uts46::after_punycode_decode --- smallvec::SmallVec::<A>::push (Constraint Depth: 3)
-uts46::Uts46::check_label --- core::slice::<impl [T]>::last (Constraint Depth: 5)
-uts46::Uts46::process --- <core::slice::Iter<'a, T> as core::iter::Iterator>::position (Constraint Depth: 4)
-uts46::verify_dns_length --- core::slice::<impl [T]>::is_empty (Constraint Depth: 3)
-uts46::classify_for_punycode --- <core::iter::Copied<I> as core::iter::Iterator>::next (Constraint Depth: 0)
+punycode::encode_into --- core::num::<impl u32>::checked_add (Constraint Depth: 1)
+uts46::verify_dns_length --- core::slice::<impl [T]>::is_empty (Constraint Depth: 1)
 deprecated::Config::to_ascii --- core::str::<impl str>::len (Constraint Depth: 0)
-punycode::encode --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-deprecated::map_transitional --- <core::str::Chars<'a> as core::clone::Clone>::clone (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- <smallvec::SmallVec<A> as core::iter::Extend<<A as smallvec::Array>::Item>>::extend (Constraint Depth: 9)
-uts46::apply_ascii_deny_list_to_lower_cased_unicode --- core::num::<impl u128>::checked_shl (Constraint Depth: 0)
-punycode::encode_str --- core::result::Result::<T, E>::ok (Constraint Depth: 0)
-punycode::encode --- core::result::Result::<T, E>::ok (Constraint Depth: 0)
-deprecated::map_transitional --- std::string::String::push_str (Constraint Depth: 2)
-uts46::classify_for_punycode --- core::iter::Iterator::copied (Constraint Depth: 0)
-domain_to_ascii_strict --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
-domain_to_unicode --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
-uts46::Uts46::after_punycode_decode --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
-uts46::Uts46::process --- core::slice::<impl [T]>::split (Constraint Depth: 1)
-domain_to_ascii --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
-uts46::is_passthrough_ascii_label --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-uts46::AsciiDenyList::new --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-uts46::is_ascii --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 3)
-uts46::split_ascii_fast_path_prefix --- core::num::<impl u8>::is_ascii (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- <core::iter::Map<I, F> as core::iter::Iterator>::next (Constraint Depth: 4)
-uts46::Uts46::after_punycode_decode --- core::slice::<impl [T]>::iter_mut (Constraint Depth: 0)
-uts46::Uts46::check_label --- core::slice::<impl [T]>::len (Constraint Depth: 2)
-punycode::decode_to_string --- core::iter::Iterator::collect (Constraint Depth: 0)
-uts46::Uts46::process --- core::slice::<impl [T]>::split_at (Constraint Depth: 5)
-uts46::Uts46::process --- core::iter::Iterator::copied (Constraint Depth: 5)
-uts46::Uts46::process_innermost --- idna_adapter::Adapter::map_normalize (Constraint Depth: 4)
-uts46::Uts46::check_label --- idna_adapter::Adapter::is_virama (Constraint Depth: 6)
-uts46::Uts46::check_label --- core::iter::Iterator::copied (Constraint Depth: 5)
-uts46::check_hyphens --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-uts46::Uts46::check_label --- core::iter::Iterator::rev (Constraint Depth: 5)
-uts46::verify_dns_length --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
-uts46::Uts46::is_bidi --- idna_adapter::BidiClassMask::intersects (Constraint Depth: 3)
-uts46::in_inclusive_range8 --- core::num::<impl u8>::wrapping_sub (Constraint Depth: 0)
-uts46::Uts46::has_appropriately_joining_char --- idna_adapter::JoiningType::is_transparent (Constraint Depth: 3)
-punycode::decode_to_string --- core::result::Result::<T, E>::ok (Constraint Depth: 1)
-deprecated::map_transitional --- <core::str::Chars<'a> as core::iter::Iterator>::next (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::iter::Iterator::map (Constraint Depth: 9)
-uts46::is_ascii --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
-uts46::is_passthrough_ascii_label --- core::slice::<impl [T]>::split_first (Constraint Depth: 0)
-punycode::Decoder::decode --- <core::slice::Iter<'a, T> as core::iter::Iterator>::rposition (Constraint Depth: 0)
-uts46::Uts46::process --- core::option::Option::<T>::unwrap (Constraint Depth: 0)
-uts46::Uts46::process --- core::num::<impl u8>::is_ascii_uppercase (Constraint Depth: 4)
-uts46::Uts46::process_innermost --- smallvec::SmallVec::<A>::push (Constraint Depth: 5)
-uts46::Uts46::check_label --- core::slice::<impl [T]>::first_mut (Constraint Depth: 1)
-punycode::Decoder::decode --- smallvec::SmallVec::<A>::len (Constraint Depth: 0)
-punycode::decode_to_string --- core::str::<impl str>::as_bytes (Constraint Depth: 1)
-uts46::Uts46::after_punycode_decode --- core::iter::Iterator::zip (Constraint Depth: 0)
-punycode::encode_into --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 3)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::is_empty (Constraint Depth: 3)
-uts46::check_hyphens --- core::slice::<impl [T]>::last_mut (Constraint Depth: 0)
-<punycode::Decode<'_, T, C> as core::iter::Iterator>::next --- core::slice::<impl [T]>::len (Constraint Depth: 1)
-punycode::Decoder::decode --- std::slice::<impl [T]>::sort_by_key (Constraint Depth: 0)
-uts46::Uts46::is_bidi --- idna_adapter::Adapter::bidi_class (Constraint Depth: 3)
-uts46::Uts46::check_label --- core::slice::<impl [T]>::split_at_mut (Constraint Depth: 4)
-punycode::Decoder::decode --- smallvec::SmallVec::<A>::push (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::option::Option::<T>::is_none (Constraint Depth: 5)
-uts46::Uts46::process_innermost --- smallvec::SmallVec::<A>::len (Constraint Depth: 3)
-uts46::Uts46::after_punycode_decode --- idna_adapter::Adapter::normalize_validate (Constraint Depth: 1)
-uts46::Uts46::check_label --- core::slice::<impl [T]>::split_first_mut (Constraint Depth: 4)
-uts46::split_ascii_fast_path_prefix --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
-punycode::decode --- core::str::<impl str>::as_bytes (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- <core::slice::Iter<'a, T> as core::iter::Iterator>::next (Constraint Depth: 9)
-punycode::encode_into --- core::option::Option::<T>::ok_or (Constraint Depth: 4)
-uts46::Uts46::process_innermost --- idna_adapter::BidiClassMask::intersects (Constraint Depth: 5)
-uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_arabic_number (Constraint Depth: 13)
-uts46::Uts46::has_appropriately_joining_char --- idna_adapter::JoiningType::to_mask (Constraint Depth: 3)
-uts46::Uts46::process_inner --- core::slice::<impl [T]>::len (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::last_mut (Constraint Depth: 6)
-uts46::Uts46::process_innermost --- smallvec::SmallVec::<A>::truncate (Constraint Depth: 8)
-punycode::Decoder::decode --- <core::slice::Iter<'a, T> as core::iter::Iterator>::all (Constraint Depth: 1)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::starts_with (Constraint Depth: 5)
-uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_ltr (Constraint Depth: 5)
-uts46::Uts46::process --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
-uts46::Uts46::after_punycode_decode --- core::iter::Iterator::try_for_each (Constraint Depth: 0)
-uts46::split_ascii_fast_path_prefix --- <core::slice::Iter<'a, T> as core::iter::Iterator>::position (Constraint Depth: 0)
-uts46::Uts46::process --- <core::slice::RSplit<'a, T, P> as core::iter::Iterator>::next (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::last (Constraint Depth: 6)
+uts46::Uts46::has_appropriately_joining_char --- idna_adapter::JoiningType::is_transparent (Constraint Depth: 1)
+uts46::Uts46::process --- core::slice::<impl [T]>::strip_suffix (Constraint Depth: 0)
+uts46::split_ascii_fast_path_prefix --- core::slice::<impl [T]>::split_at (Constraint Depth: 2)
+deprecated::Idna::to_unicode --- core::str::<impl str>::as_bytes (Constraint Depth: 1)
 domain_to_ascii --- core::result::Result::<T, E>::map (Constraint Depth: 0)
-uts46::write_punycode_label --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
-punycode::Decoder::decode --- core::slice::<impl [T]>::len (Constraint Depth: 0)
-uts46::Uts46::process_innermost --- <[u8] as utf8_iter::Utf8CharsEx>::chars (Constraint Depth: 4)
-uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split_last_mut (Constraint Depth: 5)
+uts46::in_inclusive_range8 --- core::num::<impl u8>::wrapping_sub (Constraint Depth: 0)
+deprecated::map_transitional --- std::string::String::push (Constraint Depth: 4)
+punycode::decode_to_string --- core::result::Result::<T, E>::ok (Constraint Depth: 0)
+punycode::encode --- core::iter::Iterator::copied (Constraint Depth: 0)
+uts46::is_passthrough_ascii_label --- core::slice::<impl [T]>::last (Constraint Depth: 1)
+uts46::classify_for_punycode --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 1)
+domain_to_ascii_strict --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+punycode::Decoder::decode --- smallvec::SmallVec::<A>::push (Constraint Depth: 0)
+uts46::Uts46::process --- core::num::<impl u8>::is_ascii_uppercase (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- smallvec::SmallVec::<A>::len (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::iter_mut (Constraint Depth: 5)
+uts46::Uts46::process_innermost --- core::option::Option::<T>::is_none (Constraint Depth: 3)
+uts46::Uts46::check_label --- core::slice::<impl [T]>::last (Constraint Depth: 1)
+punycode::encode_into --- core::option::Option::<T>::ok_or (Constraint Depth: 1)
+uts46::write_punycode_label --- core::iter::Iterator::copied (Constraint Depth: 0)
+punycode::encode_str --- core::str::<impl str>::len (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- idna_adapter::BidiClassMask::intersects (Constraint Depth: 3)
+punycode::encode_str --- core::str::<impl str>::chars (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split_last_mut (Constraint Depth: 3)
+uts46::Uts46::has_appropriately_joining_char --- idna_adapter::JoiningType::to_mask (Constraint Depth: 1)
+uts46::Uts46::check_label --- core::slice::<impl [T]>::len (Constraint Depth: 1)
+uts46::Uts46::check_label --- idna_adapter::Adapter::is_virama (Constraint Depth: 2)
+uts46::Uts46::check_label --- core::iter::Iterator::copied (Constraint Depth: 1)
+deprecated::Idna::to_unicode --- std::string::String::push_str (Constraint Depth: 1)
+uts46::write_punycode_label --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+punycode::encode_str --- core::option::Option::<T>::map (Constraint Depth: 0)
+uts46::verify_dns_length --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+punycode::Decoder::decode --- core::option::Option::<T>::ok_or (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_nonspacing_mark (Constraint Depth: 4)
+uts46::Uts46::check_label --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
+domain_to_unicode --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::starts_with (Constraint Depth: 3)
+uts46::split_ascii_fast_path_prefix --- core::num::<impl u8>::is_ascii (Constraint Depth: 0)
+uts46::Uts46::process --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_ltr (Constraint Depth: 3)
+uts46::Uts46::after_punycode_decode --- idna_adapter::Adapter::normalize_validate (Constraint Depth: 1)
+domain_to_ascii_strict --- core::result::Result::<T, E>::map (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- core::str::<impl str>::as_bytes (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- <[u8] as utf8_iter::Utf8CharsEx>::chars (Constraint Depth: 2)
+uts46::split_ascii_fast_path_prefix --- <core::slice::Iter<'a, T> as core::iter::Iterator>::position (Constraint Depth: 0)
 uts46::Uts46::process_inner --- core::slice::Iter::<'a, T>::as_slice (Constraint Depth: 1)
-deprecated::Config::to_ascii --- core::result::Result::<T, E>::map (Constraint Depth: 0)
-uts46::Uts46::has_appropriately_joining_char --- idna_adapter::JoiningTypeMask::intersects (Constraint Depth: 3)
-punycode::encode_into --- core::num::<impl u32>::checked_mul (Constraint Depth: 2)
-punycode::Decoder::decode --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
-<punycode::Decode<'_, T, C> as core::iter::Iterator>::next --- core::slice::<impl [T]>::get (Constraint Depth: 1)
-uts46::Uts46::process_inner --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
-uts46::Uts46::process --- core::slice::<impl [T]>::contains (Constraint Depth: 2)
+uts46::Uts46::process --- <core::slice::Iter<'a, T> as core::iter::Iterator>::position (Constraint Depth: 1)
+punycode::encode_into --- core::option::Option::<T>::unwrap (Constraint Depth: 1)
+<u8 as punycode::PunycodeCodeUnit>::char_ascii_lower_case --- core::num::<impl u8>::to_ascii_lowercase (Constraint Depth: 0)
+punycode::decode_to_string --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 5)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::last_mut (Constraint Depth: 4)
+uts46::AsciiDenyList::new --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+uts46::Uts46::after_punycode_decode --- core::iter::Iterator::copied (Constraint Depth: 1)
+uts46::Uts46::after_punycode_decode --- smallvec::SmallVec::<A>::push (Constraint Depth: 1)
+punycode::decode --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+uts46::check_hyphens --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+domain_to_unicode --- std::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- idna_adapter::BidiClass::to_mask (Constraint Depth: 3)
+punycode::Decoder::decode --- core::num::<impl u32>::checked_add (Constraint Depth: 0)
+uts46::verify_dns_length --- core::slice::ascii::<impl [u8]>::is_ascii (Constraint Depth: 0)
+punycode::Decoder::decode --- <core::slice::Iter<'a, T> as core::iter::Iterator>::rposition (Constraint Depth: 0)
+uts46::Uts46::process --- core::slice::<impl [T]>::rsplit (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::iter (Constraint Depth: 7)
+uts46::Uts46::process --- core::slice::<impl [T]>::contains (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::is_empty (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- <smallvec::SmallVec<A> as core::iter::Extend<<A as smallvec::Array>::Item>>::extend (Constraint Depth: 7)
+uts46::classify_for_punycode --- core::iter::Iterator::copied (Constraint Depth: 0)
+deprecated::map_transitional --- <core::str::Chars<'a> as core::iter::Iterator>::next (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- smallvec::SmallVec::<A>::truncate (Constraint Depth: 6)
+uts46::Uts46::after_punycode_decode --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_european_number (Constraint Depth: 8)
+domain_to_ascii_strict --- std::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
+uts46::Uts46::after_punycode_decode --- core::iter::Iterator::try_for_each (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+deprecated::Idna::to_ascii --- std::string::String::push_str (Constraint Depth: 1)
+uts46::AsciiDenyList::new --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+uts46::Uts46::process --- <core::slice::Iter<'a, T> as core::iter::Iterator>::next (Constraint Depth: 1)
+punycode::Decoder::decode --- <core::slice::Iter<'a, T> as core::iter::Iterator>::all (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split (Constraint Depth: 1)
+uts46::split_ascii_fast_path_prefix --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+uts46::Uts46::process_inner --- core::slice::<impl [T]>::len (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- smallvec::SmallVec::<A>::push (Constraint Depth: 1)
+punycode::encode --- core::slice::<impl [T]>::len (Constraint Depth: 0)
 uts46::Uts46::process_inner --- <core::slice::Iter<'a, T> as core::iter::Iterator>::next (Constraint Depth: 0)
+deprecated::Config::to_unicode --- core::str::<impl str>::len (Constraint Depth: 0)
+punycode::encode --- core::option::Option::<T>::map (Constraint Depth: 0)
+deprecated::map_transitional --- core::str::Chars::<'a>::as_str (Constraint Depth: 2)
+uts46::apply_ascii_deny_list_to_lower_cased_unicode --- core::num::<impl u128>::checked_shl (Constraint Depth: 0)
+punycode::Decoder::decode --- smallvec::SmallVec::<A>::len (Constraint Depth: 0)
+uts46::Uts46::process --- <core::slice::RSplit<'a, T, P> as core::iter::Iterator>::next (Constraint Depth: 0)
+uts46::classify_for_punycode --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+deprecated::map_transitional --- <core::str::Chars<'a> as core::clone::Clone>::clone (Constraint Depth: 0)
+deprecated::Config::to_ascii --- core::result::Result::<T, E>::map (Constraint Depth: 0)
+punycode::encode --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+uts46::in_inclusive_range_char --- core::num::<impl u32>::wrapping_sub (Constraint Depth: 0)
+uts46::verify_dns_length --- core::slice::<impl [T]>::strip_suffix (Constraint Depth: 0)
+punycode::encode_into --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 1)
+uts46::verify_dns_length --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+uts46::Uts46::is_bidi --- idna_adapter::BidiClassMask::intersects (Constraint Depth: 1)
+uts46::Uts46::process_innermost --- idna_adapter::Adapter::map_normalize (Constraint Depth: 2)
+uts46::Uts46::process_innermost --- idna_adapter::BidiClass::is_arabic_number (Constraint Depth: 9)
+uts46::Uts46::check_label --- idna_adapter::Adapter::is_mark (Constraint Depth: 2)
+uts46::is_ascii --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
+uts46::Uts46::process --- core::slice::<impl [T]>::split (Constraint Depth: 1)
+deprecated::map_transitional --- core::str::<impl str>::chars (Constraint Depth: 0)
+punycode::Decoder::decode --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split_first_mut (Constraint Depth: 2)
+uts46::classify_for_punycode --- <core::iter::Copied<I> as core::iter::Iterator>::next (Constraint Depth: 0)
+domain_to_ascii --- std::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
+punycode::encode --- core::result::Result::<T, E>::ok (Constraint Depth: 0)
+<punycode::Decode<'_, T, C> as core::iter::Iterator>::next --- core::slice::<impl [T]>::len (Constraint Depth: 1)
+punycode::Decoder::decode --- smallvec::SmallVec::<A>::clear (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- <core::slice::Iter<'a, T> as core::iter::Iterator>::next (Constraint Depth: 7)
+uts46::Uts46::check_label --- core::slice::<impl [T]>::split_at_mut (Constraint Depth: 1)
+punycode::encode_into --- core::num::<impl u32>::checked_mul (Constraint Depth: 1)
+uts46::Uts46::process --- core::num::<impl u8>::to_ascii_lowercase (Constraint Depth: 2)
+uts46::Uts46::has_appropriately_joining_char --- idna_adapter::Adapter::joining_type (Constraint Depth: 1)
+punycode::Decoder::decode --- std::slice::<impl [T]>::sort_by_key (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::split_mut (Constraint Depth: 2)
+uts46::Uts46::after_punycode_decode --- core::slice::<impl [T]>::iter_mut (Constraint Depth: 0)
+uts46::Uts46::is_bidi --- idna_adapter::BidiClass::to_mask (Constraint Depth: 1)
+uts46::Uts46::process_inner --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::iter::Iterator::map (Constraint Depth: 7)
+uts46::Uts46::process --- core::slice::<impl [T]>::split_at (Constraint Depth: 1)
+punycode::decode_to_string --- core::iter::Iterator::collect (Constraint Depth: 0)
+uts46::check_hyphens --- core::slice::<impl [T]>::last_mut (Constraint Depth: 0)
+uts46::Uts46::process --- core::option::Option::<T>::unwrap (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- core::slice::<impl [T]>::last (Constraint Depth: 4)
+uts46::Uts46::check_label --- core::slice::<impl [T]>::first_mut (Constraint Depth: 1)
+uts46::has_punycode_prefix --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+uts46::Uts46::has_appropriately_joining_char --- idna_adapter::JoiningTypeMask::intersects (Constraint Depth: 1)
+punycode::decode --- core::iter::Iterator::collect (Constraint Depth: 0)
+punycode::encode_str --- core::result::Result::<T, E>::ok (Constraint Depth: 0)
+uts46::is_passthrough_ascii_label --- core::slice::<impl [T]>::split_first (Constraint Depth: 0)
+punycode::Decoder::decode --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+uts46::Uts46::after_punycode_decode --- core::iter::Iterator::zip (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- idna_adapter::Adapter::bidi_class (Constraint Depth: 3)
+uts46::Uts46::is_bidi --- idna_adapter::Adapter::bidi_class (Constraint Depth: 1)
+uts46::Uts46::process_inner --- <core::slice::Iter<'_, T> as core::clone::Clone>::clone (Constraint Depth: 0)
+uts46::Uts46::process_innermost --- <core::iter::Map<I, F> as core::iter::Iterator>::next (Constraint Depth: 2)
+deprecated::map_transitional --- core::str::<impl str>::len (Constraint Depth: 2)
+uts46::Uts46::check_label --- core::slice::<impl [T]>::split_first_mut (Constraint Depth: 1)
+uts46::verify_dns_length --- core::slice::<impl [T]>::split (Constraint Depth: 1)
+uts46::is_passthrough_ascii_label --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+uts46::check_hyphens --- core::slice::<impl [T]>::first_mut (Constraint Depth: 0)
+punycode::Decoder::decode --- core::num::<impl u32>::checked_mul (Constraint Depth: 0)
+punycode::decode --- core::result::Result::<T, E>::ok (Constraint Depth: 0)
+uts46::is_ascii --- core::char::methods::<impl char>::is_ascii (Constraint Depth: 1)
+domain_to_ascii --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+<punycode::Decode<'_, T, C> as core::iter::Iterator>::next --- core::slice::<impl [T]>::get (Constraint Depth: 1)
+uts46::Uts46::process --- core::slice::<impl [T]>::len (Constraint Depth: 0)
+uts46::Uts46::check_label --- core::iter::Iterator::rev (Constraint Depth: 1)
+deprecated::map_transitional --- std::string::String::push_str (Constraint Depth: 2)
+uts46::Uts46::process --- core::iter::Iterator::copied (Constraint Depth: 2)
 Target name: tests
 Target test:tests is not supported
 Target name: unit

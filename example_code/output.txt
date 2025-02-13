@@ -1,0 +1,606 @@
+Target name: example_code
+The code is Ok(
+    "{\n    assert!(test_assert());\n}",
+)
+Entering expr: Block(
+    Block {
+        stmts: [
+            Stmt {
+                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).15),
+                kind: Semi(
+                    Expr {
+                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).1),
+                        kind: If(
+                            Expr {
+                                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).6),
+                                kind: DropTemps(
+                                    Expr {
+                                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).2),
+                                        kind: Unary(
+                                            Not,
+                                            Expr {
+                                                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).3),
+                                                kind: Call(
+                                                    Expr {
+                                                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).4),
+                                                        kind: Path(
+                                                            Resolved(
+                                                                None,
+                                                                Path {
+                                                                    span: src/main.rs:179:13: 179:24 (#0),
+                                                                    res: Def(
+                                                                        Fn,
+                                                                        DefId(0:4 ~ example_code[e214]::test_assert),
+                                                                    ),
+                                                                    segments: [
+                                                                        PathSegment {
+                                                                            ident: test_assert#0,
+                                                                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).5),
+                                                                            res: Def(
+                                                                                Fn,
+                                                                                DefId(0:4 ~ example_code[e214]::test_assert),
+                                                                            ),
+                                                                            args: None,
+                                                                            infer_args: true,
+                                                                        },
+                                                                    ],
+                                                                },
+                                                            ),
+                                                        ),
+                                                        span: src/main.rs:179:13: 179:24 (#0),
+                                                    },
+                                                    [],
+                                                ),
+                                                span: src/main.rs:179:13: 179:26 (#0),
+                                            },
+                                        ),
+                                        span: src/main.rs:179:5: 179:27 (#4),
+                                    },
+                                ),
+                                span: src/main.rs:179:5: 179:27 (#7),
+                            },
+                            Expr {
+                                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).14),
+                                kind: Block(
+                                    Block {
+                                        stmts: [],
+                                        expr: Some(
+                                            Expr {
+                                                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).7),
+                                                kind: Call(
+                                                    Expr {
+                                                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).8),
+                                                        kind: Path(
+                                                            Resolved(
+                                                                None,
+                                                                Path {
+                                                                    span: src/main.rs:179:5: 179:5 (#4),
+                                                                    res: Def(
+                                                                        Fn,
+                                                                        DefId(2:9575 ~ core[f118]::panicking::panic),
+                                                                    ),
+                                                                    segments: [
+                                                                        PathSegment {
+                                                                            ident: $crate#5,
+                                                                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).9),
+                                                                            res: Err,
+                                                                            args: None,
+                                                                            infer_args: true,
+                                                                        },
+                                                                        PathSegment {
+                                                                            ident: panicking#0,
+                                                                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).10),
+                                                                            res: Def(
+                                                                                Mod,
+                                                                                DefId(2:9562 ~ core[f118]::panicking),
+                                                                            ),
+                                                                            args: None,
+                                                                            infer_args: true,
+                                                                        },
+                                                                        PathSegment {
+                                                                            ident: panic#0,
+                                                                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).11),
+                                                                            res: Def(
+                                                                                Fn,
+                                                                                DefId(2:9575 ~ core[f118]::panicking::panic),
+                                                                            ),
+                                                                            args: None,
+                                                                            infer_args: true,
+                                                                        },
+                                                                    ],
+                                                                },
+                                                            ),
+                                                        ),
+                                                        span: src/main.rs:179:5: 179:27 (#4),
+                                                    },
+                                                    [
+                                                        Expr {
+                                                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).12),
+                                                            kind: Lit(
+                                                                Spanned {
+                                                                    node: Str(
+                                                                        "assertion failed: test_assert()",
+                                                                        Cooked,
+                                                                    ),
+                                                                    span: no-location (#0),
+                                                                },
+                                                            ),
+                                                            span: no-location (#0),
+                                                        },
+                                                    ],
+                                                ),
+                                                span: src/main.rs:179:5: 179:27 (#4),
+                                            },
+                                        ),
+                                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).13),
+                                        rules: DefaultBlock,
+                                        span: src/main.rs:179:5: 179:27 (#4),
+                                        targeted_by_break: false,
+                                    },
+                                    None,
+                                ),
+                                span: src/main.rs:179:5: 179:27 (#4),
+                            },
+                            None,
+                        ),
+                        span: src/main.rs:179:5: 179:27 (#4),
+                    },
+                ),
+                span: src/main.rs:179:5: 179:27 (#4),
+            },
+        ],
+        expr: None,
+        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).16),
+        rules: DefaultBlock,
+        span: src/main.rs:178:11: 180:2 (#0),
+        targeted_by_break: false,
+    },
+    None,
+), constraint_depth0
+The code is Ok(
+    "assert!(test_assert())",
+)
+Entering expr: If(
+    Expr {
+        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).6),
+        kind: DropTemps(
+            Expr {
+                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).2),
+                kind: Unary(
+                    Not,
+                    Expr {
+                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).3),
+                        kind: Call(
+                            Expr {
+                                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).4),
+                                kind: Path(
+                                    Resolved(
+                                        None,
+                                        Path {
+                                            span: src/main.rs:179:13: 179:24 (#0),
+                                            res: Def(
+                                                Fn,
+                                                DefId(0:4 ~ example_code[e214]::test_assert),
+                                            ),
+                                            segments: [
+                                                PathSegment {
+                                                    ident: test_assert#0,
+                                                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).5),
+                                                    res: Def(
+                                                        Fn,
+                                                        DefId(0:4 ~ example_code[e214]::test_assert),
+                                                    ),
+                                                    args: None,
+                                                    infer_args: true,
+                                                },
+                                            ],
+                                        },
+                                    ),
+                                ),
+                                span: src/main.rs:179:13: 179:24 (#0),
+                            },
+                            [],
+                        ),
+                        span: src/main.rs:179:13: 179:26 (#0),
+                    },
+                ),
+                span: src/main.rs:179:5: 179:27 (#4),
+            },
+        ),
+        span: src/main.rs:179:5: 179:27 (#7),
+    },
+    Expr {
+        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).14),
+        kind: Block(
+            Block {
+                stmts: [],
+                expr: Some(
+                    Expr {
+                        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).7),
+                        kind: Call(
+                            Expr {
+                                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).8),
+                                kind: Path(
+                                    Resolved(
+                                        None,
+                                        Path {
+                                            span: src/main.rs:179:5: 179:5 (#4),
+                                            res: Def(
+                                                Fn,
+                                                DefId(2:9575 ~ core[f118]::panicking::panic),
+                                            ),
+                                            segments: [
+                                                PathSegment {
+                                                    ident: $crate#5,
+                                                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).9),
+                                                    res: Err,
+                                                    args: None,
+                                                    infer_args: true,
+                                                },
+                                                PathSegment {
+                                                    ident: panicking#0,
+                                                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).10),
+                                                    res: Def(
+                                                        Mod,
+                                                        DefId(2:9562 ~ core[f118]::panicking),
+                                                    ),
+                                                    args: None,
+                                                    infer_args: true,
+                                                },
+                                                PathSegment {
+                                                    ident: panic#0,
+                                                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).11),
+                                                    res: Def(
+                                                        Fn,
+                                                        DefId(2:9575 ~ core[f118]::panicking::panic),
+                                                    ),
+                                                    args: None,
+                                                    infer_args: true,
+                                                },
+                                            ],
+                                        },
+                                    ),
+                                ),
+                                span: src/main.rs:179:5: 179:27 (#4),
+                            },
+                            [
+                                Expr {
+                                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).12),
+                                    kind: Lit(
+                                        Spanned {
+                                            node: Str(
+                                                "assertion failed: test_assert()",
+                                                Cooked,
+                                            ),
+                                            span: no-location (#0),
+                                        },
+                                    ),
+                                    span: no-location (#0),
+                                },
+                            ],
+                        ),
+                        span: src/main.rs:179:5: 179:27 (#4),
+                    },
+                ),
+                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).13),
+                rules: DefaultBlock,
+                span: src/main.rs:179:5: 179:27 (#4),
+                targeted_by_break: false,
+            },
+            None,
+        ),
+        span: src/main.rs:179:5: 179:27 (#4),
+    },
+    None,
+), constraint_depth0
+The code is Ok(
+    "assert!(test_assert())",
+)
+Entering expr: Unary(
+    Not,
+    Expr {
+        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).3),
+        kind: Call(
+            Expr {
+                hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).4),
+                kind: Path(
+                    Resolved(
+                        None,
+                        Path {
+                            span: src/main.rs:179:13: 179:24 (#0),
+                            res: Def(
+                                Fn,
+                                DefId(0:4 ~ example_code[e214]::test_assert),
+                            ),
+                            segments: [
+                                PathSegment {
+                                    ident: test_assert#0,
+                                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).5),
+                                    res: Def(
+                                        Fn,
+                                        DefId(0:4 ~ example_code[e214]::test_assert),
+                                    ),
+                                    args: None,
+                                    infer_args: true,
+                                },
+                            ],
+                        },
+                    ),
+                ),
+                span: src/main.rs:179:13: 179:24 (#0),
+            },
+            [],
+        ),
+        span: src/main.rs:179:13: 179:26 (#0),
+    },
+), constraint_depth0
+The code is Ok(
+    "test_assert()",
+)
+Entering expr: Call(
+    Expr {
+        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).4),
+        kind: Path(
+            Resolved(
+                None,
+                Path {
+                    span: src/main.rs:179:13: 179:24 (#0),
+                    res: Def(
+                        Fn,
+                        DefId(0:4 ~ example_code[e214]::test_assert),
+                    ),
+                    segments: [
+                        PathSegment {
+                            ident: test_assert#0,
+                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).5),
+                            res: Def(
+                                Fn,
+                                DefId(0:4 ~ example_code[e214]::test_assert),
+                            ),
+                            args: None,
+                            infer_args: true,
+                        },
+                    ],
+                },
+            ),
+        ),
+        span: src/main.rs:179:13: 179:24 (#0),
+    },
+    [],
+), constraint_depth0
+resolved new call Call { call_expr: HirId(DefId(0:3 ~ example_code[e214]::main).3), call_expr_span: src/main.rs:179:13: 179:26 (#0), caller: Some(DefId(0:3 ~ example_code[e214]::main)), caller_span: None, callee: DefId(0:4 ~ example_code[e214]::test_assert), callee_span: src/main.rs:179:13: 179:24 (#0), callee_path: "test_assert", constraint_depth: 0 }
+The code is Ok(
+    "test_assert",
+)
+Entering expr: Path(
+    Resolved(
+        None,
+        Path {
+            span: src/main.rs:179:13: 179:24 (#0),
+            res: Def(
+                Fn,
+                DefId(0:4 ~ example_code[e214]::test_assert),
+            ),
+            segments: [
+                PathSegment {
+                    ident: test_assert#0,
+                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).5),
+                    res: Def(
+                        Fn,
+                        DefId(0:4 ~ example_code[e214]::test_assert),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+            ],
+        },
+    ),
+), constraint_depth0
+The code is Ok(
+    "assert!(test_assert())",
+)
+Entering expr: Call(
+    Expr {
+        hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).8),
+        kind: Path(
+            Resolved(
+                None,
+                Path {
+                    span: src/main.rs:179:5: 179:5 (#4),
+                    res: Def(
+                        Fn,
+                        DefId(2:9575 ~ core[f118]::panicking::panic),
+                    ),
+                    segments: [
+                        PathSegment {
+                            ident: $crate#5,
+                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).9),
+                            res: Err,
+                            args: None,
+                            infer_args: true,
+                        },
+                        PathSegment {
+                            ident: panicking#0,
+                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).10),
+                            res: Def(
+                                Mod,
+                                DefId(2:9562 ~ core[f118]::panicking),
+                            ),
+                            args: None,
+                            infer_args: true,
+                        },
+                        PathSegment {
+                            ident: panic#0,
+                            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).11),
+                            res: Def(
+                                Fn,
+                                DefId(2:9575 ~ core[f118]::panicking::panic),
+                            ),
+                            args: None,
+                            infer_args: true,
+                        },
+                    ],
+                },
+            ),
+        ),
+        span: src/main.rs:179:5: 179:27 (#4),
+    },
+    [
+        Expr {
+            hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).12),
+            kind: Lit(
+                Spanned {
+                    node: Str(
+                        "assertion failed: test_assert()",
+                        Cooked,
+                    ),
+                    span: no-location (#0),
+                },
+            ),
+            span: no-location (#0),
+        },
+    ],
+), constraint_depth1
+resolved new call Call { call_expr: HirId(DefId(0:3 ~ example_code[e214]::main).7), call_expr_span: src/main.rs:179:5: 179:27 (#4), caller: Some(DefId(0:3 ~ example_code[e214]::main)), caller_span: None, callee: DefId(2:9575 ~ core[f118]::panicking::panic), callee_span: src/main.rs:179:5: 179:5 (#4), callee_path: "core::panicking::panic", constraint_depth: 1 }
+The code is Ok(
+    "assert!(test_assert())",
+)
+Entering expr: Path(
+    Resolved(
+        None,
+        Path {
+            span: src/main.rs:179:5: 179:5 (#4),
+            res: Def(
+                Fn,
+                DefId(2:9575 ~ core[f118]::panicking::panic),
+            ),
+            segments: [
+                PathSegment {
+                    ident: $crate#5,
+                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).9),
+                    res: Err,
+                    args: None,
+                    infer_args: true,
+                },
+                PathSegment {
+                    ident: panicking#0,
+                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).10),
+                    res: Def(
+                        Mod,
+                        DefId(2:9562 ~ core[f118]::panicking),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+                PathSegment {
+                    ident: panic#0,
+                    hir_id: HirId(DefId(0:3 ~ example_code[e214]::main).11),
+                    res: Def(
+                        Fn,
+                        DefId(2:9575 ~ core[f118]::panicking::panic),
+                    ),
+                    args: None,
+                    infer_args: true,
+                },
+            ],
+        },
+    ),
+), constraint_depth1
+The code is Ok(
+    "",
+)
+Entering expr: Lit(
+    Spanned {
+        node: Str(
+            "assertion failed: test_assert()",
+            Cooked,
+        ),
+        span: no-location (#0),
+    },
+), constraint_depth1
+The code is Ok(
+    "{\n    return true;\n}",
+)
+Entering expr: Block(
+    Block {
+        stmts: [
+            Stmt {
+                hir_id: HirId(DefId(0:4 ~ example_code[e214]::test_assert).3),
+                kind: Semi(
+                    Expr {
+                        hir_id: HirId(DefId(0:4 ~ example_code[e214]::test_assert).1),
+                        kind: Ret(
+                            Some(
+                                Expr {
+                                    hir_id: HirId(DefId(0:4 ~ example_code[e214]::test_assert).2),
+                                    kind: Lit(
+                                        Spanned {
+                                            node: Bool(
+                                                true,
+                                            ),
+                                            span: src/main.rs:183:12: 183:16 (#0),
+                                        },
+                                    ),
+                                    span: src/main.rs:183:12: 183:16 (#0),
+                                },
+                            ),
+                        ),
+                        span: src/main.rs:183:5: 183:16 (#0),
+                    },
+                ),
+                span: src/main.rs:183:5: 183:17 (#0),
+            },
+        ],
+        expr: None,
+        hir_id: HirId(DefId(0:4 ~ example_code[e214]::test_assert).4),
+        rules: DefaultBlock,
+        span: src/main.rs:182:25: 184:2 (#0),
+        targeted_by_break: false,
+    },
+    None,
+), constraint_depth0
+The code is Ok(
+    "return true",
+)
+Entering expr: Ret(
+    Some(
+        Expr {
+            hir_id: HirId(DefId(0:4 ~ example_code[e214]::test_assert).2),
+            kind: Lit(
+                Spanned {
+                    node: Bool(
+                        true,
+                    ),
+                    span: src/main.rs:183:12: 183:16 (#0),
+                },
+            ),
+            span: src/main.rs:183:12: 183:16 (#0),
+        },
+    ),
+), constraint_depth0
+The code is Ok(
+    "true",
+)
+Entering expr: Lit(
+    Spanned {
+        node: Bool(
+            true,
+        ),
+        span: src/main.rs:183:12: 183:16 (#0),
+    },
+), constraint_depth0
+Functions:
+  Function: test_assert, Span: src/main.rs:182:1: 184:2 (#0)
+  Function: main, Span: src/main.rs:178:1: 180:2 (#0)
+
+Method Declarations:
+
+Method Implementations:
+
+Static Calls:
+main --- test_assert (Constraint Depth: 0)
+main --- core::panicking::panic (Constraint Depth: 1)
+
+Dynamic Calls:
+
+Non Local Calls:
