@@ -179,14 +179,48 @@ fn a()->bool{
     false
 }
 
-fn main() {
-    if test_assert(){
-        a();
-    }
-    // debug_assert!(test_assert());
+// fn main() {
+//     if test_assert(){
+//         a();
+//     }
+//     // debug_assert!(test_assert());
+// }
+
+// fn test_assert() -> bool{
+//     return true;
+// }
+
+fn b()->bool{
+    true
 }
 
-fn test_assert() -> bool{
-    return true;
+fn c()->bool{
+    true
 }
+
+fn main(){
+    // for i in 0..1{
+    //     let a = if true{
+    //         a();
+    //     }else{
+    //         b();
+    //     };
+    // }
+    let domain_buffer = "hello";
+
+    for label in &domain_buffer.split(|c| *c == '.') {
+        if true{
+            a();
+        }
+        else if true{
+            b();
+        }else{
+            c();
+        }
+    }
+    
+}
+
+
+
 
