@@ -74,14 +74,14 @@ impl S1 {
 //     }
 // }
 
-// pub struct R;
+pub struct R;
 
-// impl T for R {
-//     fn bla(&self) -> bool {
-//         let _x = 4;
-//         return true;
-//     }
-// }
+impl T for R {
+    fn bla(&self) -> bool {
+        let _x = 4;
+        return true;
+    }
+}
 
 // pub fn _virt(ob: &dyn T) {
 //     ob.bla();

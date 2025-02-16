@@ -6,6 +6,7 @@ use rustc_middle::ty::TyCtxt;
 use rustc_middle::ty::ParamEnvAnd;
 use std::collections::{HashMap, HashSet};
 use std::path;
+use std::string;
 use rustc_hir::intravisit;
 use rustc_middle::hir::nested_filter;
 use rustc_span::Span;
@@ -165,6 +166,46 @@ impl<'tcx> CallgraphVisitor<'tcx> {
         }
     }
 
+    fn handle_call(&mut self, new_call: Call, call_type: String) {
+        if call_type == "static"{
+            if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
+                if existing_call.should_insert(self.constraint_depth) {
+                    self.static_calls.remove(&existing_call);
+                    self.static_calls.insert(new_call);
+                    //println!("Updated call with new constraint depth: {}", self.constraint_depth);
+                }
+            } else {
+                self.static_calls.insert(new_call);
+                //println!("Inserted new call with constraint depth: {}", self.constraint_depth);
+            }
+        }
+        else if call_type == "dynamic"{
+            if let Some(existing_call) = self.dynamic_calls.get(&new_call).cloned() {
+                if existing_call.should_insert(self.constraint_depth) {
+                    self.dynamic_calls.remove(&existing_call);
+                    self.dynamic_calls.insert(new_call);
+                    //println!("Updated call with new constraint depth: {}", self.constraint_depth);
+                }
+            } else {
+                self.dynamic_calls.insert(new_call);
+                //println!("Inserted new call with constraint depth: {}", self.constraint_depth);
+            }
+        }
+        else{
+            if let Some(existing_call) = self.non_local_calls.get(&new_call).cloned() {
+                if existing_call.should_insert(self.constraint_depth) {
+                    self.non_local_calls.remove(&existing_call);
+                    self.non_local_calls.insert(new_call);
+                    //println!("Updated call with new constraint depth: {}", self.constraint_depth);
+                }
+            } else {
+                self.non_local_calls.insert(new_call);
+                //println!("Inserted new call with constraint depth: {}", self.constraint_depth);
+            }
+        }
+        
+    }
+
 }
 
 
@@ -188,7 +229,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
         let old_depth = self.constraint_depth; // 保存当前深度
         let hir_id = expr.hir_id;
         let mut flag = true;
-        // println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
+        println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
         // println!("Entering expr: {:#?}, constraint_depth{}", expr.kind, self.constraint_depth);
         // 检查表达式类型并更新约束层数
         match expr.kind {
@@ -336,19 +377,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                             println!("resolved new call {:?}", new_call);
                 
                             // 检查是否已经存在相同的调用（只比较 caller 和 callee）
-                            if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
-                                // 如果存在相同的 caller 和 callee，比较约束深度
-                                if existing_call.should_insert(self.constraint_depth) {
-                                    // 移除现有的调用
-                                    self.static_calls.remove(&existing_call);
-                                    // 插入新的调用
-                                    self.static_calls.insert(new_call);
-                                    //println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
-                                }
-                            } else {
-                                self.static_calls.insert(new_call);
-                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
-                            }
+                            self.handle_call(new_call, "static".to_string());
                         }
                     }
                     rustc_hir::QPath::TypeRelative(ty, path_segment) => {   
@@ -370,30 +399,13 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                                         callee_path: callee_path_output.clone(),
                                         constraint_depth: self.constraint_depth,
                                     };
-
                                     // println!("Typeratived new call {:?}", new_call);
                             
-                                        // 检查是否已经存在相同的调用（只比较 caller 和 callee）
-                                    if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
-                                        // 如果存在相同的 caller 和 callee，比较约束深度
-                                        if existing_call.should_insert(self.constraint_depth) {
-                                            // 移除现有的调用
-                                            self.static_calls.remove(&existing_call);
-                                            // 插入新的调用
-                                            self.static_calls.insert(new_call);
-                                            //println!("Replaced existing call with new call, constraint_depth: {}", self.constraint_depth);
-                                        }
-                                        else{
-                                            //println!("not replaced, caller: {:?}, callee: {}, constraint_depth: {}", self.cur_fn, callee_path_output.clone(), self.constraint_depth);
-                                        }
-                                    } else {
-                                        self.static_calls.insert(new_call);
-                                        //println!("Inserted new call, caller: {:?}, callee: {}, constraint_depth: {}", self.cur_fn, callee_path_output.clone(), self.constraint_depth);
-                                    }
-                                }
+                                    self.handle_call(new_call, "static".to_string());
                                 }
                             }
                         }
+                    }
                         
                         
                     rustc_hir::QPath::LangItem(_, span) => {
@@ -407,117 +419,221 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                 let o_def_id = hir_id.owner;
                 let typeck_tables = self.tcx.typeck(o_def_id);
                 let substs = typeck_tables.node_args(hir_id);
-                let method_id = typeck_tables.type_dependent_def_id(hir_id).expect("fail");
-                let param_env = self.tcx.param_env(method_id);
-                if let Ok(Some(inst)) =
-                    self.tcx.resolve_instance_raw(ParamEnvAnd { param_env, value: (method_id, substs) })
-                {
-                    // println!("into method call: {:#?}", expr);
-                    let res_def_id = inst.def_id();
-                    // println!("caller: {:?}", self.cur_fn);
-                    // println!("def_id: {:?}, get_path: {:#?}", res_def_id, self.tcx.def_path_str(res_def_id));
-                    match self.tcx.hir().get_if_local(res_def_id) {
-                        Some(rustc_hir::Node::TraitItem(rustc_hir::TraitItem { span, .. })) => {
-                            // dynamic calls resolve only to the trait method decl
-                            let new_call = Call {
-                                call_expr: hir_id,
-                                call_expr_span: expr.span,
-                                caller: self.cur_fn,
-                                caller_span: None,
-                                callee: res_def_id,
-                                callee_span: *span,
-                                callee_path: self.tcx.def_path_str(res_def_id),
-                                constraint_depth: self.constraint_depth,
-                            };
-                            println!("new dynamiccall: {:#?}", new_call);
-
-                            // 检查是否已经存在相同的动态调用
-                            if let Some(existing_call) = self.dynamic_calls.get(&new_call).cloned() {
-                                // 如果存在相同的 caller 和 callee，比较约束深度
-                                if existing_call.should_insert(self.constraint_depth) {
-                                    // 移除现有的调用
-                                    self.dynamic_calls.remove(&existing_call);
-                                    // 插入新的调用
-                                    self.dynamic_calls.insert(new_call);
-                                    //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+            
+                // 获取方法调用的定义 ID
+                let method_id = typeck_tables.type_dependent_def_id(hir_id);
+            
+                match method_id {
+                    Some(def_id) => {
+                        // 静态分发：已知具体的实现
+                        let param_env = self.tcx.param_env(def_id);
+            
+                        match self.tcx.resolve_instance_raw(ParamEnvAnd { param_env, value: (def_id, substs) }) {
+                            Ok(Some(inst)) => {
+                                // 成功解析为具体的实例
+                                let res_def_id = inst.def_id();
+                            // println!("caller: {:?}", self.cur_fn);
+                            // println!("def_id: {:?}, get_path: {:#?}", res_def_id, self.tcx.def_path_str(res_def_id));
+                            match self.tcx.hir().get_if_local(res_def_id) {
+                                Some(rustc_hir::Node::TraitItem(rustc_hir::TraitItem { span, .. })) => {
+                                    // dynamic calls resolve only to the trait method decl
+                                    let new_call = Call {
+                                        call_expr: hir_id,
+                                        call_expr_span: expr.span,
+                                        caller: self.cur_fn,
+                                        caller_span: None,
+                                        callee: res_def_id,
+                                        callee_span: *span,
+                                        callee_path: self.tcx.def_path_str(res_def_id),
+                                        constraint_depth: self.constraint_depth,
+                                    };
+                                    self.handle_call(new_call, "dynamic".to_string());
                                 }
-                            } else {
-                                self.dynamic_calls.insert(new_call);
-                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+                                Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem { span, .. })) |
+                                Some(rustc_hir::Node::Item(rustc_hir::Item { span, .. })) |
+                                Some(rustc_hir::Node::ForeignItem(rustc_hir::ForeignItem { span, .. })) => {
+                                    // calls for which the receiver's type can be resolved
+                                    let new_call = Call {
+                                        call_expr: hir_id,
+                                        call_expr_span: expr.span,
+                                        caller: self.cur_fn,
+                                        caller_span: None,
+                                        callee: res_def_id,
+                                        callee_span: *span,
+                                        callee_path: self.tcx.def_path_str(res_def_id),
+                                        constraint_depth: self.constraint_depth,
+                                    };
+
+                                    self.handle_call(new_call, "static".to_string());
+                                }
+                                None => {
+                                    let new_call = Call {
+                                        call_expr: hir_id,
+                                        call_expr_span: expr.span,
+                                        caller: self.cur_fn,
+                                        caller_span: None,
+                                        callee: res_def_id,
+                                        callee_span: Span::default(),
+                                        callee_path: self.tcx.def_path_str(res_def_id),
+                                        constraint_depth: self.constraint_depth,
+                                    };
+
+                                    self.handle_call(new_call, "non_local".to_string());
+                                },
+                                _ => todo!()
+                                };
+                            },
+                            Ok(None) | Err(_) => {
+                                // 无法解析为具体实例，可能是动态分发的调用
+                                let new_call = Call {
+                                    call_expr: hir_id,
+                                    call_expr_span: expr.span,
+                                    caller: self.cur_fn,
+                                    caller_span: None,
+                                    callee: def_id,
+                                    callee_span: expr.span,
+                                    callee_path: self.tcx.def_path_str(def_id),
+                                    constraint_depth: self.constraint_depth,
+                                };
+            
+                                println!("new dynamic call: {:#?}", new_call);
+                                self.handle_call(new_call, "dynamic".to_string());
                             }
                         }
-                        Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem { span, .. })) |
-                        Some(rustc_hir::Node::Item(rustc_hir::Item { span, .. })) |
-                        Some(rustc_hir::Node::ForeignItem(rustc_hir::ForeignItem { span, .. })) => {
-                            // calls for which the receiver's type can be resolved
-                            let new_call = Call {
-                                call_expr: hir_id,
-                                call_expr_span: expr.span,
-                                caller: self.cur_fn,
-                                caller_span: None,
-                                callee: res_def_id,
-                                callee_span: *span,
-                                callee_path: self.tcx.def_path_str(res_def_id),
-                                constraint_depth: self.constraint_depth,
-                            };
-
-                            println!("new static call: {:#?}", new_call);
-                            // 检查是否已经存在相同的静态调用
-                            if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
-                                // 如果存在相同的 caller 和 callee，比较约束深度
-                                if existing_call.should_insert(self.constraint_depth) {
-                                    // 移除现有的调用
-                                    self.static_calls.remove(&existing_call);
-                                    // 插入新的调用
-                                    self.static_calls.insert(new_call);
-                                    //println!("replaced new call, constraint_depth: {}", self.constraint_depth);
-                                }
-                            } else {
-                                self.static_calls.insert(new_call);
-                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
-                            }
-                        }
-                        None => {
-                            let new_call = Call {
-                                call_expr: hir_id,
-                                call_expr_span: expr.span,
-                                caller: self.cur_fn,
-                                caller_span: None,
-                                callee: res_def_id,
-                                callee_span: Span::default(),
-                                callee_path: self.tcx.def_path_str(res_def_id),
-                                constraint_depth: self.constraint_depth,
-                            };
-
-                            // println!("new static call: {:#?}", new_call);
-                            // 检查是否已经存在相同的调用
-                            if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
-                                // 如果存在相同的 caller 和 callee，比较约束深度
-                                if existing_call.should_insert(self.constraint_depth) {
-                                    // 移除现有的调用
-                                    self.non_local_calls.remove(&existing_call);
-                                    // 插入新的调用
-                                    self.non_local_calls.insert(new_call);
-                                    //println!("replaced new call, constraint_depth: {}", self.constraint_depth);
-                                }
-                            } else {
-                                self.non_local_calls.insert(new_call);
-                                //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
-                            }
-                        },
-                        _ => todo!()
-                    };
+                    }
+                    None => {
+                        // 动态分发：无法直接解析具体的实现
+                        let new_call = Call {
+                            call_expr: hir_id,
+                            call_expr_span: expr.span,
+                            caller: self.cur_fn,
+                            caller_span: None,
+                            callee: segment.res.def_id(),
+                            callee_span: expr.span,
+                            callee_path: self.tcx.def_path_str(segment.res.def_id()),
+                            constraint_depth: self.constraint_depth,
+                        };
+            
+                        println!("new dynamic call: {:#?}", new_call);
+                        self.handle_call(new_call, "dynamic".to_string());
+                    }
                 }
+            
                 intravisit::walk_expr(self, expr); // 确保遍历所有表达式
             },
+            // rustc_hir::ExprKind::MethodCall(ref segment, ref receiver, ref args, span) => {
+            //     let o_def_id = hir_id.owner;
+            //     let typeck_tables = self.tcx.typeck(o_def_id);
+            //     let substs = typeck_tables.node_args(hir_id);
+            //     let method_id = typeck_tables.type_dependent_def_id(hir_id).expect("fail");
+            //     let param_env = self.tcx.param_env(method_id);
+            //     println!("into method call: {:#?}", expr);
+            //     if let Ok(Some(inst)) =
+            //         self.tcx.resolve_instance_raw(ParamEnvAnd { param_env, value: (method_id, substs) })
+            //     {
+                    
+            //         let res_def_id = inst.def_id();
+            //         // println!("caller: {:?}", self.cur_fn);
+            //         // println!("def_id: {:?}, get_path: {:#?}", res_def_id, self.tcx.def_path_str(res_def_id));
+            //         match self.tcx.hir().get_if_local(res_def_id) {
+            //             Some(rustc_hir::Node::TraitItem(rustc_hir::TraitItem { span, .. })) => {
+            //                 // dynamic calls resolve only to the trait method decl
+            //                 let new_call = Call {
+            //                     call_expr: hir_id,
+            //                     call_expr_span: expr.span,
+            //                     caller: self.cur_fn,
+            //                     caller_span: None,
+            //                     callee: res_def_id,
+            //                     callee_span: *span,
+            //                     callee_path: self.tcx.def_path_str(res_def_id),
+            //                     constraint_depth: self.constraint_depth,
+            //                 };
+            //                 println!("new dynamiccall: {:#?}", new_call);
+
+            //                 // 检查是否已经存在相同的动态调用
+            //                 if let Some(existing_call) = self.dynamic_calls.get(&new_call).cloned() {
+            //                     // 如果存在相同的 caller 和 callee，比较约束深度
+            //                     if existing_call.should_insert(self.constraint_depth) {
+            //                         // 移除现有的调用
+            //                         self.dynamic_calls.remove(&existing_call);
+            //                         // 插入新的调用
+            //                         self.dynamic_calls.insert(new_call);
+            //                         //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+            //                     }
+            //                 } else {
+            //                     self.dynamic_calls.insert(new_call);
+            //                     //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+            //                 }
+            //             }
+            //             Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem { span, .. })) |
+            //             Some(rustc_hir::Node::Item(rustc_hir::Item { span, .. })) |
+            //             Some(rustc_hir::Node::ForeignItem(rustc_hir::ForeignItem { span, .. })) => {
+            //                 // calls for which the receiver's type can be resolved
+            //                 let new_call = Call {
+            //                     call_expr: hir_id,
+            //                     call_expr_span: expr.span,
+            //                     caller: self.cur_fn,
+            //                     caller_span: None,
+            //                     callee: res_def_id,
+            //                     callee_span: *span,
+            //                     callee_path: self.tcx.def_path_str(res_def_id),
+            //                     constraint_depth: self.constraint_depth,
+            //                 };
+
+            //                 println!("new static call: {:#?}", new_call);
+            //                 // 检查是否已经存在相同的静态调用
+            //                 if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
+            //                     // 如果存在相同的 caller 和 callee，比较约束深度
+            //                     if existing_call.should_insert(self.constraint_depth) {
+            //                         // 移除现有的调用
+            //                         self.static_calls.remove(&existing_call);
+            //                         // 插入新的调用
+            //                         self.static_calls.insert(new_call);
+            //                         //println!("replaced new call, constraint_depth: {}", self.constraint_depth);
+            //                     }
+            //                 } else {
+            //                     self.static_calls.insert(new_call);
+            //                     //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+            //                 }
+            //             }
+            //             None => {
+            //                 let new_call = Call {
+            //                     call_expr: hir_id,
+            //                     call_expr_span: expr.span,
+            //                     caller: self.cur_fn,
+            //                     caller_span: None,
+            //                     callee: res_def_id,
+            //                     callee_span: Span::default(),
+            //                     callee_path: self.tcx.def_path_str(res_def_id),
+            //                     constraint_depth: self.constraint_depth,
+            //                 };
+
+            //                 // println!("new static call: {:#?}", new_call);
+            //                 // 检查是否已经存在相同的调用
+            //                 if let Some(existing_call) = self.static_calls.get(&new_call).cloned() {
+            //                     // 如果存在相同的 caller 和 callee，比较约束深度
+            //                     if existing_call.should_insert(self.constraint_depth) {
+            //                         // 移除现有的调用
+            //                         self.non_local_calls.remove(&existing_call);
+            //                         // 插入新的调用
+            //                         self.non_local_calls.insert(new_call);
+            //                         //println!("replaced new call, constraint_depth: {}", self.constraint_depth);
+            //                     }
+            //                 } else {
+            //                     self.non_local_calls.insert(new_call);
+            //                     //println!("Inserted new call, constraint_depth: {}", self.constraint_depth);
+            //                 }
+            //             },
+            //             _ => todo!()
+            //         };
+            //     }
+            //     intravisit::walk_expr(self, expr); // 确保遍历所有表达式
+            // },
             _ => {
                 //println!("Processing other expression: {:?}", expr);
                 intravisit::walk_expr(self, expr); // 确保遍历所有表达式
-            }
-            
+            }  
         }
-
-        
         if flag {
             self.constraint_depth = old_depth; // 恢复之前的深度
             //println!("Exiting expression {:?}, restored constraint_depth to {}", expr, self.constraint_depth);

@@ -1,59 +1,59 @@
-// mod a; 
-// use crate::a::fun_method::{S1, S}; 
+mod a; 
+use crate::a::fun_method::{S1, S, R, T}; 
 
-// fn main() {
-//     let s = S {};
-//     // let r = R {};
+fn main() {
+    let s = S {};
+    let r = R {};
 
-//     // // 测试 if 表达式
-//     // s.met();
+    // // 测试 if 表达式
+    // s.met();
 
-//     // for loop
-//     // for i in 0..100{
-//     //     s.bla();
-//     // }
-//     let i = 0;
-//     // while(i < 100){
-//     //     s.bla();
-//     // }
+    // for loop
+    // for i in 0..100{
+    //     s.bla();
+    // }
+    let i = 0;
+    // while(i < 100){
+    //     s.bla();
+    // }
     
-//     loop{
-//         if(i < 100){
-//             s.bla();
-//         }
+    // loop{
+    //     if i < 100 {
+    //         s.bla();
+    //     }
         
-//     }
-//     // s.met();
-//     // println!("lla");
-//     // let a = true && false;
-//     // // 测试嵌套 if 和函数调用
-//     // if S1::should_call_bla(1) && S1::should_call_bla1(2) && S1::should_call_bla2(3){
-//     //     s.bla();
-//     // }
+    // }
+    // s.met();
+    // println!("lla");
+    // let a = true && false;
+    // // 测试嵌套 if 和函数调用
+    if S1::should_call_bla(1) && S1::should_call_bla1(2) && S1::should_call_bla2(3){
+        s.bla();
+    }
 
 
-//     // // 测试复杂条件
-//     // let mut count = 0;
-//     // while count < 5 {
-//     //     if S1::should_call_bla2(count) {
-//     //         println!("Count matches condition: {}", count);
-//     //     }
-//     //     count += 1;
-//     // }
-//     // let mut a = 0;
-//     //just loop
-//     // loop {
-//     //     a += 1;
-//     //     if s.test_while(a) >= 10 {
-//     //         break;
-//     //     }
-//     // }
+    // // 测试复杂条件
+    // let mut count = 0;
+    // while count < 5 {
+    //     if S1::should_call_bla2(count) {
+    //         println!("Count matches condition: {}", count);
+    //     }
+    //     count += 1;
+    // }
+    // let mut a = 0;
+    //just loop
+    // loop {
+    //     a += 1;
+    //     if s.test_while(a) >= 10 {
+    //         break;
+    //     }
+    // }
 
-//     //while loop
-//     // while (s.test_while(a) < 10 || s.test_while1(a) < 10) {
-//     //     a += 1;
-//     // }
-// }
+    //while loop
+    // while (s.test_while(a) < 10 || s.test_while1(a) < 10) {
+    //     a += 1;
+    // }
+
 
     // let t: &dyn T = &s;
     // let r: &dyn T = &r;
@@ -64,7 +64,7 @@
     // } else {
     //     println!("both false");
     // }
-// }
+}
 
 
 // struct S;
@@ -175,9 +175,9 @@
 //     }
 // }
 
-fn a()->bool{
-    false
-}
+// fn a()->bool{
+//     false
+// }
 
 // fn main() {
 //     if test_assert(){
@@ -190,37 +190,58 @@ fn a()->bool{
 //     return true;
 // }
 
-fn b()->bool{
-    true
-}
+// fn b()->bool{
+//     true
+// }
 
-fn c()->bool{
-    true
-}
+// fn c()->bool{
+//     true
+// }
 
-fn main(){
-    // for i in 0..1{
-    //     let a = if true{
-    //         a();
-    //     }else{
-    //         b();
-    //     };
-    // }
-    let domain_buffer = "hello";
-
-    for label in &domain_buffer.split(|c| *c == '.') {
-        if true{
-            a();
-        }
-        else if true{
-            b();
-        }else{
-            c();
-        }
-    }
+// fn main(){
+//     for i in 0..1{
+//         let a = if true{
+//             a();
+//         }else{
+//             b();
+//         };
+//     }
     
-}
+// }
 
 
+// trait Foo {
+//     fn do_foo(&self);
+// }
 
+// struct A;
+// struct B;
+
+// impl Foo for A {
+//     fn do_foo(&self) {
+//         println!("A does foo");
+//     }
+// }
+
+// impl Foo for B {
+//     fn do_foo(&self) {
+//         println!("B does foo");
+//     }
+// }
+
+// fn call_foo<T: Foo>(x: T) {
+//     x.do_foo();
+// }
+
+// fn main() {
+//     let a1 = A;
+//     let a = A;
+//     let b = B;
+    
+//     call_foo(a); // 静态分发
+//     call_foo(b); // 静态分发
+
+//     let dynamic_foo: &dyn Foo = &a1;
+//     dynamic_foo.do_foo(); // 动态分发
+// }
 
