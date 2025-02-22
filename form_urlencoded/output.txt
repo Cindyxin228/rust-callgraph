@@ -1,0 +1,239 @@
+Target name: form_urlencoded
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:81 ~ form_urlencoded[8cfe]::string).3),
+    call_expr_span: src/lib.rs:359:5: 362:25 (#0),
+    caller: Some(
+        DefId(0:81 ~ form_urlencoded[8cfe]::string),
+    ),
+    caller_span: None,
+    callee: DefId(0:51 ~ form_urlencoded[8cfe]::Target::as_mut_string),
+    callee_span: src/lib.rs:359:5: 362:25 (#0),
+    caller_path: "form_urlencoded::string",
+    callee_path: "form_urlencoded::Target::as_mut_string",
+    constraint_depth: 0,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:67 ~ form_urlencoded[8cfe]::{impl#6}::for_suffix).9),
+    call_expr_span: src/lib.rs:223:12: 223:34 (#0),
+    caller: Some(
+        DefId(0:67 ~ form_urlencoded[8cfe]::{impl#6}::for_suffix),
+    ),
+    caller_span: None,
+    callee: DefId(0:51 ~ form_urlencoded[8cfe]::Target::as_mut_string),
+    callee_span: src/lib.rs:223:12: 223:34 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::for_suffix",
+    callee_path: "form_urlencoded::Target::as_mut_string",
+    constraint_depth: 0,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:67 ~ form_urlencoded[8cfe]::{impl#6}::for_suffix).37),
+    call_expr_span: src/lib.rs:227:17: 227:39 (#0),
+    caller: Some(
+        DefId(0:67 ~ form_urlencoded[8cfe]::{impl#6}::for_suffix),
+    ),
+    caller_span: None,
+    callee: DefId(0:51 ~ form_urlencoded[8cfe]::Target::as_mut_string),
+    callee_span: src/lib.rs:227:17: 227:39 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::for_suffix",
+    callee_path: "form_urlencoded::Target::as_mut_string",
+    constraint_depth: 1,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:72 ~ form_urlencoded[8cfe]::{impl#6}::extend_pairs).26),
+    call_expr_span: src/lib.rs:296:30: 296:43 (#0),
+    caller: Some(
+        DefId(0:72 ~ form_urlencoded[8cfe]::{impl#6}::extend_pairs),
+    ),
+    caller_span: None,
+    callee: DefId(1:2784 ~ core[f118]::borrow::Borrow::borrow),
+    callee_span: src/lib.rs:296:30: 296:43 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::extend_pairs",
+    callee_path: "core::borrow::Borrow::borrow",
+    constraint_depth: 1,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:72 ~ form_urlencoded[8cfe]::{impl#6}::extend_pairs).45),
+    call_expr_span: src/lib.rs:301:21: 301:31 (#0),
+    caller: Some(
+        DefId(0:72 ~ form_urlencoded[8cfe]::{impl#6}::extend_pairs),
+    ),
+    caller_span: None,
+    callee: DefId(1:3063 ~ core[f118]::convert::AsRef::as_ref),
+    callee_span: src/lib.rs:301:21: 301:31 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::extend_pairs",
+    callee_path: "core::convert::AsRef::as_ref",
+    constraint_depth: 1,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:72 ~ form_urlencoded[8cfe]::{impl#6}::extend_pairs).49),
+    call_expr_span: src/lib.rs:302:21: 302:31 (#0),
+    caller: Some(
+        DefId(0:72 ~ form_urlencoded[8cfe]::{impl#6}::extend_pairs),
+    ),
+    caller_span: None,
+    callee: DefId(1:3063 ~ core[f118]::convert::AsRef::as_ref),
+    callee_span: src/lib.rs:302:21: 302:31 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::extend_pairs",
+    callee_path: "core::convert::AsRef::as_ref",
+    constraint_depth: 1,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:76 ~ form_urlencoded[8cfe]::{impl#6}::extend_keys_only).26),
+    call_expr_span: src/lib.rs:325:25: 325:46 (#0),
+    caller: Some(
+        DefId(0:76 ~ form_urlencoded[8cfe]::{impl#6}::extend_keys_only),
+    ),
+    caller_span: None,
+    callee: DefId(1:3063 ~ core[f118]::convert::AsRef::as_ref),
+    callee_span: src/lib.rs:325:25: 325:46 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::extend_keys_only",
+    callee_path: "core::convert::AsRef::as_ref",
+    constraint_depth: 1,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:76 ~ form_urlencoded[8cfe]::{impl#6}::extend_keys_only).28),
+    call_expr_span: src/lib.rs:325:25: 325:37 (#0),
+    caller: Some(
+        DefId(0:76 ~ form_urlencoded[8cfe]::{impl#6}::extend_keys_only),
+    ),
+    caller_span: None,
+    callee: DefId(1:2784 ~ core[f118]::borrow::Borrow::borrow),
+    callee_span: src/lib.rs:325:25: 325:37 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::extend_keys_only",
+    callee_path: "core::borrow::Borrow::borrow",
+    constraint_depth: 1,
+}
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:79 ~ form_urlencoded[8cfe]::{impl#6}::finish).3),
+    call_expr_span: src/lib.rs:345:9: 348:22 (#0),
+    caller: Some(
+        DefId(0:79 ~ form_urlencoded[8cfe]::{impl#6}::finish),
+    ),
+    caller_span: None,
+    callee: DefId(0:52 ~ form_urlencoded[8cfe]::Target::finish),
+    callee_span: src/lib.rs:345:9: 348:22 (#0),
+    caller_path: "form_urlencoded::Serializer::<'a, T>::finish",
+    callee_path: "form_urlencoded::Target::finish",
+    constraint_depth: 0,
+}
+Functions:
+  Function: <ParseIntoOwned<'a> as core::iter::Iterator>::next, Span: src/lib.rs:110:5: 114:6 (#0)
+  Function: Serializer::<'a, T>::finish, Span: src/lib.rs:344:5: 349:6 (#0)
+  Function: <&'a mut _::string::String as Target>::finish, Span: src/lib.rs:202:5: 204:6 (#0)
+  Function: Serializer::<'a, T>::encoding_override, Span: src/lib.rs:247:5: 250:6 (#0)
+  Function: byte_serialized_unchanged, Span: src/lib.rs:131:1: 133:2 (#0)
+  Function: append_encoded, Span: src/lib.rs:388:1: 390:2 (#0)
+  Function: <&'a mut _::string::String as Target>::as_mut_string, Span: src/lib.rs:199:5: 201:6 (#0)
+  Function: Serializer::<'a, T>::new, Span: src/lib.rs:213:5: 215:6 (#0)
+  Function: Serializer::<'a, T>::extend_keys_only, Span: src/lib.rs:316:5: 330:6 (#0)
+  Function: byte_serialize, Span: src/lib.rs:121:1: 123:2 (#0)
+  Function: <_::string::String as Target>::as_mut_string, Span: src/lib.rs:189:5: 191:6 (#0)
+  Function: <ByteSerialize<'a> as core::iter::Iterator>::next, Span: src/lib.rs:138:5: 163:6 (#0)
+  Function: <_::string::String as Target>::finish, Span: src/lib.rs:192:5: 194:6 (#0)
+  Function: Serializer::<'a, T>::for_suffix, Span: src/lib.rs:222:5: 236:6 (#0)
+  Function: append_pair, Span: src/lib.rs:365:1: 376:2 (#0)
+  Function: <ByteSerialize<'a> as core::iter::Iterator>::size_hint, Span: src/lib.rs:165:5: 171:6 (#0)
+  Function: append_separator_if_needed, Span: src/lib.rs:352:1: 356:2 (#0)
+  Function: append_key_only, Span: src/lib.rs:378:1: 386:2 (#0)
+  Function: encode, Span: src/lib.rs:392:1: 397:2 (#0)
+  Function: Parse::<'a>::into_owned, Span: src/lib.rs:97:5: 99:6 (#0)
+  Function: Serializer::<'a, T>::append_pair, Span: src/lib.rs:255:5: 264:6 (#0)
+  Function: Serializer::<'a, T>::clear, Span: src/lib.rs:241:5: 244:6 (#0)
+  Function: Serializer::<'a, T>::extend_pairs, Span: src/lib.rs:286:5: 307:6 (#0)
+  Function: decode_utf8_lossy, Span: src/lib.rs:399:1: 425:2 (#0)
+  Function: <Parse<'a> as core::iter::Iterator>::next, Span: src/lib.rs:51:5: 67:6 (#0)
+  Function: replace_plus, Span: src/lib.rs:79:1: 93:2 (#0)
+  Function: decode, Span: src/lib.rs:70:1: 76:2 (#0)
+  Function: parse, Span: src/lib.rs:39:1: 41:2 (#0)
+  Function: string, Span: src/lib.rs:358:1: 363:2 (#0)
+  Function: Serializer::<'a, T>::append_key_only, Span: src/lib.rs:269:5: 277:6 (#0)
+
+Method Declarations:
+  Method Declaration: Target::as_mut_string
+  Method Declaration: Target::finish
+
+Method Implementations:
+  Method Implementation for Target::as_mut_string: [DefId(0:55 ~ form_urlencoded[8cfe]::{impl#4}::as_mut_string), DefId(0:60 ~ form_urlencoded[8cfe]::{impl#5}::as_mut_string)]
+  Method Implementation for core::iter::Iterator::next: [DefId(0:19 ~ form_urlencoded[8cfe]::{impl#0}::next), DefId(0:34 ~ form_urlencoded[8cfe]::{impl#2}::next), DefId(0:41 ~ form_urlencoded[8cfe]::{impl#3}::next)]
+  Method Implementation for Target::finish: [DefId(0:56 ~ form_urlencoded[8cfe]::{impl#4}::finish), DefId(0:61 ~ form_urlencoded[8cfe]::{impl#5}::finish)]
+  Method Implementation for core::iter::Iterator::size_hint: [DefId(0:43 ~ form_urlencoded[8cfe]::{impl#3}::size_hint)]
+
+Static Calls:
+form_urlencoded::Serializer::<'a, T>::for_suffix --- core::fmt::Arguments::new_v1 (Constraint Depth: 1)
+form_urlencoded::decode --- _::borrow::Cow::Owned (Constraint Depth: 1)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- core::str::from_utf8_unchecked (Constraint Depth: 1)
+form_urlencoded::append_encoded --- form_urlencoded::byte_serialize (Constraint Depth: 0)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- form_urlencoded::byte_serialized_unchanged (Constraint Depth: 1)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- core::prelude::v1::Some (Constraint Depth: 1)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- form_urlencoded::decode (Constraint Depth: 0)
+form_urlencoded::decode_utf8_lossy --- core::panicking::panic (Constraint Depth: 3)
+form_urlencoded::decode_utf8_lossy --- _::borrow::Cow::Owned (Constraint Depth: 2)
+form_urlencoded::<ParseIntoOwned<'a> as core::iter::Iterator>::next --- form_urlencoded::<Parse<'a> as core::iter::Iterator>::next (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::append_pair --- form_urlencoded::string (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::append_key_only --- form_urlencoded::append_key_only (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::extend_pairs --- form_urlencoded::string (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::extend_pairs --- form_urlencoded::append_pair (Constraint Depth: 1)
+form_urlencoded::append_pair --- form_urlencoded::append_separator_if_needed (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::append_pair --- form_urlencoded::append_pair (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::extend_keys_only --- form_urlencoded::string (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::append_key_only --- form_urlencoded::string (Constraint Depth: 0)
+form_urlencoded::decode --- form_urlencoded::decode_utf8_lossy (Constraint Depth: 0)
+form_urlencoded::decode --- form_urlencoded::replace_plus (Constraint Depth: 0)
+form_urlencoded::decode_utf8_lossy --- _::string::String::from_utf8_unchecked (Constraint Depth: 2)
+form_urlencoded::Serializer::<'a, T>::for_suffix --- core::prelude::v1::Some (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::for_suffix --- core::panicking::panic_fmt (Constraint Depth: 1)
+form_urlencoded::append_encoded --- form_urlencoded::encode (Constraint Depth: 0)
+form_urlencoded::decode_utf8_lossy --- _::string::String::from_utf8_lossy (Constraint Depth: 1)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- core::prelude::v1::Some (Constraint Depth: 0)
+form_urlencoded::replace_plus --- _::borrow::Cow::Borrowed (Constraint Depth: 1)
+form_urlencoded::Serializer::<'a, T>::for_suffix --- core::fmt::rt::Argument::new_display (Constraint Depth: 1)
+form_urlencoded::append_pair --- form_urlencoded::append_encoded (Constraint Depth: 0)
+form_urlencoded::append_key_only --- form_urlencoded::append_encoded (Constraint Depth: 0)
+form_urlencoded::decode --- percent_encoding::percent_decode (Constraint Depth: 1)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::size_hint --- core::prelude::v1::Some (Constraint Depth: 1)
+form_urlencoded::Serializer::<'a, T>::extend_keys_only --- form_urlencoded::append_key_only (Constraint Depth: 1)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- percent_encoding::percent_encode_byte (Constraint Depth: 3)
+form_urlencoded::Serializer::<'a, T>::clear --- form_urlencoded::string (Constraint Depth: 0)
+form_urlencoded::append_key_only --- form_urlencoded::append_separator_if_needed (Constraint Depth: 0)
+form_urlencoded::replace_plus --- _::borrow::Cow::Owned (Constraint Depth: 1)
+
+Dynamic Calls:
+form_urlencoded::Serializer::<'a, T>::for_suffix --- form_urlencoded::Target::as_mut_string (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::extend_pairs --- core::convert::AsRef::as_ref (Constraint Depth: 1)
+form_urlencoded::Serializer::<'a, T>::extend_pairs --- core::borrow::Borrow::borrow (Constraint Depth: 1)
+form_urlencoded::string --- form_urlencoded::Target::as_mut_string (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::extend_keys_only --- core::convert::AsRef::as_ref (Constraint Depth: 1)
+form_urlencoded::Serializer::<'a, T>::extend_keys_only --- core::borrow::Borrow::borrow (Constraint Depth: 1)
+form_urlencoded::Serializer::<'a, T>::finish --- form_urlencoded::Target::finish (Constraint Depth: 0)
+
+Non Local Calls:
+form_urlencoded::encode --- <T as core::convert::Into<U>>::into (Constraint Depth: 0)
+form_urlencoded::replace_plus --- <core::slice::Iter<'a, T> as core::iter::Iterator>::position (Constraint Depth: 1)
+form_urlencoded::decode_utf8_lossy --- core::str::<impl str>::as_bytes (Constraint Depth: 2)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::size_hint --- core::slice::<impl [T]>::len (Constraint Depth: 1)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- <core::slice::Iter<'a, T> as core::iter::Iterator>::position (Constraint Depth: 1)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::size_hint --- core::slice::<impl [T]>::is_empty (Constraint Depth: 0)
+form_urlencoded::append_pair --- _::string::String::push (Constraint Depth: 0)
+form_urlencoded::string --- core::option::Option::<T>::as_mut (Constraint Depth: 0)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
+form_urlencoded::append_separator_if_needed --- _::string::String::len (Constraint Depth: 0)
+form_urlencoded::replace_plus --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
+form_urlencoded::<ParseIntoOwned<'a> as core::iter::Iterator>::next --- core::option::Option::<T>::map (Constraint Depth: 0)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- core::slice::<impl [T]>::split_at (Constraint Depth: 2)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- core::option::Option::<T>::unwrap_or (Constraint Depth: 0)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- core::slice::<impl [T]>::splitn (Constraint Depth: 0)
+form_urlencoded::append_encoded --- <_::string::String as core::iter::Extend<&'a str>>::extend (Constraint Depth: 0)
+form_urlencoded::append_separator_if_needed --- _::string::String::push (Constraint Depth: 1)
+form_urlencoded::decode --- <T as core::convert::Into<U>>::into (Constraint Depth: 1)
+form_urlencoded::string --- core::option::Option::<T>::expect (Constraint Depth: 0)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- <core::slice::SplitN<'a, T, P> as core::iter::Iterator>::next (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::finish --- core::option::Option::<T>::expect (Constraint Depth: 0)
+form_urlencoded::encode --- core::str::<impl str>::as_bytes (Constraint Depth: 0)
+form_urlencoded::replace_plus --- _::slice::<impl _::borrow::ToOwned for [T]>::to_owned (Constraint Depth: 1)
+form_urlencoded::Serializer::<'a, T>::clear --- _::string::String::truncate (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::finish --- core::option::Option::<T>::take (Constraint Depth: 0)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- core::slice::<impl [T]>::is_empty (Constraint Depth: 0)
+form_urlencoded::<ByteSerialize<'a> as core::iter::Iterator>::next --- core::slice::<impl [T]>::split_first (Constraint Depth: 0)
+form_urlencoded::<ParseIntoOwned<'a> as core::iter::Iterator>::next --- _::borrow::Cow::<'_, B>::into_owned (Constraint Depth: 0)
+form_urlencoded::<Parse<'a> as core::iter::Iterator>::next --- core::option::Option::<T>::unwrap (Constraint Depth: 0)
+form_urlencoded::Serializer::<'a, T>::for_suffix --- _::string::String::len (Constraint Depth: 0)

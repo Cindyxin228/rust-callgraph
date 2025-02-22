@@ -31,6 +31,8 @@ fn main() {
         s.bla();
     }
 
+    let a = String::new();
+
 
     // // 测试复杂条件
     // let mut count = 0;

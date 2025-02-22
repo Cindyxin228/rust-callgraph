@@ -1,0 +1,1430 @@
+Target name: callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:76 ~ callgraph[07d9]::visitor::{impl#5}::visit_impl_item).116),
+    call_expr_span: src/visitor.rs:677:40: 680:40 (#0),
+    caller: Some(
+        DefId(0:76 ~ callgraph[07d9]::visitor::{impl#5}::visit_impl_item),
+    ),
+    caller_span: None,
+    callee: DefId(2:8499 ~ core[f118]::iter::traits::iterator::Iterator::next),
+    callee_span: src/visitor.rs:677:40: 680:40 (#0),
+    caller_path: "callgraph::<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item",
+    callee_path: "std::iter::Iterator::next",
+    constraint_depth: 5,
+}
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+Functions:
+  Function: visitor::CallgraphVisitor::<'tcx>::handle_call, Span: src/visitor.rs:173:5: 211:6 (#0)
+  Function: visitor::CallgraphVisitor::<'tcx>::get_full_path, Span: src/visitor.rs:396:5: 423:6 (#0)
+  Function: visitor::Call::should_insert, Span: src/visitor.rs:72:5: 74:6 (#0)
+  Function: visitor::CallgraphVisitor::<'tcx>::process_method_call, Span: src/visitor.rs:213:5: 331:6 (#0)
+  Function: <visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item, Span: src/visitor.rs:610:5: 624:6 (#0)
+  Function: visitor::CallgraphVisitor::<'tcx>::dump, Span: src/visitor.rs:121:5: 171:6 (#0)
+  Function: <visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::nested_visit_map, Span: src/visitor.rs:468:5: 470:6 (#0)
+  Function: <visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr, Span: src/visitor.rs:474:5: 607:6 (#0)
+  Function: visitor::CallgraphVisitor::<'tcx>::get_current_crate_name, Span: src/visitor.rs:425:5: 453:6 (#0)
+  Function: visitor::CallgraphVisitor::<'tcx>::process_call, Span: src/visitor.rs:333:5: 393:6 (#0)
+  Function: visitor::CallgraphVisitor::<'tcx>::new, Span: src/visitor.rs:106:5: 119:6 (#0)
+  Function: <visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item, Span: src/visitor.rs:660:5: 703:6 (#0)
+  Function: analyze, Span: src/lib.rs:43:1: 48:2 (#0)
+  Function: <visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item, Span: src/visitor.rs:628:5: 655:6 (#0)
+  Function: compile_time_sysroot, Span: src/lib.rs:21:1: 41:2 (#0)
+  Function: <visitor::Call as std::cmp::PartialEq>::eq, Span: src/visitor.rs:66:5: 68:6 (#0)
+  Function: <visitor::Call as std::hash::Hash>::hash, Span: src/visitor.rs:58:5: 61:6 (#0)
+
+Method Declarations:
+
+Method Implementations:
+  Method Implementation for rustc_hir::intravisit::Visitor::visit_trait_item: [DefId(0:75 ~ callgraph[07d9]::visitor::{impl#5}::visit_trait_item)]
+  Method Implementation for rustc_hir::intravisit::Visitor::visit_impl_item: [DefId(0:76 ~ callgraph[07d9]::visitor::{impl#5}::visit_impl_item)]
+  Method Implementation for std::cmp::PartialEq::eq: [DefId(0:42 ~ callgraph[07d9]::visitor::{impl#2}::eq)]
+  Method Implementation for rustc_hir::intravisit::Visitor::nested_visit_map: [DefId(0:71 ~ callgraph[07d9]::visitor::{impl#5}::nested_visit_map)]
+  Method Implementation for std::hash::Hash::hash: [DefId(0:39 ~ callgraph[07d9]::visitor::{impl#1}::hash)]
+  Method Implementation for rustc_hir::intravisit::Visitor::visit_expr: [DefId(0:72 ~ callgraph[07d9]::visitor::{impl#5}::visit_expr)]
+  Method Implementation for rustc_hir::intravisit::Visitor::visit_item: [DefId(0:74 ~ callgraph[07d9]::visitor::{impl#5}::visit_item)]
+
+Static Calls:
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- core::fmt::rt::Argument::new_debug (Constraint Depth: 1)
+compile_time_sysroot --- core::fmt::rt::Argument::new_display (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- core::fmt::rt::Argument::new_display (Constraint Depth: 0)
+compile_time_sysroot --- std::prelude::v1::Some (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- std::fs::read_to_string (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_call --- callgraph::visitor::CallgraphVisitor::<'tcx>::get_full_path (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- rustc_hir::intravisit::walk_item (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::new --- std::collections::HashMap::new (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::vec::Vec::new (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- core::fmt::rt::Placeholder::new (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::handle_call --- callgraph::visitor::Call::should_insert (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- callgraph::visitor::CallgraphVisitor::<'tcx>::handle_call (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_call --- callgraph::visitor::CallgraphVisitor::<'tcx>::handle_call (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- rustc_hir::intravisit::walk_trait_item (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::prelude::v1::Some (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- std::io::_print (Constraint Depth: 1)
+compile_time_sysroot --- std::fmt::format (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::dump --- std::fmt::Arguments::new_const (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::dump --- std::fmt::Arguments::new_v1 (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- core::fmt::rt::UnsafeArg::new (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_call --- std::prelude::v1::Some (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- std::io::_print (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- std::prelude::v1::Some (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_hir::intravisit::walk_impl_item (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- std::env::current_dir (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- core::panicking::panic (Constraint Depth: 4)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- std::fmt::Arguments::new_v1_formatted (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_span::Span::default (Constraint Depth: 4)
+analyze --- callgraph::visitor::CallgraphVisitor::new (Constraint Depth: 0)
+compile_time_sysroot --- std::fmt::Arguments::new_v1 (Constraint Depth: 1)
+analyze --- callgraph::visitor::CallgraphVisitor::<'tcx>::dump (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::dump --- std::io::_print (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- callgraph::visitor::CallgraphVisitor::<'tcx>::get_full_path (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- std::string::String::new (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- toml::from_str (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- callgraph::visitor::CallgraphVisitor::<'tcx>::process_call (Constraint Depth: 1)
+compile_time_sysroot --- std::hint::must_use (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_call --- rustc_hir::intravisit::walk_expr (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- callgraph::visitor::CallgraphVisitor::<'tcx>::get_current_crate_name (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- std::hint::must_use (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- std::prelude::v1::Some (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- callgraph::<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- callgraph::visitor::CallgraphVisitor::<'tcx>::process_method_call (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::new --- std::collections::HashSet::new (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- rustc_hir::intravisit::walk_expr (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::dump --- core::fmt::rt::Argument::new_display (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::dump --- core::fmt::rt::Argument::new_debug (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- std::prelude::v1::Some (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- std::fmt::Arguments::new_v1 (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- std::fmt::format (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_hir::intravisit::walk_expr (Constraint Depth: 0)
+
+Dynamic Calls:
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- std::iter::Iterator::next (Constraint Depth: 5)
+
+Non Local Calls:
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::vec::Vec::<T, A>::push (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- rustc_hir::OwnerId::to_def_id (Constraint Depth: 1)
+compile_time_sysroot --- std::option::Option::<T>::or (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::handle_call --- std::option::Option::<&T>::cloned (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- std::collections::HashSet::<T, S>::insert (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_call --- <T as std::string::ToString>::to_string (Constraint Depth: 4)
+analyze --- rustc_middle::hir::map::Map::<'hir>::visit_all_item_likes_in_crate (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_call --- <std::string::String as std::clone::Clone>::clone (Constraint Depth: 4)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- std::option::Option::<T>::unwrap_or_else (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- rustc_middle::ty::print::pretty::<impl rustc_middle::ty::TyCtxt<'t>>::def_path_str (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- rustc_hir::OwnerId::to_def_id (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_hir::ImplItem::<'hir>::hir_id (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- <str as std::string::ToString>::to_string (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- toml::Value::get (Constraint Depth: 0)
+analyze --- rustc_middle::hir::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir (Constraint Depth: 0)
+<visitor::Call as std::hash::Hash>::hash --- <rustc_span::def_id::DefId as std::hash::Hash>::hash (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- std::result::Result::<T, E>::ok (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- rustc_session::session::Session::source_map (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- std::collections::hash_map::Entry::<'a, K, V>::or_default (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::process_call --- <str as std::string::ToString>::to_string (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::associated_items (Constraint Depth: 5)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- rustc_hir::Item::<'hir>::hir_id (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- std::cmp::Ord::min (Constraint Depth: 3)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- rustc_span::Span::is_dummy (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::ty::TypeckResults::<'tcx>::node_args (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_middle::hir::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- std::vec::Vec::<T, A>::push (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_hir::OwnerId::to_def_id (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::nested_visit_map --- rustc_middle::hir::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::collections::hash_map::Entry::<'a, K, V>::or_default (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- <str as std::string::ToString>::to_string (Constraint Depth: 2)
+compile_time_sysroot --- std::str::<impl std::borrow::ToOwned for str>::to_owned (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_hir::def::Res::<Id>::def_id (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::impl_of_method (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::dump --- <str as std::string::ToString>::to_string (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::handle_call --- std::collections::HashSet::<T, S>::remove (Constraint Depth: 3)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::typeck (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- std::path::Path::join (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_span::<impl rustc_span::Span>::from_expansion (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::param_env (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- rustc_span::source_map::SourceMap::span_to_snippet (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::ty::Instance::<'tcx>::def_id (Constraint Depth: 3)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- std::collections::HashMap::<K, V, S>::entry (Constraint Depth: 2)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- std::option::Option::<T>::map (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::hir::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir (Constraint Depth: 4)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- rustc_span::<impl rustc_span::Span>::from_expansion (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- rustc_hir::TraitItem::<'hir>::hir_id (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- rustc_span::Span::is_dummy (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- core::str::<impl str>::contains (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::dump --- rustc_middle::ty::print::pretty::<impl rustc_middle::ty::TyCtxt<'t>>::def_path_str (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::collections::HashSet::<T, S>::insert (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::hir::map::Map::<'hir>::get_if_local (Constraint Depth: 4)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- rustc_span::def_id::DefId::is_local (Constraint Depth: 0)
+compile_time_sysroot --- std::option::Option::<T>::expect (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_expr --- std::option::Option::<T>::as_ref (Constraint Depth: 1)
+<visitor::Call as std::hash::Hash>::hash --- <std::option::Option<T> as std::hash::Hash>::hash (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::resolve_instance_raw (Constraint Depth: 3)
+visitor::CallgraphVisitor::<'tcx>::handle_call --- std::collections::HashSet::<T, S>::get (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_full_path --- core::str::<impl str>::starts_with (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_middle::hir::map::Map::<'hir>::get_if_local (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- toml::Value::as_str (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- <str as std::string::ToString>::to_string (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- std::option::Option::<T>::map (Constraint Depth: 2)
+visitor::CallgraphVisitor::<'tcx>::get_current_crate_name --- std::path::Path::exists (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- rustc_span::<impl rustc_span::Span>::from_expansion (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_span::Span::is_dummy (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::collections::HashMap::<K, V, S>::entry (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_middle::ty::AssocItems::filter_by_name_unhygienic (Constraint Depth: 5)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_item --- std::collections::HashSet::<T, S>::insert (Constraint Depth: 1)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_impl_item --- rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::trait_id_of_impl (Constraint Depth: 4)
+compile_time_sysroot --- std::option::Option::<T>::is_some (Constraint Depth: 0)
+visitor::CallgraphVisitor::<'tcx>::process_method_call --- rustc_middle::ty::TypeckResults::<'tcx>::type_dependent_def_id (Constraint Depth: 0)
+<visitor::CallgraphVisitor<'tcx> as rustc_hir::intravisit::Visitor<'tcx>>::visit_trait_item --- std::collections::HashMap::<K, V, S>::insert (Constraint Depth: 1)
+visitor::CallgraphVisitor::<'tcx>::handle_call --- std::collections::HashSet::<T, S>::insert (Constraint Depth: 2)
+Target name: callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+Functions:
+  Function: <CallgraphCallbacks as rustc_driver::Callbacks>::after_analysis, Span: src/bin/callgraph.rs:16:5: 23:6 (#0)
+  Function: main, Span: src/bin/callgraph.rs:28:1: 50:2 (#0)
+
+Method Declarations:
+
+Method Implementations:
+  Method Implementation for rustc_driver::Callbacks::after_analysis: [DefId(0:16 ~ callgraph[4401]::{impl#0}::after_analysis)]
+
+Static Calls:
+main --- std::env::args (Constraint Depth: 0)
+<CallgraphCallbacks as rustc_driver::Callbacks>::after_analysis --- callgraph::analyze (Constraint Depth: 0)
+main --- rustc_driver::RunCompiler::new (Constraint Depth: 0)
+main --- callgraph::compile_time_sysroot (Constraint Depth: 0)
+
+Dynamic Calls:
+
+Non Local Calls:
+main --- std::vec::Vec::<T, A>::push (Constraint Depth: 2)
+<CallgraphCallbacks as rustc_driver::Callbacks>::after_analysis --- rustc_interface::Queries::<'tcx>::global_ctxt (Constraint Depth: 0)
+main --- std::iter::Iterator::collect (Constraint Depth: 0)
+main --- core::slice::<impl [T]>::iter (Constraint Depth: 1)
+main --- <std::slice::Iter<'a, T> as std::iter::Iterator>::any (Constraint Depth: 1)
+main --- std::str::<impl std::borrow::ToOwned for str>::to_owned (Constraint Depth: 2)
+<CallgraphCallbacks as rustc_driver::Callbacks>::after_analysis --- rustc_interface::queries::QueryResult::<'a, &'tcx rustc_middle::ty::context::GlobalCtxt<'tcx>>::enter (Constraint Depth: 0)
+main --- rustc_driver::RunCompiler::<'a, 'b>::run (Constraint Depth: 0)
+<CallgraphCallbacks as rustc_driver::Callbacks>::after_analysis --- std::result::Result::<T, E>::unwrap (Constraint Depth: 0)
+main --- std::result::Result::<T, E>::expect (Constraint Depth: 0)
+Target name: cargo-callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+new dynamic call: Call {
+    call_expr: HirId(DefId(0:12 ~ cargo_callgraph[0592]::show_error).14),
+    call_expr_span: src/bin/cargo-callgraph.rs:17:20: 17:32 (#0),
+    caller: Some(
+        DefId(0:12 ~ cargo_callgraph[0592]::show_error),
+    ),
+    caller_span: None,
+    callee: DefId(2:3063 ~ core[f118]::convert::AsRef::as_ref),
+    callee_span: src/bin/cargo-callgraph.rs:17:20: 17:32 (#0),
+    caller_path: "callgraph::show_error",
+    callee_path: "std::convert::AsRef::as_ref",
+    constraint_depth: 0,
+}
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+current_crate_name:callgraph
+Functions:
+  Function: main, Span: src/bin/cargo-callgraph.rs:220:1: 257:2 (#0)
+  Function: inside_cargo_rustc::contains_target_flag, Span: src/bin/cargo-callgraph.rs:447:5: 449:6 (#0)
+  Function: find_callgraph, Span: src/bin/cargo-callgraph.rs:146:1: 150:2 (#0)
+  Function: cargo_package, Span: src/bin/cargo-callgraph.rs:105:1: 143:2 (#0)
+  Function: get_arg_flag_value, Span: src/bin/cargo-callgraph.rs:29:1: 51:2 (#0)
+  Function: TargetKind::is_lib_str, Span: src/bin/cargo-callgraph.rs:267:5: 269:6 (#0)
+  Function: <TargetKind as std::convert::From<&cargo_metadata::Target>>::from, Span: src/bin/cargo-callgraph.rs:275:5: 283:6 (#0)
+  Function: <TargetKind as std::fmt::Display>::fmt, Span: src/bin/cargo-callgraph.rs:287:5: 297:6 (#0)
+  Function: test_sysroot_consistency::get_sysroot, Span: src/bin/cargo-callgraph.rs:156:5: 174:6 (#0)
+  Function: inside_cargo_rustc::is_target_crate, Span: src/bin/cargo-callgraph.rs:455:5: 463:6 (#0)
+  Function: version_info, Span: src/bin/cargo-callgraph.rs:99:1: 102:2 (#0)
+  Function: in_cargo_callgraph, Span: src/bin/cargo-callgraph.rs:302:1: 434:2 (#0)
+  Function: clean_package, Span: src/bin/cargo-callgraph.rs:191:1: 210:2 (#0)
+  Function: has_arg_flag, Span: src/bin/cargo-callgraph.rs:22:1: 26:2 (#0)
+  Function: get_first_arg_with_rs_suffix, Span: src/bin/cargo-callgraph.rs:92:1: 96:2 (#0)
+  Function: test_sysroot_consistency, Span: src/bin/cargo-callgraph.rs:155:1: 189:2 (#0)
+  Function: any_arg_flag, Span: src/bin/cargo-callgraph.rs:54:1: 89:2 (#0)
+  Function: inside_cargo_rustc::run_command, Span: src/bin/cargo-callgraph.rs:469:5: 484:6 (#0)
+  Function: show_error, Span: src/bin/cargo-callgraph.rs:16:1: 19:2 (#0)
+  Function: inside_cargo_rustc::is_crate_type_lib, Span: src/bin/cargo-callgraph.rs:465:5: 467:6 (#0)
+  Function: inside_cargo_rustc, Span: src/bin/cargo-callgraph.rs:436:1: 530:2 (#0)
+
+Method Declarations:
+
+Method Implementations:
+  Method Implementation for std::convert::From::from: [DefId(0:46 ~ cargo_callgraph[0592]::{impl#1}::from)]
+  Method Implementation for std::fmt::Display::fmt: [DefId(0:50 ~ cargo_callgraph[0592]::{impl#2}::fmt)]
+
+Static Calls:
+has_arg_flag --- std::env::args (Constraint Depth: 0)
+in_cargo_callgraph --- std::env::args (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- std::fmt::Arguments::new_v1 (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- core::fmt::rt::Argument::new_debug (Constraint Depth: 1)
+version_info --- callgraph::find_callgraph (Constraint Depth: 0)
+inside_cargo_rustc::is_target_crate --- callgraph::get_first_arg_with_rs_suffix (Constraint Depth: 1)
+cargo_package --- callgraph::show_error (Constraint Depth: 0)
+test_sysroot_consistency --- callgraph::test_sysroot_consistency::get_sysroot (Constraint Depth: 0)
+in_cargo_callgraph --- callgraph::TargetKind::from (Constraint Depth: 0)
+get_arg_flag_value --- std::env::args (Constraint Depth: 0)
+inside_cargo_rustc --- std::env::var (Constraint Depth: 1)
+inside_cargo_rustc::contains_target_flag --- callgraph::get_arg_flag_value (Constraint Depth: 0)
+cargo_package --- cargo_metadata::MetadataCommand::new (Constraint Depth: 0)
+show_error --- core::fmt::rt::Argument::new_display (Constraint Depth: 0)
+inside_cargo_rustc::is_crate_type_lib --- callgraph::any_arg_flag (Constraint Depth: 0)
+inside_cargo_rustc --- callgraph::inside_cargo_rustc::run_command (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- std::process::exit (Constraint Depth: 2)
+main --- std::io::_eprint (Constraint Depth: 1)
+in_cargo_callgraph --- std::fmt::Arguments::new_v1 (Constraint Depth: 1)
+test_sysroot_consistency --- std::hint::must_use (Constraint Depth: 1)
+in_cargo_callgraph --- std::io::_print (Constraint Depth: 1)
+in_cargo_callgraph --- std::fmt::Arguments::new_const (Constraint Depth: 2)
+in_cargo_callgraph --- core::fmt::rt::Argument::new_display (Constraint Depth: 1)
+in_cargo_callgraph --- core::fmt::rt::Argument::new_debug (Constraint Depth: 2)
+test_sysroot_consistency --- std::process::Command::new (Constraint Depth: 0)
+any_arg_flag --- std::env::args (Constraint Depth: 0)
+clean_package --- std::fmt::format (Constraint Depth: 1)
+in_cargo_callgraph --- callgraph::test_sysroot_consistency (Constraint Depth: 0)
+cargo_package --- std::fmt::Arguments::new_v1 (Constraint Depth: 1)
+cargo_package --- std::fmt::format (Constraint Depth: 1)
+main --- callgraph::in_cargo_callgraph (Constraint Depth: 1)
+inside_cargo_rustc --- std::env::args (Constraint Depth: 1)
+inside_cargo_rustc --- callgraph::inside_cargo_rustc::is_crate_type_lib (Constraint Depth: 0)
+test_sysroot_consistency --- core::fmt::rt::Argument::new_display (Constraint Depth: 1)
+main --- std::env::args (Constraint Depth: 0)
+inside_cargo_rustc::run_command --- std::env::var_os (Constraint Depth: 0)
+main --- callgraph::inside_cargo_rustc (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- std::fmt::Arguments::new_v1 (Constraint Depth: 0)
+clean_package --- std::process::Command::new (Constraint Depth: 0)
+in_cargo_callgraph --- std::env::var_os (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- std::path::PathBuf::from (Constraint Depth: 0)
+inside_cargo_rustc --- which::which (Constraint Depth: 2)
+<TargetKind as std::fmt::Display>::fmt --- core::fmt::rt::Argument::new_display (Constraint Depth: 0)
+show_error --- std::process::exit (Constraint Depth: 0)
+cargo_package --- callgraph::get_arg_flag_value (Constraint Depth: 0)
+cargo_package --- std::hint::must_use (Constraint Depth: 1)
+test_sysroot_consistency --- std::fmt::format (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- std::io::_eprint (Constraint Depth: 1)
+get_arg_flag_value --- std::prelude::v1::Some (Constraint Depth: 1)
+main --- std::fmt::Arguments::new_const (Constraint Depth: 1)
+<TargetKind as std::fmt::Display>::fmt --- std::fmt::Arguments::new_v1 (Constraint Depth: 0)
+show_error --- std::fmt::Arguments::new_v1 (Constraint Depth: 0)
+in_cargo_callgraph --- callgraph::get_arg_flag_value (Constraint Depth: 1)
+<TargetKind as std::convert::From<&cargo_metadata::Target>>::from --- callgraph::TargetKind::is_lib_str (Constraint Depth: 0)
+test_sysroot_consistency --- std::fmt::Arguments::new_v1 (Constraint Depth: 1)
+in_cargo_callgraph --- callgraph::version_info (Constraint Depth: 2)
+in_cargo_callgraph --- callgraph::show_error (Constraint Depth: 2)
+test_sysroot_consistency --- callgraph::show_error (Constraint Depth: 1)
+in_cargo_callgraph --- serde_json::to_string (Constraint Depth: 1)
+inside_cargo_rustc --- callgraph::find_callgraph (Constraint Depth: 1)
+in_cargo_callgraph --- callgraph::cargo_package (Constraint Depth: 0)
+in_cargo_callgraph --- std::io::_eprint (Constraint Depth: 2)
+in_cargo_callgraph --- std::time::Duration::from_secs (Constraint Depth: 2)
+inside_cargo_rustc --- callgraph::inside_cargo_rustc::is_target_crate (Constraint Depth: 0)
+inside_cargo_rustc --- std::process::Command::new (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- core::fmt::rt::Argument::new_display (Constraint Depth: 0)
+test_sysroot_consistency --- callgraph::find_callgraph (Constraint Depth: 0)
+in_cargo_callgraph --- std::process::Command::new (Constraint Depth: 1)
+show_error --- std::io::_print (Constraint Depth: 0)
+get_first_arg_with_rs_suffix --- std::env::args (Constraint Depth: 0)
+version_info --- rustc_version::VersionMeta::for_command (Constraint Depth: 0)
+in_cargo_callgraph --- std::env::current_exe (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- std::string::String::from_utf8 (Constraint Depth: 0)
+clean_package --- callgraph::version_info (Constraint Depth: 0)
+clean_package --- std::hint::must_use (Constraint Depth: 1)
+find_callgraph --- std::env::current_exe (Constraint Depth: 0)
+inside_cargo_rustc --- serde_json::from_str (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- std::rt::panic_fmt (Constraint Depth: 1)
+cargo_package --- core::fmt::rt::Argument::new_display (Constraint Depth: 1)
+version_info --- std::process::Command::new (Constraint Depth: 0)
+clean_package --- callgraph::show_error (Constraint Depth: 1)
+in_cargo_callgraph --- callgraph::has_arg_flag (Constraint Depth: 0)
+test_sysroot_consistency::get_sysroot --- std::rt::panic_fmt (Constraint Depth: 0)
+clean_package --- std::fmt::Arguments::new_const (Constraint Depth: 1)
+main --- callgraph::show_error (Constraint Depth: 0)
+cargo_package --- std::env::current_dir (Constraint Depth: 0)
+cargo_package --- std::path::Path::new (Constraint Depth: 0)
+in_cargo_callgraph --- callgraph::clean_package (Constraint Depth: 2)
+inside_cargo_rustc --- callgraph::inside_cargo_rustc::contains_target_flag (Constraint Depth: 0)
+
+Dynamic Calls:
+show_error --- std::convert::AsRef::as_ref (Constraint Depth: 0)
+
+Non Local Calls:
+inside_cargo_rustc --- std::result::Result::<T, E>::expect (Constraint Depth: 1)
+main --- <std::env::Args as std::iter::Iterator>::next (Constraint Depth: 0)
+cargo_package --- cargo_metadata::MetadataCommand::exec (Constraint Depth: 1)
+in_cargo_callgraph --- std::process::Child::kill (Constraint Depth: 2)
+get_arg_flag_value --- core::str::<impl str>::starts_with (Constraint Depth: 0)
+in_cargo_callgraph --- std::iter::Iterator::collect (Constraint Depth: 0)
+<TargetKind as std::convert::From<&cargo_metadata::Target>>::from --- core::slice::<impl [T]>::get (Constraint Depth: 1)
+inside_cargo_rustc::contains_target_flag --- std::option::Option::<T>::is_some (Constraint Depth: 0)
+get_first_arg_with_rs_suffix --- std::iter::Iterator::take_while (Constraint Depth: 0)
+get_first_arg_with_rs_suffix --- std::iter::Iterator::find (Constraint Depth: 0)
+cargo_package --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+get_first_arg_with_rs_suffix --- core::str::<impl str>::ends_with (Constraint Depth: 0)
+test_sysroot_consistency::get_sysroot --- std::process::Command::output (Constraint Depth: 0)
+cargo_package --- <std::slice::Iter<'a, T> as std::iter::Iterator>::position (Constraint Depth: 0)
+test_sysroot_consistency::get_sysroot --- std::result::Result::<T, E>::expect (Constraint Depth: 0)
+get_arg_flag_value --- core::str::<impl str>::len (Constraint Depth: 0)
+in_cargo_callgraph --- std::slice::<impl [T]>::sort_by_key (Constraint Depth: 0)
+in_cargo_callgraph --- std::vec::Vec::<T, A>::as_slice (Constraint Depth: 2)
+in_cargo_callgraph --- std::option::Option::<T>::is_some (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- std::process::ExitStatus::success (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- std::path::Path::canonicalize (Constraint Depth: 0)
+inside_cargo_rustc::run_command --- std::option::Option::<T>::unwrap_or (Constraint Depth: 2)
+cargo_package --- std::result::Result::<T, E>::expect (Constraint Depth: 1)
+clean_package --- std::process::Child::wait (Constraint Depth: 0)
+in_cargo_callgraph --- <std::vec::Vec<T, A> as std::iter::IntoIterator>::into_iter (Constraint Depth: 0)
+in_cargo_callgraph --- std::process::Command::arg (Constraint Depth: 1)
+<TargetKind as std::convert::From<&cargo_metadata::Target>>::from --- <std::slice::Iter<'a, T> as std::iter::Iterator>::any (Constraint Depth: 0)
+cargo_package --- std::option::Option::<T>::unwrap_or_else (Constraint Depth: 0)
+main --- core::str::<impl str>::ends_with (Constraint Depth: 1)
+in_cargo_callgraph --- std::process::Child::wait (Constraint Depth: 2)
+inside_cargo_rustc::is_target_crate --- std::path::Path::is_relative (Constraint Depth: 0)
+cargo_package --- std::option::Option::<T>::map (Constraint Depth: 0)
+test_sysroot_consistency::get_sysroot --- std::process::Command::arg (Constraint Depth: 0)
+find_callgraph --- std::result::Result::<T, E>::expect (Constraint Depth: 0)
+main --- std::option::Option::<T>::unwrap (Constraint Depth: 0)
+inside_cargo_rustc::run_command --- std::process::ExitStatus::code (Constraint Depth: 2)
+any_arg_flag --- std::iter::Iterator::take_while (Constraint Depth: 0)
+get_arg_flag_value --- std::str::<impl std::borrow::ToOwned for str>::to_owned (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- std::result::Result::<T, E>::unwrap_or_else (Constraint Depth: 0)
+cargo_package --- std::result::Result::<T, E>::unwrap (Constraint Depth: 0)
+has_arg_flag --- std::iter::Iterator::any (Constraint Depth: 0)
+in_cargo_callgraph --- std::process::ExitStatus::success (Constraint Depth: 2)
+cargo_package --- std::vec::Vec::<T, A>::remove (Constraint Depth: 0)
+<TargetKind as std::convert::From<&cargo_metadata::Target>>::from --- std::option::Option::<T>::map (Constraint Depth: 1)
+test_sysroot_consistency --- std::path::Path::display (Constraint Depth: 1)
+in_cargo_callgraph --- std::process::Command::env (Constraint Depth: 1)
+cargo_package --- std::result::Result::<T, E>::as_ref (Constraint Depth: 1)
+in_cargo_callgraph --- std::option::Option::<T>::is_none (Constraint Depth: 1)
+get_arg_flag_value --- std::iter::Iterator::take_while (Constraint Depth: 0)
+inside_cargo_rustc::is_target_crate --- std::path::<impl std::convert::AsRef<std::path::Path> for std::string::String>::as_ref (Constraint Depth: 0)
+get_arg_flag_value --- <std::iter::TakeWhile<I, P> as std::iter::Iterator>::next (Constraint Depth: 1)
+<TargetKind as std::convert::From<&cargo_metadata::Target>>::from --- core::slice::<impl [T]>::iter (Constraint Depth: 0)
+in_cargo_callgraph --- <std::process::Child as wait_timeout::ChildExt>::wait_timeout (Constraint Depth: 2)
+in_cargo_callgraph --- std::result::Result::<T, E>::expect (Constraint Depth: 1)
+cargo_package --- std::path::Path::parent (Constraint Depth: 1)
+has_arg_flag --- std::iter::Iterator::take_while (Constraint Depth: 0)
+<TargetKind as std::fmt::Display>::fmt --- std::fmt::Formatter::<'a>::write_fmt (Constraint Depth: 0)
+any_arg_flag --- core::str::<impl str>::len (Constraint Depth: 0)
+in_cargo_callgraph --- std::iter::Iterator::skip (Constraint Depth: 1)
+in_cargo_callgraph --- std::slice::<impl [T]>::join (Constraint Depth: 2)
+any_arg_flag --- std::str::<impl std::borrow::ToOwned for str>::to_owned (Constraint Depth: 1)
+main --- std::string::String::as_str (Constraint Depth: 1)
+any_arg_flag --- core::str::<impl str>::is_empty (Constraint Depth: 0)
+test_sysroot_consistency::get_sysroot --- core::str::<impl str>::trim (Constraint Depth: 0)
+get_arg_flag_value --- core::str::<impl str>::is_empty (Constraint Depth: 0)
+any_arg_flag --- <std::iter::TakeWhile<I, P> as std::iter::Iterator>::next (Constraint Depth: 1)
+in_cargo_callgraph --- std::process::Command::spawn (Constraint Depth: 1)
+inside_cargo_rustc::run_command --- std::option::Option::<T>::is_some (Constraint Depth: 0)
+inside_cargo_rustc::run_command --- std::process::Command::status (Constraint Depth: 1)
+cargo_package --- cargo_metadata::MetadataCommand::manifest_path (Constraint Depth: 1)
+cargo_package --- std::path::Path::canonicalize (Constraint Depth: 0)
+<TargetKind as std::convert::From<&cargo_metadata::Target>>::from --- <std::string::String as std::convert::AsRef<str>>::as_ref (Constraint Depth: 1)
+version_info --- std::result::Result::<T, E>::expect (Constraint Depth: 0)
+in_cargo_callgraph --- <std::iter::Skip<I> as std::iter::Iterator>::next (Constraint Depth: 1)
+test_sysroot_consistency::get_sysroot --- std::process::ExitStatus::success (Constraint Depth: 0)
+clean_package --- std::process::Command::spawn (Constraint Depth: 0)
+clean_package --- std::result::Result::<T, E>::expect (Constraint Depth: 0)
+any_arg_flag --- core::str::<impl str>::starts_with (Constraint Depth: 0)
+inside_cargo_rustc --- std::process::Command::args (Constraint Depth: 1)
+clean_package --- std::process::ExitStatus::success (Constraint Depth: 0)
+find_callgraph --- std::path::PathBuf::set_file_name (Constraint Depth: 0)
+clean_package --- std::process::Command::arg (Constraint Depth: 0)
+inside_cargo_rustc --- std::iter::Iterator::skip (Constraint Depth: 1)
+cargo_package --- std::option::Option::<T>::expect (Constraint Depth: 1)

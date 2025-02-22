@@ -13,6 +13,9 @@ use rustc_span::Span;
 use std::cmp::PartialEq;
 use std::hash::{Hash, Hasher};
 use rustc_hir::LangItem;
+use cargo_metadata::{MetadataCommand, Package};
+use toml;
+
 
 macro_rules! skip_generated_code {
     ($span: expr) => {
@@ -44,6 +47,7 @@ struct Call {
     // call target
     callee: DefId,
     callee_span: Span,
+    caller_path: String,
     callee_path: String,
     constraint_depth: usize,
 }
@@ -135,34 +139,34 @@ impl<'tcx> CallgraphVisitor<'tcx> {
 
         println!("\nStatic Calls:");
         for call in &self.static_calls {
-            let caller_str = match call.caller {
-                Some(caller) => self.tcx.def_path_str(caller),
-                None => "Unknown Caller".to_string(),
-            };
-            let callee_str = self.tcx.def_path_str(call.callee);
+            // let caller_str = match call.caller {
+            //     Some(caller) => self.tcx.def_path_str(caller),
+            //     None => "Unknown Caller".to_string(),
+            // };
+            // let callee_str = self.tcx.def_path_str(call.callee);
 
-            println!("{} --- {} (Constraint Depth: {})", caller_str, call.callee_path, call.constraint_depth);
+            println!("{} --- {} (Constraint Depth: {})", call.caller_path, call.callee_path, call.constraint_depth);
         }
 
         println!("\nDynamic Calls:");
         for call in &self.dynamic_calls {
-            let caller_str = match call.caller {
-                Some(caller) => self.tcx.def_path_str(caller),
-                None => "Unknown Caller".to_string(),
-            };
-            let callee_str = self.tcx.def_path_str(call.callee);
+            // let caller_str = match call.caller {
+            //     Some(caller) => self.tcx.def_path_str(caller),
+            //     None => "Unknown Caller".to_string(),
+            // };
+            // let callee_str = self.tcx.def_path_str(call.callee);
 
-            println!("{} --- {} (Constraint Depth: {})", caller_str, callee_str, call.constraint_depth);
+            println!("{} --- {} (Constraint Depth: {})", call.caller_path, call.callee_path, call.constraint_depth);
         }
 
         println!("\nNon Local Calls:");
         for call in &self.non_local_calls {
-            let caller_str = match call.caller {
-                Some(caller) => self.tcx.def_path_str(caller),
-                None => "Unknown Caller".to_string(),
-            };
+            // let caller_str = match call.caller {
+            //     Some(caller) => self.tcx.def_path_str(caller),
+            //     None => "Unknown Caller".to_string(),
+            // };
 
-            println!("{} --- {} (Constraint Depth: {})", caller_str, call.callee_path, call.constraint_depth);
+            println!("{} --- {} (Constraint Depth: {})", call.caller_path, call.callee_path, call.constraint_depth);
         }
     }
 
@@ -224,55 +228,62 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                             Ok(Some(inst)) => {
                                 // 成功解析为具体的实例
                                 let res_def_id = inst.def_id();
-                            // println!("caller: {:?}", self.cur_fn);
-                            // println!("def_id: {:?}, get_path: {:#?}", res_def_id, self.tcx.def_path_str(res_def_id));
-                            match self.tcx.hir().get_if_local(res_def_id) {
-                                Some(rustc_hir::Node::TraitItem(rustc_hir::TraitItem { span, .. })) => {
-                                    // dynamic calls resolve only to the trait method decl
-                                    let new_call = Call {
-                                        call_expr: hir_id,
-                                        call_expr_span: expr.span,
-                                        caller: self.cur_fn,
-                                        caller_span: None,
-                                        callee: res_def_id,
-                                        callee_span: *span,
-                                        callee_path: self.tcx.def_path_str(res_def_id),
-                                        constraint_depth: self.constraint_depth,
-                                    };
-                                    self.handle_call(new_call, "dynamic".to_string());
-                                }
-                                Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem { span, .. })) |
-                                Some(rustc_hir::Node::Item(rustc_hir::Item { span, .. })) |
-                                Some(rustc_hir::Node::ForeignItem(rustc_hir::ForeignItem { span, .. })) => {
-                                    // calls for which the receiver's type can be resolved
-                                    let new_call = Call {
-                                        call_expr: hir_id,
-                                        call_expr_span: expr.span,
-                                        caller: self.cur_fn,
-                                        caller_span: None,
-                                        callee: res_def_id,
-                                        callee_span: *span,
-                                        callee_path: self.tcx.def_path_str(res_def_id),
-                                        constraint_depth: self.constraint_depth,
-                                    };
+                                // println!("caller: {:?}", self.cur_fn);
+                                // println!("def_id: {:?}, get_path: {:#?}", res_def_id, self.tcx.def_path_str(res_def_id));
+                                // println!("the complete path is {:#?}", self.get_full_path(self.tcx, res_def_id));
+                                match self.tcx.hir().get_if_local(res_def_id) {
+                                    Some(rustc_hir::Node::TraitItem(rustc_hir::TraitItem { span, .. })) => {
+                                        // dynamic calls resolve only to the trait method decl
+                                        let new_call = Call {
+                                            call_expr: hir_id,
+                                            call_expr_span: expr.span,
+                                            caller: self.cur_fn,
+                                            caller_span: None,
+                                            callee: res_def_id,
+                                            callee_span: *span,
+                                            // callee_path: self.tcx.def_path_str(res_def_id),
+                                            caller_path: self.get_full_path(self.tcx, self.cur_fn),
+                                            callee_path: self.get_full_path(self.tcx, Some(res_def_id)),
+                                            constraint_depth: self.constraint_depth,
+                                        };
+                                        self.handle_call(new_call, "dynamic".to_string());
+                                    }
+                                    Some(rustc_hir::Node::ImplItem(rustc_hir::ImplItem { span, .. })) |
+                                    Some(rustc_hir::Node::Item(rustc_hir::Item { span, .. })) |
+                                    Some(rustc_hir::Node::ForeignItem(rustc_hir::ForeignItem { span, .. })) => {
+                                        // calls for which the receiver's type can be resolved
+                                        let new_call = Call {
+                                            call_expr: hir_id,
+                                            call_expr_span: expr.span,
+                                            caller: self.cur_fn,
+                                            caller_span: None,
+                                            callee: res_def_id,
+                                            callee_span: *span,
+                                            // callee_path: self.tcx.def_path_str(res_def_id),
+                                            caller_path: self.get_full_path(self.tcx, self.cur_fn),
+                                            callee_path: self.get_full_path(self.tcx, Some(res_def_id)),
+                                            constraint_depth: self.constraint_depth,
+                                        };
 
-                                    self.handle_call(new_call, "static".to_string());
-                                }
-                                None => {
-                                    let new_call = Call {
-                                        call_expr: hir_id,
-                                        call_expr_span: expr.span,
-                                        caller: self.cur_fn,
-                                        caller_span: None,
-                                        callee: res_def_id,
-                                        callee_span: Span::default(),
-                                        callee_path: self.tcx.def_path_str(res_def_id),
-                                        constraint_depth: self.constraint_depth,
-                                    };
+                                        self.handle_call(new_call, "static".to_string());
+                                    }
+                                    None => {
+                                        let new_call = Call {
+                                            call_expr: hir_id,
+                                            call_expr_span: expr.span,
+                                            caller: self.cur_fn,
+                                            caller_span: None,
+                                            callee: res_def_id,
+                                            callee_span: Span::default(),
+                                            // callee_path: self.tcx.def_path_str(res_def_id),
+                                            caller_path: self.get_full_path(self.tcx, self.cur_fn),
+                                            callee_path: self.get_full_path(self.tcx, Some(res_def_id)),
+                                            constraint_depth: self.constraint_depth,
+                                        };
 
-                                    self.handle_call(new_call, "non_local".to_string());
-                                },
-                                _ => todo!()
+                                        self.handle_call(new_call, "non_local".to_string());
+                                    },
+                                    _ => todo!()
                                 };
                             },
                             Ok(None) | Err(_) => {
@@ -284,7 +295,9 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                                     caller_span: None,
                                     callee: def_id,
                                     callee_span: expr.span,
-                                    callee_path: self.tcx.def_path_str(def_id),
+                                    // callee_path: self.tcx.def_path_str(def_id),
+                                    caller_path: self.get_full_path(self.tcx, self.cur_fn),
+                                    callee_path: self.get_full_path(self.tcx, Some(def_id)),
                                     constraint_depth: self.constraint_depth,
                                 };
             
@@ -303,7 +316,9 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                             caller_span: None,
                             callee: segment.res.def_id(),
                             callee_span: expr.span,
-                            callee_path: self.tcx.def_path_str(segment.res.def_id()),
+                            // callee_path: self.tcx.def_path_str(segment.res.def_id()),
+                            caller_path: self.get_full_path(self.tcx, self.cur_fn),
+                            callee_path: self.get_full_path(self.tcx, Some(segment.res.def_id())),
                             constraint_depth: self.constraint_depth,
                         };
             
@@ -327,11 +342,13 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                         caller_span: None,
                         callee: def_id,
                         callee_span: p.span,
-                        callee_path: self.tcx.def_path_str(def_id),
+                        // callee_path: self.tcx.def_path_str(def_id),
+                        caller_path: self.get_full_path(self.tcx, self.cur_fn),
+                        callee_path: self.get_full_path(self.tcx, Some(def_id)),
                         constraint_depth: self.constraint_depth,
                     };
 
-                    println!("resolved new call {:?}", new_call);
+                    //println!("resolved new call {:?}", new_call);
         
                     // 检查是否已经存在相同的调用（只比较 caller 和 callee）
                     self.handle_call(new_call, "static".to_string());
@@ -343,7 +360,8 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                     if let rustc_hir::QPath::Resolved(_, path) = qpath {
                         if let rustc_hir::def::Res::Def(_, def_id) = path.res {
                             // Convert DefId and Ident to strings for printing
-                            let def_id_str = self.tcx.def_path_str(def_id);
+                            // let def_id_str = self.tcx.def_path_str(def_id);
+                            let def_id_str = self.get_full_path(self.tcx, Some(def_id));
                             let ident_str = path_segment.ident.to_string();
                             let callee_path_output = def_id_str + "::" + &ident_str;
                             let new_call = Call {
@@ -353,6 +371,7 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                                 caller_span: None,
                                 callee: def_id,
                                 callee_span: path_segment.ident.span,   //error span
+                                caller_path: self.get_full_path(self.tcx, self.cur_fn),
                                 callee_path: callee_path_output.clone(),
                                 constraint_depth: self.constraint_depth,
                             };
@@ -366,13 +385,76 @@ impl<'tcx> CallgraphVisitor<'tcx> {
                 
                 
             rustc_hir::QPath::LangItem(_, span) => {
-                println!("LangItem path: {:?}", span); // 打印语言项路径信息
+                //println!("LangItem path: {:?}", span); // 打印语言项路径信息
             }
         }
         
         intravisit::walk_expr(self, expr); // 确保遍历所有表达式
     }
 
+    
+    fn get_full_path(&mut self, tcx: TyCtxt<'_>, def_id: Option<DefId>) -> String {
+        // If def_id is None, return empty string
+        let def_id = match def_id {
+            Some(id) => id,
+            None => return String::new(),
+        };
+        
+        // 获取 def_path_str
+        let def_path_str = tcx.def_path_str(def_id);
+        
+        // 获取当前 crate 名称
+        let current_crate_name = self.get_current_crate_name().unwrap_or_else(|| "unknown".to_string());
+        
+        //println!("current_crate_name:{}", current_crate_name);
+        
+        // 如果是本地 crate 定义的函数
+        if def_id.is_local() {
+            //println!("the function {} is local", def_path_str);
+            // 如果 def_path_str 已经包含 crate 名称，直接返回
+            if def_path_str.starts_with(&current_crate_name) {
+                return def_path_str;
+            }
+            // 否则，在前面加上当前 crate 名称
+            format!("{}::{}", current_crate_name, def_path_str)
+        } else {
+            // 非本地函数，直接返回完整路径
+            def_path_str
+        }
+    }
+
+    fn get_current_crate_name(&self) -> Option<String> {
+        // 获取当前工作目录
+        
+        let current_dir = std::env::current_dir().ok()?;
+        //println!("Current directory: {}", current_dir.display());  // 打印当前目录
+    
+        // 构建 Cargo.toml 的路径
+        let cargo_toml_path = current_dir.join("Cargo.toml");
+    
+        // 确保文件存在
+        if !cargo_toml_path.exists() {
+            return None;
+        }
+    
+        // 读取 Cargo.toml 文件
+        let cargo_toml_content = std::fs::read_to_string(&cargo_toml_path).ok()?;
+    
+        // 解析 TOML 内容
+        let value: toml::Value = toml::from_str(&cargo_toml_content).ok()?;
+    
+        // 获取当前 crate 的名称
+        if let Some(package) = value.get("package") {
+            if let Some(name) = package.get("name") {
+                return name.as_str().map(|s| s.to_string());
+            }
+        }
+        
+        None
+    }
+    
+    
+    
 }
 
 
@@ -392,11 +474,10 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
 
     fn visit_expr(&mut self, expr: &'tcx rustc_hir::Expr) {
         // skip_generated_code!(expr.span);
-
         let old_depth = self.constraint_depth; // 保存当前深度
         let hir_id = expr.hir_id;
         let mut flag = true;
-        println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
+        // println!("The code is {:#?}", self.tcx.sess.source_map().span_to_snippet(expr.span));
         // println!("Entering expr: {:#?}, constraint_depth{}", expr.kind, self.constraint_depth);
         // 检查表达式类型并更新约束层数
         match expr.kind {
@@ -465,7 +546,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
             rustc_hir::ExprKind::Match(ref match_expr, _, match_source) => {
                 let not_for_loop_match = match match_expr.kind {
                     rustc_hir::ExprKind::Call(ref callee, _) => {
-                        println!("into Match call");
+                        //println!("into Match call");
                         // 检查 callee 是否是 `next()` 方法，这通常是 `for` 循环的一部分
                         if let rustc_hir::ExprKind::Path(rustc_hir::QPath::LangItem(
                             LangItem::IteratorNext,
@@ -473,7 +554,7 @@ impl<'tcx> intravisit::Visitor<'tcx> for CallgraphVisitor<'tcx> {
                         )) = callee.kind
                         {
                             // 如果是 `next()` 方法调用，则它可能是 `for` 循环的一部分
-                            println!("is inner Match");
+                            //println!("is inner Match");
                             false
                         } else {
                             true

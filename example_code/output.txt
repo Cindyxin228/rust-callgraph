@@ -1,148 +1,39 @@
 Target name: example_code
-The code is Ok(
-    "{\n    x.do_foo();\n}",
-)
-The code is Ok(
-    "x.do_foo()",
-)
-new dynamic call: Call {
-    call_expr: HirId(DefId(0:13 ~ example_code[e214]::call_foo).3),
-    call_expr_span: src/main.rs:245:5: 245:15 (#0),
-    caller: Some(
-        DefId(0:13 ~ example_code[e214]::call_foo),
-    ),
-    caller_span: None,
-    callee: DefId(0:4 ~ example_code[e214]::Foo::do_foo),
-    callee_span: src/main.rs:245:5: 245:15 (#0),
-    callee_path: "Foo::do_foo",
-    constraint_depth: 0,
-}
-Inserted new call with constraint depth: 0
-The code is Ok(
-    "x",
-)
-The code is Ok(
-    "{\n    let a1 = A;\n    let a = A;\n    let b = B;\n    \n    call_foo(a); // 静态分发\n    call_foo(b); // 静态分发\n\n    let dynamic_foo: &dyn Foo = &a1;\n    dynamic_foo.do_foo(); // 动态分发\n}",
-)
-The code is Ok(
-    "A",
-)
-The code is Ok(
-    "A",
-)
-The code is Ok(
-    "B",
-)
-The code is Ok(
-    "call_foo(a)",
-)
-resolved new call Call { call_expr: HirId(DefId(0:15 ~ example_code[e214]::main).16), call_expr_span: src/main.rs:253:5: 253:16 (#0), caller: Some(DefId(0:15 ~ example_code[e214]::main)), caller_span: None, callee: DefId(0:13 ~ example_code[e214]::call_foo), callee_span: src/main.rs:253:5: 253:13 (#0), callee_path: "call_foo", constraint_depth: 0 }
-The code is Ok(
-    "call_foo",
-)
-The code is Ok(
-    "a",
-)
-The code is Ok(
-    "call_foo(b)",
-)
-resolved new call Call { call_expr: HirId(DefId(0:15 ~ example_code[e214]::main).22), call_expr_span: src/main.rs:254:5: 254:16 (#0), caller: Some(DefId(0:15 ~ example_code[e214]::main)), caller_span: None, callee: DefId(0:13 ~ example_code[e214]::call_foo), callee_span: src/main.rs:254:5: 254:13 (#0), callee_path: "call_foo", constraint_depth: 0 }
-The code is Ok(
-    "call_foo",
-)
-The code is Ok(
-    "b",
-)
-The code is Ok(
-    "&a1",
-)
-The code is Ok(
-    "a1",
-)
-The code is Ok(
-    "dynamic_foo.do_foo()",
-)
-Inserted new call with constraint depth: 0
-The code is Ok(
-    "dynamic_foo",
-)
-The code is Ok(
-    "{\n        println!(\"A does foo\");\n    }",
-)
-The code is Ok(
-    "{\n        $crate::io::_print($crate::format_args_nl!($($arg)*));\n    }",
-)
-The code is Ok(
-    "$crate::io::_print($crate::format_args_nl!($($arg)*))",
-)
-resolved new call Call { call_expr: HirId(DefId(0:10 ~ example_code[e214]::{impl#0}::do_foo).4), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:62 (#4), caller: Some(DefId(0:10 ~ example_code[e214]::{impl#0}::do_foo)), caller_span: None, callee: DefId(1:3520 ~ std[5b0f]::io::stdio::_print), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#4), callee_path: "std::io::_print", constraint_depth: 0 }
-The code is Ok(
-    "$crate::io::_print",
-)
-The code is Ok(
-    "$crate::format_args_nl!($($arg)*)",
-)
-The code is Ok(
-    "$crate::format_args_nl!($($arg)*)",
-)
-The code is Ok(
-    "\"A does foo\"",
-)
-The code is Ok(
-    "\"A does foo\"",
-)
-The code is Ok(
-    "\"A does foo\"",
-)
-The code is Ok(
-    "{\n        println!(\"B does foo\");\n    }",
-)
-The code is Ok(
-    "{\n        $crate::io::_print($crate::format_args_nl!($($arg)*));\n    }",
-)
-The code is Ok(
-    "$crate::io::_print($crate::format_args_nl!($($arg)*))",
-)
-resolved new call Call { call_expr: HirId(DefId(0:12 ~ example_code[e214]::{impl#1}::do_foo).4), call_expr_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:62 (#6), caller: Some(DefId(0:12 ~ example_code[e214]::{impl#1}::do_foo)), caller_span: None, callee: DefId(1:3520 ~ std[5b0f]::io::stdio::_print), callee_span: /home/cindy/.rustup/toolchains/nightly-2024-08-07-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#6), callee_path: "std::io::_print", constraint_depth: 0 }
-The code is Ok(
-    "$crate::io::_print",
-)
-The code is Ok(
-    "$crate::format_args_nl!($($arg)*)",
-)
-The code is Ok(
-    "$crate::format_args_nl!($($arg)*)",
-)
-The code is Ok(
-    "\"B does foo\"",
-)
-The code is Ok(
-    "\"B does foo\"",
-)
-The code is Ok(
-    "\"B does foo\"",
-)
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
+current_crate_name:example_code
 Functions:
-  Function: <A as Foo>::do_foo, Span: src/main.rs:233:5: 235:6 (#0)
-  Function: <B as Foo>::do_foo, Span: src/main.rs:239:5: 241:6 (#0)
-  Function: call_foo, Span: src/main.rs:244:1: 246:2 (#0)
-  Function: main, Span: src/main.rs:248:1: 258:2 (#0)
+  Function: a::fun_method::S1::should_call_bla, Span: src/a/fun_method.rs:57:5: 59:6 (#0)
+  Function: <a::fun_method::R as a::fun_method::T>::bla, Span: src/a/fun_method.rs:80:5: 83:6 (#0)
+  Function: a::fun_method::S1::should_call_bla1, Span: src/a/fun_method.rs:61:5: 63:6 (#0)
+  Function: a::fun_method::S1::should_call_bla2, Span: src/a/fun_method.rs:65:5: 67:6 (#0)
+  Function: main, Span: src/main.rs:4:1: 67:2 (#0)
+  Function: a::fun_method::T::bla, Span: src/a/fun_method.rs:4:5: 4:56 (#0)
+  Function: a::fun_method::S::bla, Span: src/a/fun_method.rs:24:5: 29:6 (#0)
 
 Method Declarations:
-  Method Declaration: Foo::do_foo
+  Method Declaration: a::fun_method::T::bla
 
 Method Implementations:
-  Method Implementation for Foo::do_foo: [DefId(0:10 ~ example_code[e214]::{impl#0}::do_foo), DefId(0:12 ~ example_code[e214]::{impl#1}::do_foo)]
+  Method Implementation for a::fun_method::T::bla: [DefId(0:6 ~ example_code[8ae4]::a::fun_method::T::bla), DefId(0:20 ~ example_code[8ae4]::a::fun_method::{impl#2}::bla)]
 
 Static Calls:
-main --- call_foo (Constraint Depth: 0)
-<A as Foo>::do_foo --- std::io::_print (Constraint Depth: 0)
-<A as Foo>::do_foo --- std::fmt::Arguments::new_const (Constraint Depth: 0)
-<B as Foo>::do_foo --- std::fmt::Arguments::new_const (Constraint Depth: 0)
-<B as Foo>::do_foo --- std::io::_print (Constraint Depth: 0)
+a::fun_method::S::bla --- std::io::_print (Constraint Depth: 1)
+main --- example_code::a::fun_method::S1::should_call_bla1 (Constraint Depth: 1)
+main --- example_code::a::fun_method::S1::should_call_bla2 (Constraint Depth: 2)
+main --- example_code::a::fun_method::S1::should_call_bla (Constraint Depth: 0)
+main --- example_code::a::fun_method::S::bla (Constraint Depth: 3)
+a::fun_method::S::bla --- std::fmt::Arguments::new_const (Constraint Depth: 1)
 
 Dynamic Calls:
-call_foo --- Foo::do_foo (Constraint Depth: 0)
-main --- Foo::do_foo (Constraint Depth: 0)
 
 Non Local Calls:

@@ -1,1 +1,0 @@
-This seems to be a workspace, which is not supported by cargo-callgraph
